@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="SLmap">
+	<select id="SLList" parameterType="hashmap"
+		resultType="com.ses.dto.SiteListDTO">
+		SELECT * FROM site_list WHERE M_ID like #{M_ID} and SU_KIND like #{kind} and SL_STATE like 1 order by SL_YEAR DESC, SL_MONTH DESC, SL_DAY DESC limit #{startNum}, #{ContentNum}
+	</select>
+	
+	<select id="Search" parameterType="hashmap"
+		resultType="com.ses.dto.SiteListDTO">
+		SELECT * FROM site_list WHERE M_ID like #{M_ID} and SU_KIND like #{kind} and SL_STATE like 1 and SL_NAME like #{keyword} order by SL_YEAR DESC, SL_MONTH DESC, SL_DAY DESC  limit #{startNum}, #{ContentNum}
+	</select>
+	
+	<select id="SearchCnt" parameterType="hashmap" resultType="int">
+		SELECT count(*) FROM site_list WHERE M_ID like #{M_ID} and SU_KIND like #{kind} and SL_STATE like 1 and SL_NAME like #{keyword}
+	</select>
+	
+	<select id="ListCnt" parameterType="hashmap" resultType="int">
+		SELECT count(*) FROM site_list WHERE M_ID like #{M_ID} and SU_KIND like #{kind} and SL_STATE like 1
+	</select>
+	
+	<update id="CancelSNS" parameterType="hashmap">
+		UPDATE
+		site_list SET
+		SL_STATE = 0
+		WHERE M_ID = #{M_ID} AND SL_NAME = #{SL_NAME}
+	</update>
+	
+	<select id="SearchOne" parameterType="hashmap"
+		resultType="com.ses.dto.SiteListDTO">
+		SELECT * FROM site_list WHERE M_ID like #{M_ID} and SL_NAME like #{SL_NAME}
+	</select>
+	
+	<select id="MemberPageCnt" parameterType="hashmap" resultType="int">
+		SELECT count(*) FROM site_list WHERE M_ID like #{M_ID} and SL_STATE like 1
+	</select>
+</mapper>

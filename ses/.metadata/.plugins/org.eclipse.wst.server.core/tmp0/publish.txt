@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu Feb 25 02:21:19 KST 2021
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\tytyj\\.m2\\repository\\org\\springframework\\spring-web\\5.2.1.RELEASE\\spring-web-5.2.1.RELEASE.jar=C\:\\Users\\tytyj\\apache-tomcat-9.0.27\\wtpwebapps\\SES\\WEB-INF\\lib\\spring-web-5.2.1.RELEASE.jar
+org.eclipse.jst.jee.server\:SES=C\:\\Users\\tytyj\\apache-tomcat-9.0.27\\wtpwebapps\\SES

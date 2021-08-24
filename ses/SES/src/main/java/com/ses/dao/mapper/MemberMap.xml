@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mmap">
+	<select id="MLogin" parameterType="String"
+		resultType="com.ses.dto.MemberDTO">
+		SELECT * from Member
+		WHERE M_ID like #{param1}
+	</select>
+
+	<select id="MCheckId" parameterType="String" resultType="String">
+		SELECT
+		M_ID FROM Member WHERE M_ID like #{mId}
+	</select>
+
+	<insert id="MJoin" parameterType="hashmap">
+		INSERT INTO Member
+		VALUES
+		(#{mId}, #{mPw}, #{mName}, #{mEmail1}, #{mEmail2}, #{mTel1}, #{mTel2},
+		#{mTel3}, #{mBirth1}, #{mBirth2}, #{mBirth3}, #{mFBCHK}, #{mKTCHK},
+		#{mNCHK}, #{mGCHK}, #{mEmailCHK}, #{mSmsCHK})
+	</insert>
+
+	<select id="FindID" parameterType="hashmap" resultType="String">
+		SELECT
+		M_ID FROM Member WHERE M_NAME like #{mName} and
+		M_EMAIL1 like
+		#{mEmail1} and M_EMAIL2 like #{mEmail2}
+	</select>
+
+	<select id="FindPW" parameterType="hashmap" resultType="String">
+		SELECT
+		M_ID FROM Member WHERE M_ID like #{mId} and
+		M_EMAIL1 like #{mEmail1}
+		and M_EMAIL2 like #{mEmail2}
+	</select>
+
+	<update id="ChgPW" parameterType="hashmap">
+		UPDATE
+		Member SET
+		M_PW = #{mPW}
+		WHERE
+		M_ID = #{mId}
+	</update>
+
+	<update id="ModifyInfo" parameterType="hashmap">
+		UPDATE
+		Member SET
+		M_NAME =
+		#{mName}, M_EMAIL1 = #{mEmail1}, M_EMAIL2 = #{mEmail2}, M_TEL1 =
+		#{mTel1}, M_TEL2 = #{mTel2}, M_TEL3 = #{mTel3}, M_FBCHK = #{mFBCHK},
+		M_KTCHK = #{mKTCHK}, M_NCHK = #{mNCHK}, M_GCHK = #{mGCHK}, M_EMAIL_CHK
+		= #{mEmailCHK}, M_SMS_CHK = #{mSmsCHK}
+		WHERE
+		M_ID = #{mId}
+	</update>
+</mapper>

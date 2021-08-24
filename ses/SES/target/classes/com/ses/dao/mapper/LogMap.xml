@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Lmap">
+	<select id="LList" parameterType="hashmap"
+		resultType="com.ses.dto.LogDTO">
+		SELECT * FROM Log WHERE M_ID like #{M_ID} order by L_YEAR DESC, L_MONTH DESC, L_DAY DESC limit #{startNum}, #{ContentNum}
+	</select>
+	
+	<select id="Search" parameterType="hashmap"
+		resultType="com.ses.dto.LogDTO">
+		SELECT * FROM Log WHERE M_ID like #{M_ID} AND SL_NAME LIKE #{bVal1} AND SU_KIND LIKE #{bVal2} limit #{startNum}, #{ContentNum}
+	</select>
+	
+	<select id="ListCnt" parameterType="hashmap" resultType="int">
+		SELECT count(*) FROM Log WHERE M_ID like #{M_ID}
+	</select>
+	
+	<select id="SearchCnt" parameterType="hashmap" resultType="int">
+		SELECT count(*) FROM Log WHERE M_ID like #{M_ID} AND SL_NAME LIKE #{bVal1} AND SU_KIND LIKE #{bVal2}
+	</select>
+	
+	<insert id="InputLog" parameterType="hashmap">
+		INSERT INTO Log
+		VALUES
+		(#{M_ID}, #{SL_NAME}, #{SL_SITE}, #{SU_KIND}, #{L_ACTIVITY}, #{L_YEAR}, #{L_MONTH}, #{L_DAY}, #{L_HOUR}, #{L_MINUTE})
+	</insert>
+</mapper>

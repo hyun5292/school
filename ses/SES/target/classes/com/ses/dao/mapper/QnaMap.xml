@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Qmap">
+	<select id="QList" parameterType="hashmap"
+		resultType="com.ses.dto.QnaDTO">
+		SELECT * FROM Qna ORDER BY Q_NUM DESC limit #{startNum}, #{ContentNum}
+	</select>
+
+	<select id="GetFour" parameterType="hashmap"
+		resultType="com.ses.dto.QnaDTO">
+		SELECT * FROM Qna ORDER BY Q_NUM limit 0,4
+	</select>
+
+	<select id="GetQna" parameterType="int"
+		resultType="com.ses.dto.QnaDTO">
+		SELECT * FROM Qna WHERE Q_NUM like #{Qnum}
+	</select>
+
+	<select id="ListCnt" resultType="int">
+		SELECT count(*) FROM Qna;
+	</select>
+	
+	<select id="SearchCnt" parameterType="hashmap" resultType="int">
+		SELECT count(*) FROM Qna WHERE Q_TITLE LIKE #{bVal1} AND M_ID LIKE #{bVal2}
+	</select>
+	
+	<select id="Search" parameterType="hashmap"
+		resultType="com.ses.dto.QnaDTO">
+		SELECT * FROM Qna WHERE Q_TITLE LIKE #{bVal1} AND M_ID LIKE #{bVal2} limit #{startNum}, #{ContentNum}
+	</select>
+	
+	<insert id="NewQna" parameterType="hashmap">
+		INSERT INTO Qna (Q_TITLE, M_ID, Q_PWD, Q_CONTENT, Q_YEAR, Q_MONTH, Q_DAY, Q_REPLY)
+		VALUES (#{Q_TITLE}, #{M_ID}, #{Q_PWD}, #{Q_CONTENT}, #{Q_YEAR}, #{Q_MONTH}, #{Q_DAY}, #{Q_REPLY})
+	</insert>
+</mapper>

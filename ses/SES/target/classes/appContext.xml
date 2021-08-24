@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<context:annotation-config />
+
+	<bean id="lDAO" class="com.ses.dao.LogDAO" />
+	<bean id="mDAO" class="com.ses.dao.MemberDAO" />
+	<bean id="qDAO" class="com.ses.dao.QnaDAO" />
+	<bean id="slDAO" class="com.ses.dao.SiteListDAO" />
+	<bean id="suDAO" class="com.ses.dao.SignUpDAO" />
+</beans>
