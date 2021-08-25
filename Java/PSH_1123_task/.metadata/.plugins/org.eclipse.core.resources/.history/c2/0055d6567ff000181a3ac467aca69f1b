@@ -1,0 +1,50 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class num4_2 extends JFrame{
+	public num4_2() {
+		setTitle("진동하는 프레임 만들기");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		setSize(300, 300);
+		setVisible(true);
+		
+		VibContainerThread th = new VibContainerThread();
+		th.start();
+	}
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+class VibContainerThread extends Thread{
+	private Container contentPane;
+	public VibContainerThread(Container contentPane) {
+		
+	}
+	public void run() {
+		int chk = 1;
+		int x = contentPane.getX();
+		int y = contentPane.getY();
+		while(true) {
+			try {
+				Thread.sleep(10);
+			}
+			catch(Exception e) {
+				return;
+			}
+			
+			int loc_x = x + ((int)(Math.random()*10*chk));
+			int loc_y = y + ((int)(Math.random()*10*chk));
+			
+			if(chk == -1) {
+				chk = 1;
+			}
+			else {
+				chk = -1;
+			}
+		}
+	}
+}

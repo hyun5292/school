@@ -1,0 +1,13 @@
+import java.io.*;
+
+public class BinaryCopyEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//File src = new File("c://Window\\Web\\Wallpaper\\Theme1\\img1.jpg");
+		
+		//File dest = new File("c:\\Temp\\copyimg.jpg");
+		
+	}
+
+}

@@ -1,0 +1,31 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class OpenChallenge extends JFrame{
+	public OpenChallenge() {
+		super("Open Challenge 9");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container c = getContentPane();
+		c.setLayout(new BorderLayout());
+		
+		c.add(new NorthPanel(), BorderLayout.NORTH);
+		c.add(new CenterPanel(), BorderLayout.CENTER);
+		setSize(500, 500);
+		setVisible(true);
+	}
+	
+	class NorthPanel extends JPanel {
+		public NorthPanel() {
+			setBackground(Color.LIGHT_GRAY);
+		}
+	}
+	
+	class CenterPanel extends JPanel{
+		
+	}
+	
+	public static void main(String[] args) {
+		new OpenChallenge();
+	}
+
+}

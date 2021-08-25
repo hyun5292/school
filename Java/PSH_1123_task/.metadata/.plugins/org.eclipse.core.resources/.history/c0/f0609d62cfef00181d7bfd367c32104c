@@ -1,0 +1,45 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class num2 extends JFrame{
+	private Container contentPane;
+	public num2() {
+		this.contentPane = contentPane;
+		setTitle("원을 0.5초 간격으로 이동시키기");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		MyPanel panel = new MyPanel();
+		setContentPane(panel);
+		
+		setSize(300, 300);
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new num2();
+	}
+	
+	class MyPanel extends JPanel{
+		public MyPanel() {
+			setLayout(null);
+			addMouseListener(new MouseAdapter() {
+				public void mousePressed(MouseEvent e) {
+					int x = ((int)(Math.random()*contentPane.getWidth()));
+					int y = ((int)(Math.random()*contentPane.getHeight()));
+					super.paintComponent(g);
+					g.setColor(Color.MAGENTA);
+					g.drawOval(x, y, 50, 50);
+					CircleThread c = new CircleThread();
+				}
+			});
+		}
+	}
+	
+	class CircleThread extends Thread{
+		
+	}
+}
+
+
+

@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+class Person{
+	private String player;
+	private Scanner scanner = new Scanner(System.in);
+	public Person(String player) {  //이름 입력
+		this.player = player;
+	}
+	
+	public String GetName() {  //이름 반환
+		return this.player;
+	}
+	
+	public boolean Play() {  //게임 시작
+		//사용자 이름받기
+		System.out.print("[" + this.player + "]:<Enter>");
+		String key = scanner.nextLine();
+		int[] n = new int[3];
+
+		System.out.print("\t\t");
+		for(int i = 0; i < n.length; i++) {
+			n[i] = (int)(Math.random()*3 + 1);
+			System.out.print(n[i] + " ");
+		}
+		System.out.println();
+		
+		boolean result = true;
+		for(int i = 0; i < n.length; i++) {
+			if(n[i] != n[0]) {
+				result = false;
+				break;
+			}
+		}
+		return result;
+	}
+}
+
+public class Num10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		String result;
+		String[] players = new String[2];
+		
+		for(int i = 0; i < players.length; i++) {
+			System.out.print((i + 1) + "번째 선수 이름>>");
+			players[i] = scanner.nextLine();
+		}
+		
+		while(true) {
+			Person[] p = new Person[players.length];
+			int i = 0;
+			if(p[i].Play()) {
+				System.out.println(p[i].GetName() + "님이 이겼습니다!");
+				break;
+			}
+			else {
+				System.out.println("아쉽군요!");
+				i++;
+				i = i % players.length;
+			}
+		}
+	}
+
+}

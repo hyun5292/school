@@ -1,0 +1,21 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class num2 extends JFrame{
+	public num2() {
+		setTitle("원을 0.5초 간격으로 이동시키기");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		MyPanel panel = new MyPanel();
+		setContentPane(panel);
+		
+		setSize(300, 300);
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new num2();
+	}
+
+}

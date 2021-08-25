@@ -1,0 +1,20 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class OpenChallenge extends JFrame{
+	class NorthPanel extends JPanel {
+		setTitle("Open Challenge 9");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container c = getContentPane();
+	}
+	
+	class CenterPanel extends JPanel{
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

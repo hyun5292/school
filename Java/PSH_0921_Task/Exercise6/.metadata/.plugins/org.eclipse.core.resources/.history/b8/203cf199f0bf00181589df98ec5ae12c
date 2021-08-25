@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+class Person{
+	private String player;
+	private Scanner scanner = new Scanner(System.in);
+	public Person(String player) {
+		this.player = player;
+	}
+	
+	public String Play() {
+		System.out.print("[" + this.player + "]:<Enter>");
+		String key = scanner.nextLine();
+		int n1, n2, n3;
+		n1 = (int)(Math.random() * 3 + 1);
+		n2 = (int)(Math.random() * 3 + 1);
+		n3 = (int)(Math.random() * 3 + 1);
+		
+		System.out.print(n1 + " " + n2 + " " + n3 + " ");
+		
+		if(n1 == n2 && n2 == n3) {
+			return "이겼습니다!";
+		}
+		else {
+			return "아쉽군요!";
+		}
+	}
+	public boolean Check(String chk) {
+		if(chk.equals("이겼습니다!")) {
+			System.out.println(player+ "님이 " + chk);
+			return false;
+		}
+		else {
+			System.out.println(chk);
+			return true;
+		}
+	}
+}
+
+public class Num10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		String result;
+		
+		System.out.print("1번째 선수 이름>>");
+		String player1 = scanner.nextLine();
+		Person play1 = new Person(player1);
+		
+		System.out.print("2번째 선수 이름>>");
+		String player2 = scanner.nextLine();
+		Person play2 = new Person(player1);
+		
+		while(true) {
+			result = play1.Play();
+			if(play1.Check(result)) {
+				break;
+			}
+			else {
+				result = play2.Play();
+				if(play2.Check(result)) {
+					break;
+				}
+				
+			}
+		}
+	}
+
+}

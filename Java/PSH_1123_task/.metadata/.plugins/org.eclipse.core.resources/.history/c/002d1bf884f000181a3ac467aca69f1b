@@ -1,0 +1,47 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class num6 extends JFrame {
+	public num6() {
+		setTitle("버블 게임");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		MyPanel panel = new MyPanel();
+		setContentPane(panel);
+		setSize(300, 300);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new num6();
+	}
+
+}
+
+class MyPanel extends JPanel {
+	public MyPanel() {
+		addMouseListener(new MouseAdapter() {
+			public void mousePressed(MouseEvent e) {
+				BubbleThread Bth = new BubbleThread(e.getX(), e.getY());
+			}
+		});
+	}
+}
+
+class BubbleThread extends Thread {
+	JLabel bubble;
+
+	public BubbleThread(int x, int y) {
+		ImageIcon img = new ImageIcon("images/bubble.jpg");
+		bubble = new JLabel(img);
+		bubble.setSize(img.getIconWidth(), img.getIconWidth());
+		bubble.setLocation(x, y);
+		add(bubble);
+		repaint();
+	}
+
+	public void run() {
+
+	}
+}

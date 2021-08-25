@@ -1,0 +1,52 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class num8 extends JFrame{
+	private MySnowPanel panel = new MySnowPanel();
+	public num8() {
+		super("눈 내리는 마을");
+	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    setContentPane(panel);
+	    
+	    setSize(700,500);
+	    setVisible(true);
+	}
+	public static void main(String[] args) {
+		new num8();
+	}
+}
+	
+class MySnowPanel extends JPanel{
+	ImageIcon icon = new ImageIcon("images/village.jpg");
+    Image img = icon.getImage();
+    public MySnowPanel() {
+    	super.paintComponent(g);
+    	g.drawImage(img, 0, 0, getWidth(), getHeight(), this);
+    }
+    
+    public void DrawSnow(Graphics g) {
+    	super.paintComponent(g);
+    	
+    	int x = ((int)(Math.random()*getWidth()));
+    	int y = ((int)(Math.random()*getHeight()));
+    	
+    	g.setColor(Color.WHITE);
+    	g.fillOval(x, y, 10, 10);
+    }
+    
+    class SnowThread extends Thread{
+    	public void run() {
+    		while(true) {
+    			try {
+    				Thread.sleep(300);
+    			}
+    			catch(Exception e) {
+    				return;
+    			}
+    		}
+    	}
+    }
+}
+
+

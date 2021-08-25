@@ -1,0 +1,53 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class num10 extends JFrame {
+	private Panel10 panel = new Panel10();
+	public num10(){
+		setTitle("Make Drawing to Start");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setContentPane(panel);
+		
+		setSize(500, 500);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new num10();
+	}
+	
+	class Panel10 extends JPanel{
+		public void paintComponent(Graphics g) {
+			addMouseListener(new MouseAdapter() {
+				public void mouseEntered(MouseEvent e) {
+					g.clearRect(0, 0, getWidth(), getHeight());
+					int x = ((int)(Math.random()*getWidth()));
+					int y = ((int)(Math.random()*getHeight()));
+					int width = ((int)(Math.random()*getWidth()));
+					int height = ((int)(Math.random()*getHeight()));
+					g.setColor(Color.BLUE);
+					g.fillOval(x, y, width, height);
+					
+					MyThread th = new MyThread();
+					th.start();
+				}
+			});
+		}
+	}
+	
+	class MyThread extends Thread {
+		public void run() {
+			while(true) {
+				repaint();
+				try {
+					Thread.sleep(300);
+				}
+				catch(Exception e) {
+					return;
+				}
+			}
+		}
+	}
+}
+

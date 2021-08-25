@@ -1,0 +1,91 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class num10 extends JFrame {
+	private Panel10 panel = new Panel10();
+	boolean MouseChk = false;
+	public num10(){
+		setTitle("Make Drawing to Start");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setContentPane(panel);
+		
+		setSize(500, 500);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new num10();
+	}
+	
+	class Panel10 extends JPanel{
+		public Panel10() {
+			addMouseListener(new MouseAdapter() {
+				boolean chk = true;
+				MyThread th = new MyThread();
+				public void mouseEntered(MouseEvent e) {
+					if(chk)
+					{
+						MouseChk = false;
+						chk = false;
+						th.start();
+					}
+				}
+				public void mouseExited(MouseEvent e) {
+					MouseChk = true;
+				}
+			});
+		}
+		
+		class MyThread extends Thread {
+			public void run() {
+				while(true) {
+					repaint();
+					try {
+						Thread.sleep(300);
+						Check_true();
+						Check_false();
+					}
+					catch(Exception e) {
+						return;
+					}
+				}
+			}
+		}
+		
+		synchronized public void Check_true() {
+			if(MouseChk) {
+				try {
+					wait();
+				}
+				catch(Exception e) {
+					return;
+				}
+			}
+			notify();
+		}
+		
+		synchronized public void Check_false() {
+			if(!MouseChk) {
+				MouseChk = false;
+				try {
+					notify();
+				}
+				catch(Exception e) {
+					return;
+				}
+			}
+		}
+		
+		public void paintComponent(Graphics g) {
+			g.clearRect(0, 0, getWidth(), getHeight());
+			int x = ((int)(Math.random()*getWidth()));
+			int y = ((int)(Math.random()*getHeight()));
+			int width = ((int)(Math.random()*getWidth()));
+			int height = ((int)(Math.random()*getHeight()));
+			g.setColor(Color.BLUE);
+			g.fillOval(x, y, width, height);
+		}
+	}
+}
+

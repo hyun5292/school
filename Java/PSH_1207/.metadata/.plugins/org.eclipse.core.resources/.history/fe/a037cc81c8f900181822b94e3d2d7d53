@@ -1,0 +1,25 @@
+import java.io.*;
+import java.sql.*;
+
+public class JDBC_Ex2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Connection conn;
+		Statement stmt = null;
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/sampledb", "root", "1234");
+			System.out.println("DB 연결 완료");
+			
+		}
+		catch(ClassNotFoundException e) {
+			System.out.println("JDBC 드라이버 로드 에러");
+		}
+		catch(SQLException e) {
+			System.out.println("DB 연결 오류");
+		}
+	}
+
+}

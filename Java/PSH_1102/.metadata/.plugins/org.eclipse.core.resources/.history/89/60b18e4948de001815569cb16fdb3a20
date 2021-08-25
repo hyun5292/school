@@ -1,0 +1,22 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class OpenChallenge extends JFrame{
+	public OpenChallenge() {
+		super("Open Challenge 9");
+	}
+	
+	class NorthPanel extends JPanel {
+		
+	}
+	
+	class CenterPanel extends JPanel{
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

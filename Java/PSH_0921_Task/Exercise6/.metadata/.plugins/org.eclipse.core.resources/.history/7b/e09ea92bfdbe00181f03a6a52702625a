@@ -1,0 +1,38 @@
+import java.util.Scanner;
+import java.util.Calendar;
+
+class Player{
+	String player;
+	public Player(String player) {
+		this.player = player;
+	}
+	
+	public String GetName() {
+		return this.player;
+	}
+	
+	public int Run() {
+		private Scanner scanner = new Scanner(System.in);
+		Calendar cal = Calendar.getInstance();
+		
+		
+		
+	}
+}
+
+public class Num6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calendar cal = Calendar.getInstance();
+		Player p[] = new Player[2];
+		p[0] = new Player("황기태");
+		p[1] = new Player("이재문");
+		
+		System.out.println("10초에 가까운 사람이 이기는 게임입니다.");
+		int result_player1 = p[0].Run();
+		int result_player2 = p[1].Run();
+		
+	}
+
+}

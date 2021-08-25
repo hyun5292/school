@@ -1,0 +1,26 @@
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.*;
+
+public class MoveC extends JFrame {
+	private JLabel la = new JLabel("C");
+	
+	public MoveC() {
+		setTitle("클릭 연습 용 응용프로그램");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container c = getContentPane();
+		c.setLayout(null);
+		la.setSize(50, 20);
+		la.setLocation(100, 100);
+		c.add(la);
+		
+		setSize(250, 250);
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new MoveC();
+	}
+
+}

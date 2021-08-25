@@ -1,0 +1,25 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class num8 extends JFrame{
+	private MySnowPanel panel = new MySnowPanel();
+	public num8() {
+		super("´« ³»¸®´Â »þ°¥ÀÇ ¸¶À»");
+	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    setContentPane(panel);
+	    
+	    setSize(300,300);
+	    setVisible(true);
+	}
+	public static void main(String[] args) {
+		new num8();
+	}
+}
+
+class MySnowPanel extends JPanel{
+	ImageIcon icon = new ImageIcon("images/village.jpg");
+	public MySnowPanel() {
+		
+	}
+}

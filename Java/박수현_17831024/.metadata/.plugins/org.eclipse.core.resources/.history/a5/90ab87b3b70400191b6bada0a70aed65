@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class InputNumber {
+
+	public static void main(String[] args) {
+		FileWriter fw = null;
+		Scanner scanner = new Scanner(System.in);
+		File f = new File("C:\\temp\\phone.txt");
+		try
+		{
+			fw = new FileWriter(f);
+			System.out.println("전화번호 입력 프로그램입니다.");
+			while(true) {
+				System.out.print("이름 전화번호 >> ");
+				String line = scanner.nextLine();
+				if(line.equals("그만")) {
+					break;
+				}
+				else {
+					fw.write(line + "\r\n");
+				}
+			}
+			System.out.println(f.getPath() + "에 저장하였습니다.");
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+		scanner.close();
+	}
+}

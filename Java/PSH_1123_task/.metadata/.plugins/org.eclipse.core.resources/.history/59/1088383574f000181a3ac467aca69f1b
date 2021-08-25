@@ -1,0 +1,17 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class num2 extends JFrame{
+	private Container contentPane;
+	public num2() {
+		
+	}
+	
+	public static void main(String[] args) {
+		new num2();
+	}
+}
+
+
+

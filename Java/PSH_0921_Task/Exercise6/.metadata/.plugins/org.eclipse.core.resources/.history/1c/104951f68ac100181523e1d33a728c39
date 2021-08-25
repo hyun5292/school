@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Num11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print(">>");
+		String line = scanner.nextLine();
+		
+		System.out.print("¸í·É: ");
+		String order = scanner.nextLine();
+		
+		String[] tokens = order.split("!");
+		
+		
+	}
+
+}

@@ -1,0 +1,53 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+import java.util.*;
+
+public class num4 extends JFrame{
+	public num4() {
+		setTitle("진동하는 프레임 만들기");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		setSize(300, 300);
+		setLocation(100, 100);
+		setVisible(true);
+		
+		VibrationThread th = new VibrationThread(this);
+	}
+	
+	public static void main(String[] args) {
+		new num4();
+	}
+}
+
+class VibrationThread extends Thread{
+	private Container contentPane;
+	public VibrationThread(Container contentPane) {
+		this.contentPane = contentPane;
+	}
+	
+	public void run() {
+		int chk = 1;
+		int x = contentPane.getX();
+		int y = contentPane.getY();
+		Random r = new Random();
+		while(true) {
+			try {
+				Thread.sleep(10);
+			}
+			catch(Exception e) {
+				return;
+			}
+			int sign = 1;
+            if(r.nextBoolean()) sign = 1;
+            else sign = -1;
+            int tmpX = x + r.nextInt(5)*sign;
+
+            if(r.nextBoolean()) sign = 1;
+            else sign = -1;
+            int tmpY = y + r.nextInt(5)*sign;
+            
+            contentPane.setLocation(tmpX, tmpY);
+		}
+	}
+}

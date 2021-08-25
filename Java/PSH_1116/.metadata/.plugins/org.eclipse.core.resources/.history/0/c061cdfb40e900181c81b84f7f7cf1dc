@@ -1,0 +1,17 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class LabelEx extends JFrame{
+	public LabelEx() {
+		setTitle("레이블 예제");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container c = getContentPane();
+		c.setLayout(new FlowLayout());
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.Calendar;
+
+class Player{
+	String player[] = new String[2];
+	public Player(String player[]) {
+		this.player[0] = player[0];
+		this.player[1] = player[1];
+	}
+	
+	
+}
+
+public class Num6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calendar cal = Calendar.getInstance();
+		Player p = new Player("황기태", "이재문");
+		int nowMinute = cal.get(Calendar.MINUTE);
+		int AfterMinute;
+		
+		System.out.println("10초에 가까운 사람이 이기는 게임입니다.");
+		
+	}
+
+}

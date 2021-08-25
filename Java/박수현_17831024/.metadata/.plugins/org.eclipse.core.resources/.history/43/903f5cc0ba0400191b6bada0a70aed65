@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class ReadPhoneNumber {
+	private static HashMap<String, String> phoneNumbers = new HashMap<String, String>();
+	
+	public static void main(String[] args) {
+		try {
+			Scanner scanner = new Scanner(new FileReader("C:\\temp\\phone.txt"));
+			int c;
+			while(scanner.hasNext()) {
+				String name = scanner.next();
+				String phone = scanner.next();
+				phoneNumbers.put(name, phone);
+			}
+		}catch(IOException e) {
+			System.out.println("입출력 오류");
+		}
+		System.out.println("총" + phoneNumbers.size() + "개의 전화번호를 읽었습니다.");
+	}
+
+}

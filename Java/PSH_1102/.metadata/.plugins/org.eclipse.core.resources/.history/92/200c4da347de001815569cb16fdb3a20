@@ -1,0 +1,18 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class OpenChallenge extends JFrame{
+	class NorthPanel extends JPanel {
+		setBackground(Color.LIGHT_GRAY);
+	}
+	
+	class CenterPanel extends JPanel{
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

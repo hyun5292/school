@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+class StringBufferEx{
+	private String line;
+	private String[] tokens;
+	public StringBufferEx(String line) {
+		this.line = line;
+	}
+	
+	public void Set(String str) {
+		this.tokens = str.split("!");
+	}
+	
+	public void ChangeLine() {
+		String
+	}
+}
+
+public class Num11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print(">>");
+		String line = scanner.nextLine();
+		StringBufferEx ch = new StringBufferEx(line);
+		while(true) {
+			System.out.println("명령: ");
+			String change = scanner.nextLine();
+			if(change.equals("그만")) {
+				break;
+			}
+			else {
+				ch.Set(change);
+				ch.ChangeLine();
+			}
+		}
+	}
+
+}

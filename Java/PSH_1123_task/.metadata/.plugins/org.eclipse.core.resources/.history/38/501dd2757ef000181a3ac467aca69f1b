@@ -1,0 +1,23 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class num4_2 extends JFrame{
+	public num4_2() {
+		setTitle("진동하는 프레임 만들기");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		setSize(300, 300);
+		setLocation(100, 100);
+		setVisible(true);
+		
+		VibrationThread th = new VibrationThread(this);
+		th.start();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

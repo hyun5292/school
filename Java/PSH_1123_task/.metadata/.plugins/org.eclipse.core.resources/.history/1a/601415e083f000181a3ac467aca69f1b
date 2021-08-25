@@ -1,0 +1,12 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class num6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

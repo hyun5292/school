@@ -1,0 +1,13 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class num8 {
+	public num8() {
+		
+	}
+	public static void main(String[] args) {
+		new num8();
+	}
+
+}

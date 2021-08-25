@@ -1,0 +1,29 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class num6 extends JFrame{
+	public num6(){
+		setTitle("버블 게임");
+	      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	      
+	      MyPanel panel = new MyPanel();
+	      setContentPane(p);
+	      setSize(300,300);   
+	      setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new num6();
+	}
+
+}
+
+class Mypanel extends JPanel{
+	addMouseListener(new MouseAdapter() {
+		setLayout(null);
+		public void mousePressed(MouseEvent e) {
+			
+		}
+	}
+}

@@ -1,0 +1,12 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class ReadPhoneNumber {
+	Scanner scanner = new Scanner(System.in);
+	private HashMap<String, String> phoneNumbers = new HashMap<String, String>();
+	public static void main(String[] args) {
+		
+	}
+
+}

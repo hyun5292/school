@@ -1,0 +1,9 @@
+
+public class CheckBoxEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
