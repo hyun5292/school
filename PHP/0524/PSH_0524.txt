@@ -1,0 +1,93 @@
+웹 프로그램 보안 ppt
+주소 그거 쓰면 쿠키가 다 location된 곳으로 유출된대
+<>안에 해당하는 것을 &lt로 바꿔? -> ppt에 있당
+---------------------------------
+//explode함수
+<?
+$str = "a.b.c.exe";
+$x = explode(".", $str); //배열
+...
+?>
+
+//확장자를 꺼내면
+$ex = $x[sizeof($x) - 1];
+---------------------------------
+---------------------------------
+!!!!!소연아 함수들 기말고사 100%!!!!!!!!!!!!!
+//str_replace함수
+//substr 함수 -> 함수 원형
+//adslashes함수
+//stripslashes함수
+//nl2br함수
+//urlencode함수 <-> urldecode함수
+
+//strip_tags함수 -> <>다 빼
+//htmlspecialchars함수 -> htmlentities랑 거의? 똑같 (특수문자들을 html태그로 변환)
+ex) $title = htmlspecialchars($title)
+//htmlentities함수 -> 그 <...>~<...>포함 모든 내용을 문자열로 보여줘
+//누가 내 쿠키 먹었엉? 은자가 먹었엉
+
+//md5함수 뚫렸대 소연앙
+---------------------------------
+//mysql_real_escape_string()함수
+
+//은지쿠키도둑
+
++like '심_식'-> 심일식...심이식...심삼식...
+-------------------------------
+-쿠키
+:모든 정보를 클라이언트한테 저장
+-세션
+:모든 정보를 서버에 저장
+
+보안 : 쿠키 < 세션 -> 세션에 데이터가 쌓여 과부하가 걸릴 수도...
+
+->ppt 빨간줄 그거 쿠키는 header에 있는데 그 위에서 출력을 하면
+html소스가 들어있는 data부분이 먼저 실행되서 오류가 난대 소연아
+
+session_register($value);
+==
+$_SESSION = $id;
+
+-------------------------------------------
+index.html -> 로그인 페이지 -> index.php -> 로그인 후 페이지 -> update.php -> update1.php
+           +login.php -> re_login.html                       -> logout.php
+	   -> id 찾기 -> find_id.html
+                      -> find_id.php
+           -> pwd 찾기 -> find_pwd.html
+                       -> find_pwd.php
+                       -> chpwd.php
+           -> session.php
+           -> no_session.php
+
+profile.html -> 회원가입 -> dup_id.php //여기서 db써야
+             -> new_member.php
+-> 로그인
+-> 로그아웃
+-> id 찾기
+-> pwd 찾기
+-> 정보수정
+-> 재로그인
+-> 임시 비밀번호 찾기
++ head.inc
++ 회원용 session
++ 비회원용 no session
+-----------------------------------------------------
+DB만들기
+----------------------
+login.php는 $id랑 $pwd sql real escape string 조심 그리고 데이터 넘길 때 이름만 넘겨
+존재 -> session index.php
+존재X -> ...
+session_start 앞에 @는 warning을 찾되 보이지 말라고
+
+$row_id = mysql_num_rows(); -> 이거 했을 때 1이상이면 회원가입한 사람
+
+index.php, logout.php, index.html, profile.html, dup_id.php, pwd찾기는 알려주신대
+
+수정부분 XSS 조심
+
+기말고사 게시판 만드는 거에서 많이 나온대
+중간고사처럼 약간의 문제와 많은 실기
+
+
+

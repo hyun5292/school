@@ -1,0 +1,86 @@
+관리자 로그인 -> 테이블 만들기-> 사용자 권한 주기
+->사용자 로그인 -> DB 선택 -> import
+---------------------------------------------
+head.inc -> 보안을 위해서
+안하면 id나 password가 뚫림
+
+select는 첫 행만 가리키고 한 행 한 행 본다?
+나머지는 성공 여부만??
+
+$result = mysql_query(update);
+if($result == 1)
+{
+  echo("<script>alert('수정 완료');
+  location('first.php'); //javascript
+  //<meta http-equip=refresh content='0;url=first.php'> //html
+  //content='0에서 0은 페이지 넘어가는데 걸리는 시간
+  </script>");
+}
+else
+{
+  echo("<script>history.go(-1)</script>");
+}
+----------------------------------------------
+mysql_num_rows: row개수 알아내는 함수는 외워둬
+----------------------------------------------
+<?
+$x = "남자";
+include("head.inc");
+$str = "select * from shim where gender = '$x'";
+mysql_query("set names utf8");
+$result = mysql_query($str, $db_conn);
+
+echo("<table border = 1><th>아이디<th>성별<th>이름<th>이메일");
+while($a = mysql_fetch_row($result))
+{
+	echo("<tr><td>$a[0]<td>$a[1]<td>$a[2]<td>$a[3]");
+}
+echo("</table>");
+mysql_close($db_conn);
+?>
+----------------------------------------------
+<?
+include("head.inc");
+mysql_query("set names utf8");
+$str = "select * from shim";
+$result = mysql_query($str, $db_conn);
+
+echo("<table border = 1><th>아이디<th>성별<th>이름<th>이메일");
+while($a = mysql_fetch_array($result))
+{
+	echo("<tr><td>$a[id]<td>$a[gender]<td>$a[name]<td>$a[e_mail]");
+}
+echo("</table>");
+mysql_close($db_conn);
+?>
+----------------------------------------------
+출력을 두 번할 경우 데이터가 출력이 안됨
+fetch로 행을 다 검사하구 맨 마지막인 상태여서
+다시 출력하려면 mysql_data_seek($result,1);
+
+나머지는 5주차 ppt 참고
+
+mysql_real_escape_string 중요!!!!!
+->보안에서 조심할거(?)
+1. XSS
+2. SQL injection Attack
+
+중간고사 필기 && 실기
+5주차 ppt 다 외워ㅋㅋㅋㅋㅋ
+필기:담주에 알려주신대
+실기:db+프로그램
+
+과제 : mydb 파일에 있는 각각의 페이지들을 어떻게 만들어야될지
+A4에 써오는거
+//소스치는게 아니구 구조, 방식?, 구성, 다음 페이지로 넘기기 위해서
+어떠한 것들을 가져와야 하는지 이런거 생각해서 써오기
+
+//다 post방식으로...
+search.php
+update.php -> 4가지 필드다 가져가//(X)데이터를 가져갈때 primary 키만(이름, 나이, 부서)
+update1.php
+delete.php -> 이건 primary 키만
+insert.php
+insert.html
+
+

@@ -1,0 +1,62 @@
+ayacs - 2학기 때 시간이 남으니까 그 때 5~6주 배운대
+
+소연이 무쓴써리야아아
+
+1.session, cookie 사용법
+                  사용이유
+                  session 사용 - 프로그램 쓰기(session_start() 이런거 쓰기)
++file update같은 거 안내신대
++필기 2문제
+2.XSS
+  SQL injection attack
++질문(필기 2문제 실기가 나올 수도 있음)
+
+3.게시판 - 2문제
+4.쇼핑몰 - 1문제
++실기 3문제
++ 금요일 밤12 전까지 문제 어떻게 낼지 카페봐
+---------------------------------------
+-전체 생각
+큰회사는 대분류 - 중분류 - 소분류 이렇게 나뉘어져서 디비에 들어감
+or 큰회사 아닌 곳은 숫자로 나눔(번호화)
+
+shopping.html:첫화면
+-> show.php:디테일한 내용을 담음 
+-> detail.php
+-> ShoppingCart.php:장바구니
+
+-DB
+-상품table
+:상품번호, 상품명, 가격, 상품설명, 이미지, 판매자
+
+-장바구니table
+:일렬번호, 고객id, 상품명, 상품번호, 수량, 가격, 날짜, 
+->number, p_id, cookie를 primary key로
+->결제 후, 로그아웃(다른 테이블에 복사 다시 로그인 했을 때 띄어줌) 
+
+data             -M 
+business logic   -C
+showing          -V -> 객체화 -> MVC 모델2
+-> spring framework : API -> 객체 -> MVC 모델2
+-> JSP(VIEW) + JAVA(MODEL, CONTROLL)
+
+장바구니 버튼 누르면 이미 있는 게 있으니까
+
+장바구니 버튼 - 추가 목록이 없으면 -> INSERT 
+              - 추가 목록이 있으면 -> UPDATE
+변경 버튼 - UPDATE
+삭제 버튼 - DELETE
+
+<INPUT TYPE=BUTTON VALUE='' NAME=CODE>~
+
+PRIMARY KEY가 3개니까 AUTO INCREAMENT를 못시켜 줌
+
+->TOT_NUM은 사용자가 입력하니까 XSS나 SQL injection attack 못하게
+(INT)로 정수화
+
+$SUBJECT = MYSQL_REAL_ESCAPE_STRING(HTMLSPECIALCHAR($SUBJECT));
+이렇게 쓰면 <a>같은거를 &LT;로 바꾸니까 MYSQL~이거가 ;에 걸려서 안됨
+MYSQL~을 먼저 쓰고 HTMLSPECIAL~이거를 나중에
+
+방학 때 로그인+게시판+쇼핑몰 합쳐서 해봐ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+DATAHOUSE + UPDATE + 쇼핑몰 -> 잘봐

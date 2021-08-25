@@ -1,0 +1,129 @@
+1번
+<!DOCTYPE html>
+<html>
+<head>
+	<title>second task</title>
+</head>
+<body>
+<form>
+<h1>1번</h1>
+<table>
+	<tr>
+		<td><h2>아이디</h2></td>
+		<td><input type="text" name="id"></td>
+	</tr>
+	<tr>
+		<td><h2>암호	</h2></td>
+		<td><input type="password" name="password"></td>
+	</tr>
+	<tr align="center">
+		<td colspan="2"><input type="button" name="login" value="로그인"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
+----------------------------------------------------------------------------
+2번
+<!DOCTYPE html>
+<html>
+<head>
+	<title>second task2</title>
+</head>
+<body>
+<form>
+	<h1>2번</h1>
+<table>
+	<tr>
+		<td width="20"><input type="radio" name="first" value="박수현"></td>
+		<td colspan="2"><h2>박수현</h2></td>
+	</tr>
+	<tr>
+		<td width="20"><input type="radio" name="second" value="최소연"></td>
+		<td colspan="2"><h2>최소연</h2></td>
+	</tr>
+	<tr>
+		<td width="20"><input type="radio" name="third" value="최은지"></td>
+		<td width ="100"><h2>최은지</h2></td>
+		<td><input type="button" name="test" value="테스트"></td>
+</table>
+</form>
+</body>
+</html>
+----------------------------------------------------------------------------
+3번
+<!DOCTYPE html>
+<html>
+<head>
+	<title>second task3</title>
+</head>
+<body>
+<form>
+	<h1>2번</h1>
+<table>
+	<tr>
+		<td width="20"><input type="checkbox" name="first" value="Web"></td>
+		<td colspan="2"><h2>웹 서버 프로그래밍</h2></td>
+	</tr>
+	<tr>
+		<td width="20"><input type="checkbox" name="second" value="Java"></td>
+		<td><h2>Java</h2></td>
+		<td align="right"><input type="button" name="select" value="수강신청"></td>
+	</tr>
+	<tr>
+		<td width="20"><input type="checkbox" name="third" value="자료구조"></td>
+		<td colspan="2"><h2>자료구조</h2></td>
+</table>
+</form>
+</body>
+</html>
+----------------------------------------------------------------------------
+4번
+<!DOCTYPE html>
+<html>
+<head>
+	<title>second task4</title>
+</head>
+<body>
+<form>
+<h1>4번</h1>
+	<table>
+		<tr>
+			<td width="100">
+				<select>
+					<option>밥스웨이</option>
+					<option>봉구스</option>
+					<option>엉코미</option>
+					<option>경민식당</option>
+				</select>
+			</td>
+			<td><input type="button" name="gogo" value="가즈아아아"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
+----------------------------------------------------------------------------
+5번
+<!DOCTYPE html>
+<html>
+<head>
+	<title>second task5</title>
+</head>
+<body>
+<form>
+<h1>5번</h1>
+	<table>
+		<tr>
+			<td><iframe src="" id="show" width="500" height="500"></iframe></td>
+		</tr>
+		<tr>
+			<td align="center" height="70">
+				<input type="button" value="보여라!!" name="push" onClick="show.src='https://www.daum.net/'">
+			</td>
+		</tr>
+	</table>
+	
+</form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>재로그인</title>
+    <meta name="generator" content="Namo WebEditor v5.0">
+    <style type=text/css>
+        a {text-decoration:none}
+        a:hover {text-decoration: underline}
+    </style>
+    <script language = "javascript">
+        function login()
+        {
+             document.main_login.submit();
+        }
+        function m_popup() 
+        {
+            window.open("./profile.html","",'width=720, height=510, menubar=no, toolbar=no, scrollbars=no ,status=no, resizable=no');
+        }
+        function m_find_id() 
+        {
+            window.open("./find_id.html","",'width=400, height=210, menubar=no, toolbar=no, scrollbars=no ,status=no, resizable=no');
+        }
+        function m_find_pw() 
+        {
+            window.open("./find_pw.html","",'width=400, height=210, menubar=no, toolbar=no, scrollbars=no ,status=no, resizable=no');
+        }
+</script>
+</head>
+<body>
+    <table align="center" border="0" cellpadding="0" cellspacing="30" width="340">
+        <tr>
+            <tr>
+                <td align="center">
+                    RELOGIN
+                </td>
+            </tr>
+        </tr>
+        <tr>
+            <td width="340" height="115" background="images/C_login_bg.gif" style="background-repeat:no-repeat;">
+                <table border="0" cellpadding="0" cellspacing="0" width="340">
+                    <form name="main_login" method="post" action="login.php">
+                        <tr>
+                            <td height="20" width="140"></td>
+                            <td height="20" width="130" align="center">
+                                <input type="password" name="pwd1" maxlength="16" size="12" style="background-color:rgb(172,215,116); width:100px; height:13px" tabindex='2'>
+                            </td>
+                            <td rowspan="2" height="40">
+                                <a href="javascript:login();"><img src="images/C_login_bt.gif" width="50" height="45" border="0" tabindex='3'></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20" width="140"></td>
+                            <td height="20" width="130" align="center">
+                                <input type="password" name="pwd1" maxlength="16" size="12" style="background-color:rgb(172,215,116); width:100px; height:13px" tabindex='2'>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="3">
+                                <table border="0" cellpadding="0" cellspacing="2" >
+                                    <tr>
+                                        <td width ="90" align="right">
+                                            <span style="font-size:9pt;"><a href="javascript:m_popup();"><font color="#333333">회원가입</font></a></span>
+                                        </td>
+                                        <td width ="90" align="right">
+                                            <span style="font-size:9pt;"><a href="javascript:m_find_id();"><font color="#333333">ID 찾기</font></a></span>
+                                        </td>
+                                        <td width ="90" align="right">
+                                            <span style="font-size:9pt;"><a href="javascript:m_find_pw();"><font color="#333333">pw 찾기</font></span></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

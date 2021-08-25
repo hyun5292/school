@@ -1,0 +1,257 @@
+﻿<html><head>
+<meta charset="utf-8">
+<title>회원 가입</title>
+  <style><!--
+     a  {color:3d81df; text-decoration:none}
+     A.link:visited	{color:3d81df; text-decoration:none}
+     A.link:hover 	{color:11afff; text-decoration:none;}
+     A.link:link 	{color:3d81df; text-decoration:none}
+     A.link:active	{color:3d81df; text-decoration:none;}     
+  
+      td.id1 { 
+           text-align : center ;
+           font-size  : 10pt ;
+          }          
+       
+  // --> </style>
+
+<script language="javascript">
+ function isEmpty(arg) {
+   if (arg.value==""){
+      alert("자료를 꼭 입력하십시오");
+      return false;
+   } else {
+      return true;
+   }
+ }
+
+ function isSkip(arg) {
+     for (var i=0;i<arg.value.length;i++) 
+      {
+        if (arg.value.substring(i,i+1) ==" "){
+           alert("입력값에 빈 공간이 있습니다.");          
+           return false; }     
+      }
+      return true;
+   }
+
+ function checkid(arg) {
+     idchar=new Array(arg.value.length);
+     spechar=new Array('/','.','>','<',',','?','{','}','\\');
+     for (i=0; i<arg.value.length; i++) {
+       for (j=0; j<spechar.length; j++) {
+          if (spechar[j]==arg.value.charAt(i)) {
+             alert("특수문자는 사용하지 마세요.");             
+             return false;
+          }}
+       idchar[i]=arg.value.charAt(i);
+       if ((idchar[i]>=0 && idchar[i]<=9) || (idchar[i]>='a' && idchar[i]<='z')
+            || (idchar[i]>='A' && idchar[i]<='Z')) {
+          continue; }
+       else {
+            alert("한글은 입력이 불가입니다.");          
+            return false;}
+     }
+     return true;
+   }
+
+  function checkKor(arg) {
+     idchar=new Array(arg.value.length);
+     spechar=new Array('/','.','>','<',',','?','{','}','\\');
+     for (i=0; i<arg.value.length; i++) {
+       for (j=0; j<spechar.length; j++) {
+          if (spechar[j]==arg.value.charAt(i)) {
+             alert("한글입력만 가능합니다.");             
+             return false;
+          }}
+       idchar[i]=arg.value.charAt(i);
+       if ((idchar[i]>=0 && idchar[i]<=9)) {
+            alert("숫자를 넣지 마시오. 한글만 입력하시오");
+            return false;
+        }
+       if ((idchar[i]>='a' && idchar[i]<='z') || (idchar[i]>='A' && idchar[i]<='Z')) {
+            alert("미국말 못씀 메롱~.한글만 입력하시오");
+            return false;
+        }
+       else {
+           continue; }
+     }
+     return true;
+   }
+
+  function checkpwd(arg1, arg2) {
+    if (arg1.value != arg2.value) {
+       alert("비밀번호가 틀립니다");
+       return false;
+    }
+    return true;
+  }
+
+  function charleng(arg,num) {
+    if (arg.value.length<num) {
+      alert("비밀번호는 4자리 이상입니다.");
+      return false;
+    }
+    return true;
+  }
+  
+    function idcharleng(arg,num) {
+    if (arg.value.length<num) {
+      alert("아이디는 8자리 이상입니다.");
+      return false;
+    }
+    return true;
+  }
+
+  
+function checkPID() {
+  if(!idcharleng(Member.p_id1,8)){
+	Member.p_id1.value="";
+     Member.p_id1.focus();
+     return false;
+  }
+
+  if (!isEmpty(Member.p_id1) || !isSkip(Member.p_id1) || !checkid(Member.p_id1)){
+     Member.p_id1.value="";
+     Member.p_id1.focus();
+     return false;
+   }
+  else {
+    w=open('dup_id.php?p_id1='+document.Member.p_id1.value,'checkID','width=300,height=200');
+  }    
+}   
+
+function check_dup(arg) {
+  arg.value=0;
+}
+  
+function checkForm() {
+  if(!idcharleng(Member.p_id1,8)){
+     Member.pwd1.value="";
+     Member.pwd2.value="";
+     Member.pwd1.focus();
+     return false;
+  }
+
+
+  if (Member.check_id.value==0) {
+     alert("ID가 중복이 체크되지않음");
+     Member.p_id1.focus();
+     return false;
+   }
+  // ID 확인
+  if (!isEmpty(Member.p_id1) || !isSkip(Member.p_id1) || !checkid(Member.p_id1)){
+     Member.p_id1.value="";
+     Member.p_id1.focus();
+     return false;
+   }
+   
+  // 이름 확인
+  if (!isEmpty(Member.p_name) || !isSkip(Member.p_name) || !checkKor(Member.p_name)){   
+     Member.p_name.value="";
+     Member.p_name.focus();
+     return false;
+   }
+  
+  // 암호확인
+  if (!charleng(Member.pwd1,4) || !checkpwd(Member.pwd1, Member.pwd2)) {
+     Member.pwd1.value="";
+     Member.pwd2.value="";
+     Member.pwd1.focus();
+     return false;
+  }    
+  return true;
+}   
+ </script>
+</head>
+
+<body bgcolor=#ffffff topmargin=0 marginheight=0 leftmargin=0 marginwidth=0>
+
+<form name=Member method=post action="new_member.php" onSubmit="return checkForm()">
+<br>
+<table border=0 cellpadding=0 cellspacing=0 width="626">
+<tr>
+<td width="623" height=21 colspan=6><font color=3d81df face=돋움 size=2>&nbsp;◈ 표시는 필수입력사항입니다</font></td>
+            <td width="3"></td>
+</tr>
+<tr>
+	<td width="623" height=3 colspan=6></td>
+            <td width="3"></td>
+</tr>
+<tr>
+	<td width=6 height=320 rowspan=14></td>
+	<td class=id1 width="112" height=27 bgcolor=#f1fbfe align=right>
+        
+                <p align="left"><font face=굴림 size=2 color=#000066><font color=3d81df face=돋움 size=2>◈</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I D</font> </td>
+	<td width="499" height=27 colspan=3 bgcolor=#f1fbfe>
+	<input type=text name=p_id1 size=12 maxlength=12>
+	<input type=hidden name=check_id value=0> &nbsp;&nbsp;
+  <input type="button" name="checkID" value="ID중복확인"
+          onclick="return checkPID();">
+&nbsp;&nbsp;
+          
+        <font face=돋움 size=2>8자이상(특수문자,한글 입력불가)</font></td>
+	<td width="6" height=320 align=right rowspan=14></td>
+            <td width="3"></td>
+</tr>
+<tr>
+	<td class=id1 width="112" height=27 bgcolor=#FBFCFD align=right>
+        
+                <p align="left"><font face=굴림 size=2 color=#000066><font color=3d81df face=돋움 size=2>◈</font>&nbsp;&nbsp;&nbsp;&nbsp;이름</font></td>
+	<td width="499" height=27 colspan=3 bgcolor=#FBFCFD><input type=text name=p_name size=12> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font face=돋움 size=2>(반드시 실명으로 붙여 써 주세요)</font></td>
+            <td width="3"></td>
+</tr>
+
+<tr>
+	<td class=id1 width="112" height=27 bgcolor=#FBFCFD align=center>
+        
+                <p align="left"><font face=굴림 size=2 color=#000066><font color=3d81df face=돋움 size=1>◈</font>&nbsp;비밀번호</font></td>
+	<td width="216" height=27 bgcolor=#FBFCFD><input type=password name=pwd1 size=8 >
+         <font face=굴림 size=2 color=#000066>*확인 <input type=password name=pwd2 size=8 ></font></td>
+	<td width="283" height=27 colspan=2 bgcolor=#FBFCFD> <font face=돋움 size=2>&nbsp;특수문자 및 한글 입력불가.<br>
+        &nbsp;대소문자 구별, 4자리 이상 입력</font></td>
+            <td width="3"></td>
+</tr>
+<tr>
+	<td class=id1 width="112" height=27 bgcolor=#f1fbfe align=right><font face=굴림 size=2 color=#000066>생년월일</font></td>
+	<td width="499" height=27 colspan=3 bgcolor=#f1fbfe><input type=text name=birth1 size=5 maxlength=4>
+        <font face=돋움 size=2>년 <input type=text name=birth2 size=3 maxlength=2>월 
+        <input type=text name=birth3 size=3 maxlength=2>일 &nbsp;&nbsp;
+        <input type=radio checked name=birth4 value=0>남 &nbsp;&nbsp;<input type=radio name=birth4 value=1>여</font></td>
+            <td width="3"></td>
+</tr>
+<tr>
+	<td class=id1 width="112" height=27 bgcolor=#FBFCFD align=right><font face=굴림 size=2 color=#000066>휴대폰번호</font></td>
+	<td width="216" height=27 bgcolor=#FBFCFD><input type=text name=phone1 size=4 maxlength=4>- 
+        <input type=text name=phone2 size=4 maxlength=4>- <input type=text name=phone3 size=4 maxlength=4></td>
+	
+</tr>
+
+<tr>
+	<td class=id1 width="112" height=27 bgcolor=#f1fbfe align=right><font face=굴림 size=2 color=#000066>E-MAIL</font></td>
+	<td width="216" height=27 bgcolor=#f1fbfe><input type=text name=email size=25> </td>
+	<td width="283" height=27 colspan=2 bgcolor=#f1fbfe><font face=돋움 size=2>(ID,비번 분실시 이곳으로 보내집니다)</font></td>
+            <td width="3"></td>
+</tr>
+<tr>
+	<td width="611" height=6 colspan=4 bgcolor=#FBFCFD></td>
+            <td width="3"></td>
+</tr>
+
+<tr>
+	<td width="620" height=1 colspan=6></td>
+</tr>
+<tr height=40>
+            <td width="112"></td>
+            <td width="216"></td>
+            <td width="32"></td>
+            <td width="251"></td>
+            <td width="3"></td>
+</tr>
+</table>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=submit value="회원등록">&nbsp;&nbsp;&nbsp;&nbsp;<input type=reset value="다시하기">
+</body>
+</html>

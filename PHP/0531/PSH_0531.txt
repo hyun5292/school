@@ -1,0 +1,13 @@
+//비동기식 알아둬야 한댕
+비동기식 : 화면은 가만히 있는데 뭐 검색창 켜서 검색하는 거나
+댓글 다는 거나 그 검색어순위 올라오는거 
+
+datahouse.php -> write.php -> write1.php
+	      -> delete.php
+              -> update.php -> updatd1.php
+              -> download.php -> 댓글
+
+limit 0, 10 //시작점, 개수
+
+ceil //무조건 올림
+

@@ -1,0 +1,88 @@
+정형 data
+->거의 다 정형
+비정형 data
+
+관리자가 해야할 일
+1. DB 만들기
+2. 해당 DB 권한 부여
+
+DCL, DML, DDL 중에 DML이 제일 중요
+
++php에서 db 연결 과정    //sql함수
+1.연결    //mysql_connect
+2.DB 선택    //mysql_select_db
+3.SQL문 날리기    //mysql_query
+4.결과 뽑아내기    //mysql_fetch_row
+5.연결고리 닫기    //mysql_close
+
+mysql root 아이디랑 비번 바꾸지 말고
+mysql 관리만 건드려
+그리고 여기서 테이블 절대 만들지 말래ㅋㅋ
+
++이름 같은 거 한글 쓰지마라
+DB명 : sample
+utf8_unicode_ci
+
+!!!만약에 빨간 글씨로 에러 메세지 나오면
+뒤로뒤로 -> f5 -> 로그인
+
+테이블명 : membership
+필드 :
+번호
+아이디
+이름
+학과
+나이
+
+한글이 들어가면 무조건 utf8
+
+membership -> 내보내기 -> sql 선택 파일명 -> 실행
+집에서 테이블 하나 더 만들어서 import
+
+ppt mysql 사용법 p.4
+
+//sublime
+----------------------------------------
+<?
+$db_conn = mysql_connect("localhost", "php", "php99");
+//link identifier
+$status = mysql_select_db("sample", $db_conn);
+
+$str = "select * from membership";
+mysql_query("set names utf8");
+$result = mysql_query($str, $db_conn);
+
+while($a = mysql_fetch_row($result))
+{
+	echo("$a[0] //$a[1] //$a[2] //$a[3] //$a[4] <br>");
+}
+
+mysql_close($db_conn);
+?>
+----------------------------------------
++sql문을 따로 변수에 대입해줘서 오류가 날 경우
+echo로 출력해서 오타 찾기
+
++사용권한
+호스트 -> local
+
+과제!!!
+DB명 : kyungmin
+테이블명 : shim
+id : injung
+pwd : injung11
+필드:
+아이디
+성별
+이름
+이메일
+->데이터 5개 집어넣기
+import로 가져오기
+
+
+
+
+
+
+
+

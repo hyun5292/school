@@ -1,0 +1,21 @@
+urlencode 
+urldecode
+- get방식
+
+trim() 함수
+
+Ltrim Rtrim?
+
+id primarykey 지정 못해줄 때 값을 자동으로 올려주려면
+select max(id) from dtroom;
+
+php에는 now()가 없으니까
+$putdate = date("y-m-d h:i:s");
+
+수정할 때도 모든 정보를 다 가져가
+갈 때도 올 때도
+
+삭제도 페이지 넘버 키워드 서치 다 가져가야됨
+
+
+

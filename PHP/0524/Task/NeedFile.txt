@@ -1,0 +1,16 @@
+첫 페이지 *index.html -> *index.php
+-> 로그인 페이지 -> *login.php -> !re_login.html
+-> 로그인 후 페이지 -> !update.php -> !update1.php
+                    -> !logout.php
+-> id 찾기 -> !find_id.html -> !find_id.php
+-> pwd 찾기 -> find_pwd.html -> find_pwd.php
+            -> *changpw.php
+-> 회원용 -> session.php
+-> 비회원용 -> no_session.php
+회원 가입 *profile.html
+-> id 중복검사 *dup_id.php
+-> *new_member.php
+*head.inc
+
+find_pwd.html
+find_pwd.php

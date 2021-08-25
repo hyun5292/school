@@ -1,0 +1,73 @@
+1.PHP 특징 or 장점
+2.web 프로그래밍 이유
+*3.web 프로그래밍 실행되는 과정 그림과 설명
+4.web, internet protocol
+5.get, post 방식 장단점
+6.웹 상에서 transaction이 끝나면 서버와의 연결이 끊기는 이유
+*7.프로그램(PHP & html)
+------------------------------------
+(*는 무조건 나온대 소연아!!)
+->단답형으로 4문제
+7번은 페이지에서 다른 페이지로
+아님 DB연동하는 거
+------------------------------------
+b.php하고 a.php가 있을 때
+-a.php
+<?
+$a = 30;
+echo("<a href = 'b.php?id=$a'>눌러봐</a>");
+?>
+-b.php
+<?
+$id = $_GET['id'];
+?>
+------------------------------------
+-a.php
+<?
+$a = $_POST['age'];
+if($a >= 30)
+{
+    echo("<meta http-equiv content='O;url=b.php?id=$a'>");
+}
+else
+{
+    echo("<script>history.go(-1):</script>");
+}
+?>
+------------------------------------
+<?
+function aaa()
+{
+    f1.action='b.php';
+    f1.submit();
+}
+$a = 30;
+echo("<form name=f1 method=post>
+      <input type=hidden name=id value=$a>
+      </form>");
+echo("<a href='javascript:aaa()'>눌러봐</a>");
+?>
+------------------------------------
+insert into payment (NULL, '심팔식');ㅋㅋㅋㅋ
+
+//auto increment를 사용할 수 없을 때
+select max(id)+1
+from payment;
+
+//1, 2, 5, 6, 11, 12..에서 6에서 11로 넘어갈 때
+select min(id) from payment
+where id > $id;
+
+//11에서 6으로 넘어갈 때
+select max(id) from payment
+where id < $id;
+------------------------------------
+기획->(업무)분석->설계->코딩->테스트->설치 및 유지보수
+SQL문 뭐 select * from payment나 delete from payment where id = $id;
+이런거 써주는 게 좋대
+------------------------------------
+
+
+
+
+

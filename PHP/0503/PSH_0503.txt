@@ -1,0 +1,85 @@
+소연아 학번같은 거는 varchar형으로 하래!!
+----------------------------------------
+start.php
+<td><a href = 'sort.php?type=java'>$a[2]</a>
+<td><a href = 'sort.php?type=db'>$a[3]</a>
+<td><a href = 'sort.php?type=php'>$a[4]</a>
+
+sort.php
+<?
+...
+$type = $_GET['type'];
+include("head.inc");
+$str = "select std_id, name, $type from score order by $type desc";
+...
+?>
+------------------------------------------
+name=   ,value = table, field...
+-> 소스를 확 줄일 수 있음ㅎ
+------------------------------------------
+과제 : A반 꺼를 POST 방식으로 해오래ㅋㅋㅋ
+------------------------------------------
+name은 개체의 이름과 값
+id는 개체의 이름, 명칭
+->name을 생략하면 다른 페이지로 넘길 때 불가능
++ 
+getElementById
+와 
+getElementByName
+------------------------------------------
+//
+1.데이터 입력
+$vote = $_POST['vote'];
+2.SQL문
+$vote == 1, update poll set reading = reading + 1;
+$vote == 2, update poll set swimming = swimming + 1;
+...
+3.실행
+4.뿌려주기
+독서
+  $str = "select * from poll";
+  $sum = $a[0] + ... + $a[3]
+  if(sum == 0)
+  {
+    echo();
+    echo("<meta http-equiv = refresh content = '3;~'>");
+  }
+  else{
+    인원 $a[0]
+    <img src = '.jpg' height = 10 width = $per>
+    퍼센트
+  }
+수영
+골프
+낚시
+-------------------------------------------------
+//value = "reading"
+2.SQL문
+$str = "update poll set $vote = $vote + 1";
+4.뿌려주기
+독서
+  $name = array("독서짱", "수영최고"...);
+  $str = "select * from poll";
+  $sum = $a[0] + ... + $a[3]
+  if(sum == 0)
+  {
+    echo();
+    echo("<meta http-equiv = refresh content = '3;~'>");
+  }
+  else{
+    for($i = 0; $i < sizeof($a); $i++){
+      
+    }
+    인원 $a[0]
+    <img src = '.jpg' height = 10 width = $per>
+    퍼센트
+  }
+수영
+골프
+낚시
+---------------------------------------------------
+두 번째 과제
+투표 예제 변형 하래
+두번째 화면 스샷해서 올리래
+vote1파일 이용
+-과제통에 올리는데 담주 목요일까지
