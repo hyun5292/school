@@ -1,0 +1,14 @@
+package com.jsp.ex;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class JoinService {
+	public int execute() {
+		int ri = 0;
+		AccountDAO dao = AccountDAO.getInstance(HttpServletRequest request, HttpServletResponse response);
+		ri = dao.confirmId();
+		
+		return ri;
+	}
+}

@@ -1,0 +1,12 @@
+package Service;
+
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.jsp.ex.AccountDTO;
+
+public interface Service {
+	public ArrayList<AccountDTO> execute(HttpServletRequest request, HttpServletResponse response);
+}

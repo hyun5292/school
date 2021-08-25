@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<center>
+		<h3 align="center" id="name">
+			경민대학교 융합소프트웨어과 17831024
+			<ins>박수현</ins>
+		</h3>
+		<br>
+		<table>
+			<tr>
+				<td bgcolor="#3399ff">
+					<h1>아이디 또는 비밀번호를 다시 입력해주세요!</h1>
+				</td>
+			</tr>
+			</table>
+			<br/><br/>
+			<table>
+			<tr>
+				<td align="center">
+					<a href = "Login.html">다시입력</a>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<h3>Welcome To Suhyun's Page!</h3>
+	</center>
+</body>
+</html>

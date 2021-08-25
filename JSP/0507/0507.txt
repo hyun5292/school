@@ -1,0 +1,22 @@
+<%if(session.getAttribute("ValidAccount") != null) { %>
+<jsp:forward page = "loginResult.jsp"></jsp:forward>
+<%}%>
+
+"javascript:window.location=loginOk.jsp"
+
+
+액션태그는 JSP파일에서 유동적으로 컨트롤하는거?
+
+validaccount는 로그인 중인지 확인하는 거
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\tytyj\OneDrive\πŸ≈¡ »≠∏È\Movie\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3493020505.index
+1027333826.index
+3542746678.index
+219808593.index
+1413235427.index
+3236490884.index
+3760712287.index

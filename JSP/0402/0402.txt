@@ -1,0 +1,68 @@
+Listener
+: 서블릿의 생명주기를 감시
+
+으휴 으휴
+으이규 으이규
+으익ㅍ 으익
+에이구 에이구
+느니구 므미두
+
+DB는 항상 예외처리로 잡아라
+----------------------------------------------------------------
+중간고사 꼭 나온댕
+!!!이거 시험에 나왕
+DB 연결 순서
+- JDBC 드라이버 로드
+  : DriverManager
+->Class.forName("oracle.jdbc.driver.OracleDriver");
+- DB 연결
+  : Connection
+->DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "UID", "UPW");
+- SQL문 실행
+  : Statement
+->connection.createStatement();
+- DB 연결 해제
+  : ResultSet
+->statement.executeQuery(query);
+-----------------------------------------------------------------
+++
+try{
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "clara", "agnes");
+		DatabaseMetaData meta = conn.getMetaData();
+		
+		out.println("Database : " + meta.getDatabaseProductName() + "<br/>");
+		out.println("Version : " + meta.getDatabaseProductVersion() + "<br/>");
+		out.println("Username : " + meta.getUserName());
+		conn.close();
+	}catch(Exception e){
+		out.println(e);
+	}
+------------------------------------------------------------------
+컨닝페이퍼는 손글씨로
+프린트는 퇴장
+
+select
+insert
+delete
+update
+
+ResultSet 객체
+-next()
+-previous()
+-first()
+-last()
+-get메서드
+
+executeQuery
+executeUpdate
+
+
+
+
+
+
+
+
+
+

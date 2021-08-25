@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+		String id = request.getParameter("id");
+		String pw = request.getParameter("pw");
+	%>
+	ID : <%=id %> <br/>
+	PW : <%=pw %> <br/>
+	
+	<hr/>
+	
+	ID : ${param.id} <br/>
+	PW : ${param.pw} <br/>
+	ID : ${param.["id"]} <br/>
+	PW : ${param.["pw"]} <br/>
+	
+	<hr/>
+	
+	applicationScope : ${applicationScope.app_name} <br/>
+	applicationScope : ${sessoinScope.session_name} <br/>
+	applicationScope : ${pageScope.page_name} <br/>
+	applicationScope : ${requestScope.request_name} <br/>
+	
+</body>
+</html>

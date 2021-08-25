@@ -1,0 +1,14 @@
+포워딩
+- dispatcher
+- response객체
+
+로그인을 command
+
+command는 service라고 하기도 한당
+mvc에서
+model은 이제 dao, dto
+control은 servlet
+view는 jsp
+
+
+

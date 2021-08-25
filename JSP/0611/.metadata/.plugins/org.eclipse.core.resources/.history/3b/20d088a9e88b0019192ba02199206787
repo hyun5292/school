@@ -1,0 +1,5 @@
+package memo.dao;
+
+public class MemoDao {
+
+}

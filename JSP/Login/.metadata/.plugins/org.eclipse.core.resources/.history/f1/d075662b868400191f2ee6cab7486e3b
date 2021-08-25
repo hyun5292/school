@@ -1,0 +1,11 @@
+package Service;
+
+import DaoDto.AccountDAO;
+
+public class MemberService {
+	private AccountDAO dao;
+	
+	public MemberService() {
+		dao = AccountDAO.getInstance();
+	}
+}

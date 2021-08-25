@@ -1,0 +1,27 @@
+package sqlmap;
+
+import java.io.Reader;
+
+public class MybatisManager {
+	private static SqlSessionFactory instance;
+	
+	private MybatisManager() {}
+	
+	public static SqlSessionFactory getInstance() {
+		Reader reader = null;
+		try {
+			reader = Resources.getResourceAxReader("sqlmap/sqlMapConfig.xml");
+			instance = new SqlSessionFactoryBuilder().buld(reader);
+		} catch(Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (reader != null) reader.close();
+			} catch(Exception e2) {
+				e2.printStackTrace();
+			}
+		}
+		
+		return instance;
+	}
+}

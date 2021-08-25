@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>로그인</title>
+<style>
+a {
+	text-decoration: none;
+}
+
+font {
+	color: #353F48;
+	font-size: 80px;
+}
+
+#lbl {
+	font-weight: bold;
+	font-size: 20px;
+	padding: 10px 20px;
+	Radius: 20px;
+	color: #353F48;
+	background-color: #FFE699;
+	border: solid 2px #C2722E;
+	border-radius: 10px;
+}
+
+#c {
+	text-align: center;
+	position: absolute;
+	top: -4px;
+}
+</style>
+</head>
+<body>
+	<table border=1 align="center">
+		<tr>
+			<td rowspan=4><a href="Main.jsp"><img src="Image\Logo.png"
+					width="150px" height="150px" align="center"></a></img></td>
+			<td bgcolor="#FFE08C" width="1500px" align="center">
+				<table border=0 width="1230px">
+					<tr align="center" align="center">
+						<td colspan="2" height="50px"><font size="150"
+							face="Arial Black">MOVIE</font></td>
+						<td><a href="#">회원가입</a></b></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<center>
+
+		<form action="Login.do" method="post">
+			<table border=0>
+				<tr>
+					<td align="center" bgcolor="#ffd966">
+						<h3>ID :</h3>
+					</td>
+					<td bgcolor="#ffe79f"><input type="text" name="id">
+					</td>
+				<tr>
+					<td align="center" bgcolor="#ffd966">
+						<h3>PW :</h3>
+					</td>
+					<td bgcolor="#ffe79f"><input type="password" name="pw">
+					</td>
+				</tr>
+			</table>
+			<br> <br> <input type="submit" value="로그인" id = "lbl"> <br>
+			<br>
+		</form>
+	</center>
+</body>
+</html>

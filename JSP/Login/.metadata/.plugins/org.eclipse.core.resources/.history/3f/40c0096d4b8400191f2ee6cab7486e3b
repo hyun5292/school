@@ -1,0 +1,15 @@
+package com.jsp.ex;
+
+public class AccountDAO {
+	public static final int ACCOUNT_NONEXISTENT = 0;
+	public static final int ACCOUNT_EXISTENT = 1;
+	public static final int ACCOUNT_JOIN_FAIL = 0;
+	public static final int ACCOUNT_JOIN_SUCCESS = 1;
+	public static final int ACCOUNT_LOGIN_PW_NO_GOOD = 0;
+	public static final int ACCOUNT_LOGIN_SUCCESS = 1;
+	public static final int ACCOUNT_LOGIN_IS_NOT = -1;
+	
+	public int insertMember(AccountDTO dto) {
+		
+	}
+}

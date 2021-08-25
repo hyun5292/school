@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<%
+	request.setCharacterEncoding("EUC-KR");
+
+	String id = request.getParameter("id");
+	String pw = request.getParameter("pw");
+%>
+<title>Insert title here</title>
+</head>
+<body>
+	AccountDAO dao = AccountDAO.getInstance();
+	int CheckNum = dao.userCheck(id, pw);
+	
+%>
+</body>
+</html>

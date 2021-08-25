@@ -1,0 +1,12 @@
+package memo.dao;
+
+import org.apache.ibatis.session.SqlSession;
+
+import sqlmap.MybatisManager;
+
+public class MemoDao {
+	public List<MemoDto> listMemo(){
+		SqlSession session = MybatisManager.getInstance().openSession();
+		List<MemoDto> list = session.selectList("memo.listAll");
+	}
+}

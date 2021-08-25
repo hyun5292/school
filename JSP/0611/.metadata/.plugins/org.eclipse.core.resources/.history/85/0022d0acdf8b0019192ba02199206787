@@ -1,0 +1,5 @@
+package memo.dto;
+
+public class MemoDto {
+
+}

@@ -1,0 +1,15 @@
+package sqlmap;
+
+public class MybatisManger {
+	private static SqlSessionFactory instance;
+	
+	private MybatisManager() {}
+	
+	public static SqlSessionFactory getInstance() {
+		Reader reader = null;
+		try {
+			reader = Resources.getResourceAxReader("sqlmap/sqlMapConfig.xml");
+			instance = new SqlSessionFactoryBuilder().buld(reader);
+		}
+	}
+}

@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Tue Apr 16 15:03:07 KST 2019
+org.eclipse.jst.jee.server\:PSH_0416_2=C\:\\Users\\tytyj\\apache-tomcat-9.0.17\\wtpwebapps\\PSH_0416_2
+org.eclipse.jst.jee.server\:PSH_0416=C\:\\Users\\tytyj\\apache-tomcat-9.0.17\\wtpwebapps\\PSH_0416

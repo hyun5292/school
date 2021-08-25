@@ -1,0 +1,16 @@
+package Service;
+
+import DaoDto.AccountDAO;
+
+public class MemberService {
+	private AccountDAO dao;
+	
+	public MemberService() {
+		dao = AccountDAO.getInstance();
+	}
+	
+	public boolean login(String id, String pw) {
+		int IdChk = dao.confirmId(id);
+		
+	}
+}

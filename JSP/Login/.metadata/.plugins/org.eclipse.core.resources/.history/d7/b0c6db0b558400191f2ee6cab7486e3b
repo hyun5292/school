@@ -1,0 +1,56 @@
+<%@ page import = "com.jsp.ex.*" %>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<%
+	request.setCharacterEncoding("EUC-KR");
+
+	String id = request.getParameter("id");
+	String pw = request.getParameter("pw");
+%>
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	AccountDAO dao = AccountDAO.getInstance();
+	int CheckNum = dao.userCheck(id, pw);
+	System.out.println(id + pw + CheckNum.toString());
+	if(CheckNum == -1){
+%>
+	<script language = "javaScript">
+		alert("아이디가 존재하지 않습니다");
+		history.go(-1);
+	</script>
+<%
+	} else if (CheckNum == 0) {
+%>
+	<script language = "javaScript">
+		alert("비밀번호가 틀립니다");
+		history.go(-1);
+	</script>
+<%
+	} else if (CheckNum == 1) {
+		AccountDTO dto = dao.getMember(id);
+		
+		if(dto == null) {
+%>
+	<script language = "javaScript">
+		alert("존재하지 않는 회원입니다");
+		history.go(-1);
+	</script>
+<%
+		} else{
+		String name = dto.getName();
+		session.setAttribute("id", id);
+		session.setAttribute("pw", pw);
+		session.setAttribute("name", name);
+		session.setAttribute("ValidMem", "yes");
+		response.sendRedirect("main.jsp");
+		}
+	}
+%>
+</body>
+</html>

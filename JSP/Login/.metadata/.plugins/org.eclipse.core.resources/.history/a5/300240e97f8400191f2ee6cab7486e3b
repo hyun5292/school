@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+		<h3 align="center" id="name">
+			경민대학교 융합소프트웨어과 17831024
+			<ins>박수현</ins>
+		</h3>
+		<br>
+		<h1>
+			회원가입
+		</h1>
+
+		<form action="JoinOK.jsp" method="post">
+			<table border=0>
+				<tr>
+					<td align="right" bgcolor="#3399ff">ID :</td>
+					<td colspan=6 bgcolor="#33ccff"><input type="text" name="id"
+						size=14></td>
+				</tr>
+				<tr>
+					<td align="right" bgcolor="#3399ff">PW :</td>
+					<td colspan=6 bgcolor="#33ccff"><input type="password"
+						name="pw" size = 15></td>
+				</tr>
+				<tr>
+					<td align="right" bgcolor="#3399ff">이름 :</td>
+					<td bgcolor="#33ccff" colspan=2><input type="text" name="name"
+						size=10></td>
+					<td align="right" bgcolor="#3399ff">성별 :</td>
+					<td bgcolor="#33ccff" colspan=5><input type="radio" name="gender"
+						value="man" checked="checked">남 &nbsp; <input type="radio" name="gender"
+						value="woman"> 여</td>
+				</tr>
+				<tr>
+					<td bgcolor="#3399ff">전화번호 :</td>
+					<td bgcolor="#33ccff" colspan=7><select name="phone1">
+							<option value="010">010</option>
+							<option value="011">011</option>
+							<option value="016">016</option>
+							<option value="017">017</option>
+							<option value="018">018</option>
+							<option value="019">019</option>
+					</select> <input type="text" name="phone2" size="5"> - <input
+						type="text" name="phone3" size="5"></td>
+				</tr>
+				<tr>
+					<td align="right" bgcolor="#3399ff">별명 :</td>
+					<td colspan=6 bgcolor="#33ccff"><input type="text"
+						name="nickname" size=19></td>
+				</tr>
+				<tr>
+					<td align="right" bgcolor="#3399ff">생년월일 :</td>
+					<td bgcolor="#33ccff" align="right"><input type="text" name="birth_y" size=5></td>
+					<td bgcolor="#3399ff">년</td>
+					<td bgcolor="#33ccff"><input type="text" name="birth_m" size=5></td>
+					<td bgcolor="#3399ff">월</td>
+					<td bgcolor="#33ccff"><input type="text" name="birth_d" size=5></td>
+					<td bgcolor="#3399ff">일</td>
+				</tr>
+				<tr>
+				<td align = "right" bgcolor="#3399ff">
+				Email :
+				</td>
+				<td bgcolor="#33ccff">
+				<input type="text" name="Email1" size="14">
+				</td>
+				<td align="center" bgcolor="#3399ff">
+				@
+				</td>
+				<td colspan=4 bgcolor="#33ccff">
+				<select name="Email2">
+							<option value="naver">naver.com</option>
+							<option value="daum">daum.net</option>
+							<option value="google">google.com</option>
+					</select>
+				</td>
+				</tr>
+			</table>
+			<br />
+			<table>
+				<tr>
+					<td colspan = 3 align="center">
+						<a href="login.html">로그인</a>
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><input type="submit" value="가입"></td>
+					<td width=20></td>
+					<td align="center"><input type="reset" value="취소"></td>
+				</tr>
+			</table>
+		</form>
+		<br>
+		<h3>Welcome To Suhyun's Page!</h3>
+
+	</center>
+</body>
+</html>

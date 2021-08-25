@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<jsp:useBean id = "dto" class="com.jsp.ex.AccountDTO" scope = "page"/>
+<jsp:setProperty name = "dto" property = "*"/>
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	String id = (String)session.getAttribute("id");
+	dto.setId(id);
+	
+	AccountDAO dao = AccountDAO.getInstance();
+	int ri = dao.updateMember(dto);
+	
+	if(ri == 1) {
+%>
+	<script language = "javaScript">
+		alert("정보수정 되었습니다");
+		document.location.href = "main.jsp";
+	</script>
+<%
+	} else {
+%>
+	<script language = "javaScript">
+		alert("회원가입에 실패했습니다");
+		document.location.href = "Login.jsp";
+	</script>
+<%
+
+%>
+</body>
+</html>

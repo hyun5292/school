@@ -1,0 +1,5 @@
+package Command;
+
+public interface BCommand {
+	void execute(HttpServletReqeust request, HttpServletResponse response);
+}

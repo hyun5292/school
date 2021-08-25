@@ -1,0 +1,14 @@
+DB-----------------------------------------------------------------------
+create table memo(
+idx number not null primary key,
+writer varchar2(50) not null,
+memo varchar2(4000) not null,
+post_date date default sysdate
+);
+
+commit;
+
+insert into memo (idx, writer, memo) values (1, '박남일', '안녕하세요');
+insert into memo (idx, writer, memo) values (2, '홍진영', '안녕하세요');
+insert into memo (idx, writer, memo) values (3, '박보검', '안녕하세요');
+---------------------------------------------------------------------------
