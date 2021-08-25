@@ -46,3 +46,9 @@
   + 웹 기술 수업 - Javascript, JQuery 조금, node.js 조금<br/>
     : 2020.09.03 ~ 2020.12.17<br/>
     https://github.com/hyun5292/school/tree/main/webTech
+
+  + JSP 수업<br/>
+    : 2020.03.04 ~ 2020.06.19<br/>
+    : 영화 예매 사이트 제작 기말 프로젝트<br/>
+    https://github.com/hyun5292/school/tree/main/JSP/Movie
+    
