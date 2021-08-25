@@ -1,0 +1,5 @@
+package pcop.dto;
+
+public class Member_DTO {
+
+}

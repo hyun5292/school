@@ -1,0 +1,12 @@
+package user;
+
+public class FoodKind {
+	public String[][] FoodKind = { { "라면", "햄버거", "스낵", "커피", "음료수" },
+			{ "Ramyon", "Hamburger", "Snack", "Coffee", "Drink" } };
+	public String[][] FoodName_K = {{}, {}, {}, {}, {}};
+	public String[][] FoodName_E = {{}, {}, {}, {}, {}};
+
+	public FoodKind() {
+
+	}
+}

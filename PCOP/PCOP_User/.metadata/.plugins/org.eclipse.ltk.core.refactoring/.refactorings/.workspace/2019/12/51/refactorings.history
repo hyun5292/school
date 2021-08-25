@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;PCOP_Manager&apos;" deleteContents="false" description="Delete resource &apos;PCOP_Manager&apos;" element1="/PCOP_Manager" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1576769209546"/>
+</session>

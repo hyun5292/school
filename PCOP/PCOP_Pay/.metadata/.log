@@ -1,0 +1,3256 @@
+!SESSION 2019-10-08 23:39:51.509 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-08 23:40:05.319
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-10-08 23:40:07.881
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-08 23:40:07.881
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@31d51518,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@509bf2d5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-08 23:40:19.659
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\단무쥐'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:04.116
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:04.116
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@34453e71[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=1092)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:04.147
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:04.257
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:06.445
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:06.461
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@34453e71[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=1092)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:06.476
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.137
+!MESSAGE Boot LS startup time from start to initialized: 8645ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.231
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.oaLPpdcMisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.247
+!MESSAGE subscribing to classpath changes: sts4.classpath.oaLPpdcM isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.262
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.278
+!MESSAGE subsribers = {sts4.classpath.oaLPpdcM=Send Classpath Notifications(856)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.309
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.325
+!MESSAGE project PCOP_Pay ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.340
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.356
+!MESSAGE Preparing classpath changed notification PCOP_Pay
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.356
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.oaLPpdcM => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.372
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.387
+!MESSAGE classpath=20 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.403
+!MESSAGE buffering callback sts4.classpath.oaLPpdcM PCOP_Pay false 20
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.418
+!MESSAGE executing callback sts4.classpath.oaLPpdcM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-08 23:43:15.465
+!MESSAGE executing callback sts4.classpath.oaLPpdcM SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-10-09 02:12:01.135
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 02:54:57.350
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.oaLPpdcM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 02:54:57.366
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.oaLPpdcM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 02:54:57.413
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 02:54:57.460
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.oaLPpdcM => OK
+!SESSION 2019-10-09 14:02:16.114 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-09 14:02:54.986
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-10-09 14:02:56.585
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-09 14:02:56.585
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76ac8c3d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b5c4b75,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-09 14:03:22.083
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\단무쥐'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:22.317
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:23.505
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6b4b5ac8[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=1092)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:24.676
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:24.942
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-10-09 14:03:34.539
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:38.759
+!MESSAGE Boot LS startup time from start to initialized: 13911ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:38.899
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.XxiyLIBkisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:38.915
+!MESSAGE subscribing to classpath changes: sts4.classpath.XxiyLIBk isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:38.946
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:38.946
+!MESSAGE subsribers = {sts4.classpath.XxiyLIBk=Send Classpath Notifications(842)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:38.962
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:38.993
+!MESSAGE project PCOP_Pay ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:39.009
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:39.024
+!MESSAGE Preparing classpath changed notification PCOP_Pay
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:39.024
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.XxiyLIBk => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:39.040
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:39.071
+!MESSAGE classpath=20 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:39.087
+!MESSAGE buffering callback sts4.classpath.XxiyLIBk PCOP_Pay false 20
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:39.102
+!MESSAGE executing callback sts4.classpath.XxiyLIBk 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 14:03:39.165
+!MESSAGE executing callback sts4.classpath.XxiyLIBk SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-10-09 16:31:57.687
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 16:58:44.162
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.XxiyLIBk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 16:58:44.181
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.XxiyLIBk
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 16:58:44.196
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 16:58:44.206
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.XxiyLIBk => OK
+!SESSION 2019-10-09 20:01:37.446 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-09 20:01:58.269
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-10-09 20:01:59.743
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-09 20:01:59.743
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e53f980,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c8c5513,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:21.604
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-09 20:02:22.355
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\단무쥐'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:22.826
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@5c2fc86[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=1092)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:23.053
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:23.485
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-10-09 20:02:24.474
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.391
+!MESSAGE Boot LS startup time from start to initialized: 12089ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-10-09 20:02:35.461
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.lambda$11(LSPTextHover.java:237)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.lambda$10(LSPTextHover.java:246)
+	at java.util.concurrent.CompletableFuture.uniApply(Unknown Source)
+	at java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source)
+	at java.util.concurrent.CompletableFuture$Completion.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:241)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.476
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.jsJsuDHPisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.527
+!MESSAGE subscribing to classpath changes: sts4.classpath.jsJsuDHP isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.544
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.563
+!MESSAGE subsribers = {sts4.classpath.jsJsuDHP=Send Classpath Notifications(823)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.585
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.603
+!MESSAGE project PCOP_Pay ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.616
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.629
+!MESSAGE Preparing classpath changed notification PCOP_Pay
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.650
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.jsJsuDHP => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.663
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.679
+!MESSAGE classpath=20 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.693
+!MESSAGE buffering callback sts4.classpath.jsJsuDHP PCOP_Pay false 20
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.752
+!MESSAGE executing callback sts4.classpath.jsJsuDHP 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:02:35.802
+!MESSAGE executing callback sts4.classpath.jsJsuDHP SUCCESS [done]
+!SESSION 2019-10-09 20:38:25.782 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-10-09 20:38:33.968
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-09 20:38:37.295
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-10-09 20:38:39.142
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-09 20:38:39.142
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4ef7145f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1611ce1c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:38:53.373
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:38:53.623
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@51049621[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=1092)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:38:53.639
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:38:53.763
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-09 20:38:55.840
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\단무쥐'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-10-09 20:38:57.524
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.482
+!MESSAGE Boot LS startup time from start to initialized: 12796ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.559
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.FRLsXqmpisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.573
+!MESSAGE subscribing to classpath changes: sts4.classpath.FRLsXqmp isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.595
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.612
+!MESSAGE subsribers = {sts4.classpath.FRLsXqmp=Send Classpath Notifications(813)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.668
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.686
+!MESSAGE project PCOP_Pay ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.699
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.710
+!MESSAGE Preparing classpath changed notification PCOP_Pay
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.731
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.FRLsXqmp => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.743
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.759
+!MESSAGE classpath=20 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.774
+!MESSAGE buffering callback sts4.classpath.FRLsXqmp PCOP_Pay false 20
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.794
+!MESSAGE executing callback sts4.classpath.FRLsXqmp 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:39:06.878
+!MESSAGE executing callback sts4.classpath.FRLsXqmp SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:59:34.128
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.FRLsXqmp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:59:34.153
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.FRLsXqmp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:59:34.178
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-09 20:59:34.196
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.FRLsXqmp => OK
+!SESSION 2019-10-10 15:41:56.981 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-10 15:42:21.682
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-10-10 15:42:23.162
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-10 15:42:23.162
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@206a465f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c509742,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:42:45.773
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:42:46.062
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@111c9be[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=1092)]
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-10 15:42:46.323
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\단무쥐'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:42:46.507
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:42:47.128
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:00.609
+!MESSAGE Boot LS startup time from start to initialized: 13611ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:00.741
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.COJUAgngisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:00.799
+!MESSAGE subscribing to classpath changes: sts4.classpath.COJUAgng isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:00.845
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:00.865
+!MESSAGE subsribers = {sts4.classpath.COJUAgng=Send Classpath Notifications(811)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:00.883
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:00.971
+!MESSAGE project PCOP_Pay ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:01.005
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:01.067
+!MESSAGE Preparing classpath changed notification PCOP_Pay
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:01.093
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.COJUAgng => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:01.112
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:01.154
+!MESSAGE classpath=20 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:01.221
+!MESSAGE buffering callback sts4.classpath.COJUAgng PCOP_Pay false 20
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:01.236
+!MESSAGE executing callback sts4.classpath.COJUAgng 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 15:43:01.359
+!MESSAGE executing callback sts4.classpath.COJUAgng SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-10-10 16:18:59.350
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.jdt.debug 2 0 2019-10-10 18:40:29.545
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-10-10 22:36:40.792
+!MESSAGE Connection to https://spring.io/blog.atom failed on spring.io. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: spring.io
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-10-10 22:36:41.614
+!MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: dist.springsource.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-10-10 23:37:05.935
+!MESSAGE Connection to https://spring.io/blog.atom failed on spring.io. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: spring.io
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-10-10 23:37:06.014
+!MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: dist.springsource.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1000)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:992)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 23:40:13.431
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.COJUAgng
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 23:40:13.463
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.COJUAgng
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 23:40:13.478
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-10 23:40:13.541
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.COJUAgng => OK
+!SESSION 2019-10-18 12:00:01.178 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-18 12:00:23.375
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-10-18 12:00:24.952
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-18 12:00:24.952
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d12eff1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@206a465f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:00:46.057
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:00:46.150
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7de1cc9f[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=1092)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:00:46.434
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-18 12:00:46.583
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\단무쥐'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:00:46.921
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:02.715
+!MESSAGE Boot LS startup time from start to initialized: 16129ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:02.887
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VPxOvonDisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:03.375
+!MESSAGE subscribing to classpath changes: sts4.classpath.VPxOvonD isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:03.632
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:04.076
+!MESSAGE subsribers = {sts4.classpath.VPxOvonD=Send Classpath Notifications(814)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:04.761
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:04.933
+!MESSAGE project PCOP_Pay ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:05.171
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:05.186
+!MESSAGE Preparing classpath changed notification PCOP_Pay
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:05.251
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VPxOvonD => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:05.280
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:05.298
+!MESSAGE classpath=20 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:05.334
+!MESSAGE buffering callback sts4.classpath.VPxOvonD PCOP_Pay false 20
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:05.354
+!MESSAGE executing callback sts4.classpath.VPxOvonD 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:01:05.403
+!MESSAGE executing callback sts4.classpath.VPxOvonD SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:31:54.506
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VPxOvonD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:31:54.584
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.VPxOvonD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:31:54.600
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-18 12:31:54.631
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VPxOvonD => OK
+!SESSION 2019-10-26 23:33:14.843 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-26 23:33:34.901
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-10-26 23:33:36.362
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-26 23:33:36.362
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c509742,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@77a6aa9f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:49.187
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:49.296
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1b596e21[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=1092)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:50.530
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-26 23:33:50.983
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\단무쥐'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:51.639
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-10-26 23:33:53.054
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.022
+!MESSAGE Boot LS startup time from start to initialized: 7023ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-10-26 23:33:58.101
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.lambda$11(LSPTextHover.java:237)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.lambda$10(LSPTextHover.java:246)
+	at java.util.concurrent.CompletableFuture.uniApply(Unknown Source)
+	at java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source)
+	at java.util.concurrent.CompletableFuture$Completion.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:241)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.115
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IdFTbglmisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.153
+!MESSAGE subscribing to classpath changes: sts4.classpath.IdFTbglm isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.166
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.185
+!MESSAGE subsribers = {sts4.classpath.IdFTbglm=Send Classpath Notifications(102)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.195
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.211
+!MESSAGE project PCOP_Pay ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.227
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.243
+!MESSAGE Preparing classpath changed notification PCOP_Pay
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.256
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IdFTbglm => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.267
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.293
+!MESSAGE classpath=20 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.309
+!MESSAGE buffering callback sts4.classpath.IdFTbglm PCOP_Pay false 20
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.321
+!MESSAGE executing callback sts4.classpath.IdFTbglm 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:33:58.372
+!MESSAGE executing callback sts4.classpath.IdFTbglm SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:34:59.366
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IdFTbglm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:34:59.414
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.IdFTbglm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:34:59.427
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-26 23:34:59.445
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IdFTbglm => OK
+!SESSION 2019-11-01 10:32:04.192 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-11-01 10:32:31.333
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-11-01 10:32:32.999
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-11-01 10:32:32.999
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c509742,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@77a6aa9f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:32:57.112
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:32:57.538
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1b596e21[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=1092)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:32:57.943
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:32:58.185
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-11-01 10:32:59.053
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-01 10:32:59.951
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\단무쥐'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.199
+!MESSAGE Boot LS startup time from start to initialized: 11143ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-11-01 10:33:09.299
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.lambda$11(LSPTextHover.java:237)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.lambda$10(LSPTextHover.java:246)
+	at java.util.concurrent.CompletableFuture.uniApply(Unknown Source)
+	at java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source)
+	at java.util.concurrent.CompletableFuture$Completion.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:241)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.317
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IatEKdymisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.333
+!MESSAGE subscribing to classpath changes: sts4.classpath.IatEKdym isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.356
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.370
+!MESSAGE subsribers = {sts4.classpath.IatEKdym=Send Classpath Notifications(827)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.423
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.447
+!MESSAGE project PCOP_Pay ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.463
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.475
+!MESSAGE Preparing classpath changed notification PCOP_Pay
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.493
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IatEKdym => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.511
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.574
+!MESSAGE classpath=20 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.587
+!MESSAGE buffering callback sts4.classpath.IatEKdym PCOP_Pay false 20
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.607
+!MESSAGE executing callback sts4.classpath.IatEKdym 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:09.654
+!MESSAGE executing callback sts4.classpath.IatEKdym SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:46.834
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IatEKdym
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:46.890
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.IatEKdym
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:46.946
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:33:46.964
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IatEKdym => OK
+!SESSION 2019-11-01 10:36:54.127 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-11-01 10:37:56.703
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-11-01 10:37:57.974
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-11-01 10:37:57.974
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@60eb9c29,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@51bba775,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-01 10:38:04.457
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JSY'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:26.464
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:26.465
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@759b382c[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=1092)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:26.469
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:26.514
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-11-01 10:38:30.559
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.362
+!MESSAGE Boot LS startup time from start to initialized: 4885ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-11-01 10:38:31.408
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.lambda$11(LSPTextHover.java:237)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.lambda$10(LSPTextHover.java:246)
+	at java.util.concurrent.CompletableFuture.uniApply(Unknown Source)
+	at java.util.concurrent.CompletableFuture$UniApply.tryFire(Unknown Source)
+	at java.util.concurrent.CompletableFuture$Completion.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:241)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.417
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.hOLlQkpmisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.418
+!MESSAGE subscribing to classpath changes: sts4.classpath.hOLlQkpm isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.421
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.424
+!MESSAGE subsribers = {sts4.classpath.hOLlQkpm=Send Classpath Notifications(826)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.424
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.427
+!MESSAGE project PCOP_Pay ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.428
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.428
+!MESSAGE Preparing classpath changed notification PCOP_Pay
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.429
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.hOLlQkpm => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.429
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.434
+!MESSAGE classpath=20 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.436
+!MESSAGE buffering callback sts4.classpath.hOLlQkpm PCOP_Pay false 20
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.437
+!MESSAGE executing callback sts4.classpath.hOLlQkpm 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 10:38:31.459
+!MESSAGE executing callback sts4.classpath.hOLlQkpm SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-11-01 10:38:42.110
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 11:20:42.367
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.hOLlQkpm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 11:20:42.367
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.hOLlQkpm
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 11:20:42.367
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-01 11:20:42.367
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.hOLlQkpm => OK
+!SESSION 2019-11-01 11:30:12.814 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-01 11:31:38.838
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\353ST050'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-11-03 21:39:20.766 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2019-11-03 21:40:08.882
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-11-03 21:40:08.882
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-11-03 21:40:09.881
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-11-03 21:40:09.881
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-03 21:40:24.916
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-11-08 00:36:17.216 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 4 567 2019-11-08 00:36:54.739
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2019-11-08 00:36:54.739
+!MESSAGE Could not read metadata for 'PCOP_Pay'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/PCOP_Pay)[567]: java.lang.Exception: The project description file (.project) for 'PCOP_Pay' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1557)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2454)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2211)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:472)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2019-11-08 00:36:54.740
+!MESSAGE The project description file (.project) for 'PCOP_Pay' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'PCOP_Pay' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1557)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2454)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2211)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:472)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.ui 2 0 2019-11-08 00:36:55.781
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-11-08 00:36:55.782
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-11-08 00:36:56.485
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-11-08 00:36:56.485
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-08 00:37:11.786
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-11-08 01:09:39.863 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2019-11-08 01:09:52.701
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-11-08 01:09:52.701
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-11-08 01:09:53.389
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-11-08 01:09:53.389
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-08 01:10:11.864
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-11-08 10:44:31.022 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2019-11-08 10:44:49.440
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-11-08 10:44:49.440
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-11-08 10:44:50.096
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-11-08 10:44:50.096
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-08 10:45:05.908
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-11-08 10:59:30.173 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2019-11-08 10:59:48.028
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-11-08 10:59:48.028
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-11-08 10:59:48.762
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-11-08 10:59:48.762
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-08 11:00:07.813
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-12-17 03:09:26.961 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2019-12-17 03:09:47.534
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-17 03:09:47.534
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-12-17 03:09:48.175
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-17 03:09:48.175
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-17 03:10:06.056
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-12-17 23:19:10.186 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2019-12-17 23:19:39.539
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-17 23:19:39.539
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-12-17 23:19:40.273
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-17 23:19:40.273
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-17 23:20:01.695
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-12-18 04:31:18.924 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2019-12-18 04:31:38.575
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-18 04:31:38.575
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-12-18 04:31:39.309
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-18 04:31:39.309
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-18 04:31:57.779
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2019-12-18 05:02:49.374
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package pay;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.ComponentOrientation;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextPane;
+import javax.swing.UIManager;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
+import javax.swing.text.SimpleAttributeSet;
+import javax.swing.text.StyleConstants;
+import javax.swing.text.StyledDocument;
+
+import pcop.dao.Member_DAO;
+import pcop.dto.Member_DTO;
+
+public class Charge extends JPanel {
+	int x = (int) Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+	int y = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight();
+	int Blue_Line_X = x / 2 + 50, Blue_Line_Y = y - 55;
+	int Pay_Label_X = Blue_Line_X / 2 - 40, Pay_Label_Y = Blue_Line_Y / 4 - 40;
+	int Info_W = x - (x / 2 + 100), Info_H = y / 2;
+	int Info_X = x - (x - (x / 2 + 100 - 17)), Info_Y = 80;
+	int btn_W = Info_W / 2, btn_H = (Blue_Line_Y - (Info_H + 80)) / 2;
+
+	private MainFrame win;
+	private Font font_L = new Font("맑은 고딕", Font.BOLD, 35 + y / 250);
+	private Font font_M = new Font("맑은 고딕", Font.BOLD, 30 + y / 250);
+	private Font font_S = new Font("맑은 고딕", Font.BOLD, 15 + y / 250);
+
+	private JLabel label, lbl_Charge, lbl_SeatState;
+	private JLabel[][] lbl_Pay;
+	private JTextArea textArea, textInfo;
+	private JTextArea[][] textPay;
+	private JButton btn_Charge, btn_SeatState, btn_Money, btn_Card, btn_Recharge, btn_Receipt;
+	private JTextPane output = new JTextPane();
+	private SimpleAttributeSet attribs = new SimpleAttributeSet();
+
+	private Image Coin = new ImageIcon("image/Coin.png").getImage();
+	private ImageIcon icon_Charge_s = new ImageIcon("image/selected/Charge_s.png");
+	private ImageIcon icon_SeatState = new ImageIcon("image/noselected/SeatState.png");
+	private ImageIcon icon_SeatState_s = new ImageIcon("image/selected/SeatState_s.png");
+
+	private ImageIcon Money_Before = new ImageIcon("image/noselected/Money.png");
+	private Image Money_Before_i = Money_Before.getImage();
+	private Image Money_Before_ch = Money_Before_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Money = new ImageIcon(Money_Before_ch);
+
+	private ImageIcon Money_s_Before = new ImageIcon("image/selected/Money_s.png");
+	private Image Money_s_i = Money_s_Before.getImage();
+	private Image Money_s_ch = Money_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Money_s = new ImageIcon(Money_s_ch);
+
+	private ImageIcon Card_Before = new ImageIcon("image/noselected/Card.png");
+	private Image Card_i = Card_Before.getImage();
+	private Image Card_ch = Card_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Card = new ImageIcon(Card_ch);
+
+	private ImageIcon Card_s_Before = new ImageIcon("image/selected/Card_s.png");
+	private Image Card_s_i = Card_s_Before.getImage();
+	private Image Card_s_ch = Card_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Card_s = new ImageIcon(Card_s_ch);
+
+	private ImageIcon ReCharge_Before = new ImageIcon("image/noselected/ReCharge.png");
+	private Image ReCharge_i = ReCharge_Before.getImage();
+	private Image ReCharge_ch = ReCharge_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon ReCharge = new ImageIcon(ReCharge_ch);
+
+	private ImageIcon ReCharge_s_Before = new ImageIcon("image/selected/ReCharge_s.png");
+	private Image ReCharge_s_i = ReCharge_s_Before.getImage();
+	private Image ReCharge_s_ch = ReCharge_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon ReCharge_s = new ImageIcon(ReCharge_s_ch);
+
+	private ImageIcon Receipt_Before = new ImageIcon("image/noselected/Receipt.png");
+	private Image Receipt_i = Receipt_Before.getImage();
+	private Image Receipt_ch = Receipt_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Receipt = new ImageIcon(Receipt_ch);
+
+	private ImageIcon Receipt_s_Before = new ImageIcon("image/selected/Receipt_s.png");
+	private Image Receipt_s_i = Receipt_s_Before.getImage();
+	private Image Receipt_s_ch = Receipt_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Receipt_s = new ImageIcon(Receipt_s_ch);
+
+	private String[][] Pay;
+	private Member_DAO mDao = new Member_DAO();
+	private Member_DTO mDto = null;
+
+	private String[] Charge_Price = new String[] {};
+
+	public Charge(MainFrame win) {
+
+		setLayout(null);
+		this.win = win;
+		setBackground(new java.awt.Color(50, 50, 52));
+		UIManager UI = new UIManager();
+		UI.put("OptionPane.background", new java.awt.Color(50, 50, 52));
+		UI.put("Panel.background", new java.awt.Color(50, 50, 52));
+		UI.put("OptionPane.messageFont", font_S);
+		UI.put("OptionPane.messageForeground", Color.WHITE);
+		UI.put("OptionPane.buttonFont", font_S);
+
+		/* Button - 요금충전 */
+		btn_Charge = new JButton(icon_Charge_s);
+		btn_Charge.setBorderPainted(false);
+		btn_Charge.setFocusPainted(false);
+		btn_Charge.setContentAreaFilled(false);
+		btn_Charge.setBounds(x - 340, 20, 150, 40);
+
+		add(btn_Charge);
+
+		/* Label - '/' */
+		label = new JLabel("/");
+		label.setFont(font_L);
+		label.setBounds(x - 185, 15, 50, 40);
+		label.setForeground(Color.WHITE);
+
+		add(label);
+
+		/* Button - 좌석현황 */
+		btn_SeatState = new JButton(icon_SeatState);
+		btn_SeatState.setSelectedIcon(icon_SeatState_s);
+		btn_SeatState.setRolloverIcon(icon_SeatState_s);
+		btn_SeatState.setBorderPainted(false);
+		btn_SeatState.setFocusPainted(false);
+		btn_SeatState.setContentAreaFilled(false);
+		btn_SeatState.setBounds(x - 170, 20, 150, 40);
+		btn_SeatState.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				win.Change("SeatState");
+			}
+		});
+
+		add(btn_SeatState);
+
+		/* TextArea - 충전하는 회원 정보 */
+		textInfo = new JTextArea();
+		textInfo.setBounds(Info_X, Info_Y, Info_W, Info_H);
+		textInfo.setFont(font_M);
+		textInfo.setEditable(false);
+		textInfo.setBackground(Color.LIGHT_GRAY);
+		textInfo.setBorder(new LineBorder(Color.DARK_GRAY, 5));
+
+		add(textInfo);
+
+		/* Label - 요금 목록 */
+		Pay = new String[2][4];
+		Pay[0][0] = "1000원 0:50";
+		Pay[0][1] = "2000원 1:50";
+		Pay[0][2] = "3000원 3:00";
+		Pay[0][3] = "5000원 6:00";
+		Pay[1][0] = "10000원 15:00";
+		Pay[1][1] = "20000원 35:00";
+		Pay[1][2] = "50000원 100:00";
+		lbl_Pay = new JLabel[2][4];
+		int textX = 25, textY = 30;
+		for (int i = 0; i < 2; i++) {
+			for (int j = 0; j < 4; j++) {
+				lbl_Pay[i][j] = new JLabel(Pay[i][j]);
+				lbl_Pay[i][j].setBounds(textX, textY, Pay_Label_X, Pay_Label_Y);
+				lbl_Pay[i][j].setFont(font_L);
+				lbl_Pay[i][j].setOpaque(true);
+				lbl_Pay[i][j].setHorizontalAlignment(getWidth() / 2);
+				lbl_Pay[i][j].setBackground(new java.awt.Color(227, 225, 230));
+				lbl_Pay[i][j].setBorder(new LineBorder(Color.DARK_GRAY, 5));
+				lbl_Pay[i][j].addMouseListener(new MouseAdapter() {
+					public void mouseClicked(MouseEvent e) {
+						JLabel lbl = (JLabel) e.getSource();
+						Charge_Price = lbl.getText().split(" ");
+
+						if (mDto == null) {
+							String mID = JOptionPane.showInputDialog("충전하는 회원의 ID를 입력하세요");
+							mDto = mDao.GetMemberInfo(mID);
+							if (mDto == null) {
+								JOptionPane.showMessageDialog(null, "존재하지 않는 회원입니다", "오류",
+										JOptionPane.INFORMATION_MESSAGE);
+							} else {
+								textInfo.setText("\r\n회원ID: " + mDto.getM_ID() + "\r\n\r\n남은 시간: "
+										+ mDto.getM_REMAIN_TIME() + "\r\n\r\n선택 요금 정보: " + lbl.getText().toString());
+							}
+						} else {
+							textInfo.setText("");
+							textInfo.setText("\r\n회원ID: " + mDto.getM_ID() + "\r\n\r\n남은 시간: " + mDto.getM_REMAIN_TIME()
+									+ "\r\n\r\n선택 요금 정보: " + lbl.getText().toString());
+						}
+					}
+				});
+
+				add(lbl_Pay[i][j]);
+				textY += (Pay_Label_Y + (Blue_Line_Y - (30 + 4 * (Pay_Label_Y))) / 3);
+			}
+			textY = 30;
+			textX += (Pay_Label_X + (Blue_Line_X - 2 * (15 + Pay_Label_X)));
+		}
+
+		/* TextArea - 요금 뒤에 테두리 */
+		textArea = new JTextArea();
+		textArea.setBounds(10, 15, Blue_Line_X, Blue_Line_Y);
+		textArea.setFont(font_L);
+		textArea.setEditable(false);
+		textArea.setBackground(new java.awt.Color(50, 50, 52));
+		textArea.setBorder(new LineBorder(new java.awt.Color(0, 152, 230), 5));
+
+		add(textArea);
+
+		/* Button - 현금결제 */
+		btn_Money = new JButton(Money);
+		btn_Money.setSelectedIcon(Money_s);
+		btn_Money.setRolloverIcon(Money_s);
+		btn_Money.setBorderPainted(false);
+		btn_Money.setFocusPainted(false);
+		btn_Money.setContentAreaFilled(false);
+		btn_Money.setBounds(Info_X, Info_Y + Info_H + 10, btn_W, btn_H);
+		btn_Money.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "현금을 넣어주세요", "결제", JOptionPane.INFORMATION_MESSAGE);
+				Charge();
+				boolean result = mDao.ChargeMoney(mDto);
+				if (result) {
+					JOptionPane.showMessageDialog(null, "충전이 완료되었습니다", "결제 완료", JOptionPane.INFORMATION_MESSAGE);
+					mDto = null;
+					textInfo.setText("");
+				} else {
+					JOptionPane.showMessageDialog(null, "오류가 발생하였습니다", "오류", JOptionPane.INFORMATION_MESSAGE);
+				}
+			}
+		});
+
+		add(btn_Money);
+
+		/* Button - 카드결제 */
+		btn_Card = new JButton(Card);
+		btn_Card.setSelectedIcon(Card_s);
+		btn_Card.setRolloverIcon(Card_s);
+		btn_Card.setBorderPainted(false);
+		btn_Card.setFocusPainted(false);
+		btn_Card.setContentAreaFilled(false);
+		btn_Card.setBounds(Info_X + Info_W / 2, Info_Y + Info_H + 10, btn_W, btn_H);
+		btn_Card.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "카드를 꽂아주세요", "결제", JOptionPane.INFORMATION_MESSAGE);
+				Charge();
+				boolean result = mDao.ChargeMoney(mDto);
+				if (result) {
+					JOptionPane.showMessageDialog(null, "충전이 완료되었습니다", "결제 완료", JOptionPane.INFORMATION_MESSAGE);
+					mDto = null;
+					textInfo.setText("");
+				} else {
+					JOptionPane.showMessageDialog(null, "오류가 발생하였습니다", "오류", JOptionPane.INFORMATION_MESSAGE);
+				}
+			}
+		});
+
+		add(btn_Card);
+
+		/* Button - 잔돈반환 */
+		btn_Recharge = new JButton(ReCharge);
+		btn_Recharge.setSelectedIcon(ReCharge_s);
+		btn_Recharge.setRolloverIcon(ReCharge_s);
+		btn_Recharge.setBorderPainted(false);
+		btn_Recharge.setFocusPainted(false);
+		btn_Recharge.setContentAreaFilled(false);
+		btn_Recharge.setBounds(Info_X, (Info_Y + Info_H) + Pay_Label_Y, btn_W, btn_H);
+		btn_Recharge.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				textInfo = new JTextArea() {
+					private static final long ser
+					public void paintComponent(Graphics g) {
+						//for (int i = 0; i < 10; i++) {
+							//g.drawImage(Coin, 0, 0, null);// 이미지나 그림을 그린다.
+						//}
+						g.drawRect(10, 10, 20, 20);
+						super.paintComponent(g);
+					}
+				};
+				textInfo.setOpaque(false);
+				textInfo.setLineWrap(true);
+				textInfo.setWrapStyleWord(true);
+				JOptionPane.showMessageDialog(null, "잔돈이 반환되었습니다", "잔돈반환 완료", JOptionPane.INFORMATION_MESSAGE);
+				textInfo.setText("");
+			}
+		});
+
+		add(btn_Recharge);
+
+		/* Button - 현금결제 */
+		btn_Receipt = new JButton(Receipt);
+		btn_Receipt.setSelectedIcon(Receipt_s);
+		btn_Receipt.setRolloverIcon(Receipt_s);
+		btn_Receipt.setBorderPainted(false);
+		btn_Receipt.setFocusPainted(false);
+		btn_Receipt.setContentAreaFilled(false);
+		btn_Receipt.setBounds(Info_X + Info_W / 2, (Info_Y + Info_H) + Pay_Label_Y, btn_W, btn_H);
+		btn_Receipt.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				textInfo.setText("\r\n지-지직 지잉");
+				JOptionPane.showMessageDialog(null, "영수증이 출력되었습니다", "영수증 출력 완료", JOptionPane.INFORMATION_MESSAGE);
+				textInfo.setText("");
+			}
+		});
+
+		add(btn_Receipt);
+	}
+
+	// 해당 회원 금액 충전
+	public void Charge() {
+		String[] remain_s = mDto.getM_REMAIN_TIME().split(":");
+		String[] charge_s = Charge_Price[1].split(":");
+		int remainMoney = mDto.getUSED_MONEY();
+		String chMoney = Charge_Price[0].replace("원", "");
+		int chargeMoney = Integer.parseInt(chMoney);
+		int[] remain_i = new int[] { Integer.parseInt(remain_s[0]), Integer.parseInt(remain_s[1]) };
+		int[] charge_i = new int[] { Integer.parseInt(charge_s[0]), Integer.parseInt(charge_s[1]) };
+		int[] result_i = new int[] { (remain_i[0] + charge_i[0]), (remain_i[1] + charge_i[1]) };
+
+		if (result_i[1] >= 60) {
+			result_i[0] += result_i[1] / 60;
+			result_i[1] = result_i[1] % 60;
+		}
+
+		mDto.setM_REMAIN_TIME(result_i[0] + ":" + result_i[1]);
+		mDto.setUSED_MONEY(mDto.getUSED_MONEY() + chargeMoney);
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3008)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToFieldDeclaration(ASTConverter.java:3378)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleFieldDeclaration(ASTConverter.java:456)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:337)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1113)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1811)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:344)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2263)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1877)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:205)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3115)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1439)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:392)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:200)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1138)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1315)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2019-12-18 05:02:49.408
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3008)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToFieldDeclaration(ASTConverter.java:3378)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleFieldDeclaration(ASTConverter.java:456)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:337)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1113)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1811)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:344)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2263)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1877)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:205)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3115)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1439)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:392)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:200)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1138)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1315)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2019-12-18 05:02:49.429
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3008)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToFieldDeclaration(ASTConverter.java:3378)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleFieldDeclaration(ASTConverter.java:456)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:337)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1113)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1811)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:344)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2263)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1877)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:205)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3115)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1439)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:392)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:200)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1138)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1315)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.core 4 4 2019-12-18 05:02:50.479
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package pay;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.ComponentOrientation;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextPane;
+import javax.swing.UIManager;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
+import javax.swing.text.SimpleAttributeSet;
+import javax.swing.text.StyleConstants;
+import javax.swing.text.StyledDocument;
+
+import pcop.dao.Member_DAO;
+import pcop.dto.Member_DTO;
+
+public class Charge extends JPanel {
+	int x = (int) Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+	int y = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight();
+	int Blue_Line_X = x / 2 + 50, Blue_Line_Y = y - 55;
+	int Pay_Label_X = Blue_Line_X / 2 - 40, Pay_Label_Y = Blue_Line_Y / 4 - 40;
+	int Info_W = x - (x / 2 + 100), Info_H = y / 2;
+	int Info_X = x - (x - (x / 2 + 100 - 17)), Info_Y = 80;
+	int btn_W = Info_W / 2, btn_H = (Blue_Line_Y - (Info_H + 80)) / 2;
+
+	private MainFrame win;
+	private Font font_L = new Font("맑은 고딕", Font.BOLD, 35 + y / 250);
+	private Font font_M = new Font("맑은 고딕", Font.BOLD, 30 + y / 250);
+	private Font font_S = new Font("맑은 고딕", Font.BOLD, 15 + y / 250);
+
+	private JLabel label, lbl_Charge, lbl_SeatState;
+	private JLabel[][] lbl_Pay;
+	private JTextArea textArea, textInfo;
+	private JTextArea[][] textPay;
+	private JButton btn_Charge, btn_SeatState, btn_Money, btn_Card, btn_Recharge, btn_Receipt;
+	private JTextPane output = new JTextPane();
+	private SimpleAttributeSet attribs = new SimpleAttributeSet();
+
+	private Image Coin = new ImageIcon("image/Coin.png").getImage();
+	private ImageIcon icon_Charge_s = new ImageIcon("image/selected/Charge_s.png");
+	private ImageIcon icon_SeatState = new ImageIcon("image/noselected/SeatState.png");
+	private ImageIcon icon_SeatState_s = new ImageIcon("image/selected/SeatState_s.png");
+
+	private ImageIcon Money_Before = new ImageIcon("image/noselected/Money.png");
+	private Image Money_Before_i = Money_Before.getImage();
+	private Image Money_Before_ch = Money_Before_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Money = new ImageIcon(Money_Before_ch);
+
+	private ImageIcon Money_s_Before = new ImageIcon("image/selected/Money_s.png");
+	private Image Money_s_i = Money_s_Before.getImage();
+	private Image Money_s_ch = Money_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Money_s = new ImageIcon(Money_s_ch);
+
+	private ImageIcon Card_Before = new ImageIcon("image/noselected/Card.png");
+	private Image Card_i = Card_Before.getImage();
+	private Image Card_ch = Card_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Card = new ImageIcon(Card_ch);
+
+	private ImageIcon Card_s_Before = new ImageIcon("image/selected/Card_s.png");
+	private Image Card_s_i = Card_s_Before.getImage();
+	private Image Card_s_ch = Card_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Card_s = new ImageIcon(Card_s_ch);
+
+	private ImageIcon ReCharge_Before = new ImageIcon("image/noselected/ReCharge.png");
+	private Image ReCharge_i = ReCharge_Before.getImage();
+	private Image ReCharge_ch = ReCharge_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon ReCharge = new ImageIcon(ReCharge_ch);
+
+	private ImageIcon ReCharge_s_Before = new ImageIcon("image/selected/ReCharge_s.png");
+	private Image ReCharge_s_i = ReCharge_s_Before.getImage();
+	private Image ReCharge_s_ch = ReCharge_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon ReCharge_s = new ImageIcon(ReCharge_s_ch);
+
+	private ImageIcon Receipt_Before = new ImageIcon("image/noselected/Receipt.png");
+	private Image Receipt_i = Receipt_Before.getImage();
+	private Image Receipt_ch = Receipt_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Receipt = new ImageIcon(Receipt_ch);
+
+	private ImageIcon Receipt_s_Before = new ImageIcon("image/selected/Receipt_s.png");
+	private Image Receipt_s_i = Receipt_s_Before.getImage();
+	private Image Receipt_s_ch = Receipt_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Receipt_s = new ImageIcon(Receipt_s_ch);
+
+	private String[][] Pay;
+	private Member_DAO mDao = new Member_DAO();
+	private Member_DTO mDto = null;
+
+	private String[] Charge_Price = new String[] {};
+
+	public Charge(MainFrame win) {
+
+		setLayout(null);
+		this.win = win;
+		setBackground(new java.awt.Color(50, 50, 52));
+		UIManager UI = new UIManager();
+		UI.put("OptionPane.background", new java.awt.Color(50, 50, 52));
+		UI.put("Panel.background", new java.awt.Color(50, 50, 52));
+		UI.put("OptionPane.messageFont", font_S);
+		UI.put("OptionPane.messageForeground", Color.WHITE);
+		UI.put("OptionPane.buttonFont", font_S);
+
+		/* Button - 요금충전 */
+		btn_Charge = new JButton(icon_Charge_s);
+		btn_Charge.setBorderPainted(false);
+		btn_Charge.setFocusPainted(false);
+		btn_Charge.setContentAreaFilled(false);
+		btn_Charge.setBounds(x - 340, 20, 150, 40);
+
+		add(btn_Charge);
+
+		/* Label - '/' */
+		label = new JLabel("/");
+		label.setFont(font_L);
+		label.setBounds(x - 185, 15, 50, 40);
+		label.setForeground(Color.WHITE);
+
+		add(label);
+
+		/* Button - 좌석현황 */
+		btn_SeatState = new JButton(icon_SeatState);
+		btn_SeatState.setSelectedIcon(icon_SeatState_s);
+		btn_SeatState.setRolloverIcon(icon_SeatState_s);
+		btn_SeatState.setBorderPainted(false);
+		btn_SeatState.setFocusPainted(false);
+		btn_SeatState.setContentAreaFilled(false);
+		btn_SeatState.setBounds(x - 170, 20, 150, 40);
+		btn_SeatState.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				win.Change("SeatState");
+			}
+		});
+
+		add(btn_SeatState);
+
+		/* TextArea - 충전하는 회원 정보 */
+		textInfo = new JTextArea();
+		textInfo.setBounds(Info_X, Info_Y, Info_W, Info_H);
+		textInfo.setFont(font_M);
+		textInfo.setEditable(false);
+		textInfo.setBackground(Color.LIGHT_GRAY);
+		textInfo.setBorder(new LineBorder(Color.DARK_GRAY, 5));
+
+		add(textInfo);
+
+		/* Label - 요금 목록 */
+		Pay = new String[2][4];
+		Pay[0][0] = "1000원 0:50";
+		Pay[0][1] = "2000원 1:50";
+		Pay[0][2] = "3000원 3:00";
+		Pay[0][3] = "5000원 6:00";
+		Pay[1][0] = "10000원 15:00";
+		Pay[1][1] = "20000원 35:00";
+		Pay[1][2] = "50000원 100:00";
+		lbl_Pay = new JLabel[2][4];
+		int textX = 25, textY = 30;
+		for (int i = 0; i < 2; i++) {
+			for (int j = 0; j < 4; j++) {
+				lbl_Pay[i][j] = new JLabel(Pay[i][j]);
+				lbl_Pay[i][j].setBounds(textX, textY, Pay_Label_X, Pay_Label_Y);
+				lbl_Pay[i][j].setFont(font_L);
+				lbl_Pay[i][j].setOpaque(true);
+				lbl_Pay[i][j].setHorizontalAlignment(getWidth() / 2);
+				lbl_Pay[i][j].setBackground(new java.awt.Color(227, 225, 230));
+				lbl_Pay[i][j].setBorder(new LineBorder(Color.DARK_GRAY, 5));
+				lbl_Pay[i][j].addMouseListener(new MouseAdapter() {
+					public void mouseClicked(MouseEvent e) {
+						JLabel lbl = (JLabel) e.getSource();
+						Charge_Price = lbl.getText().split(" ");
+
+						if (mDto == null) {
+							String mID = JOptionPane.showInputDialog("충전하는 회원의 ID를 입력하세요");
+							mDto = mDao.GetMemberInfo(mID);
+							if (mDto == null) {
+								JOptionPane.showMessageDialog(null, "존재하지 않는 회원입니다", "오류",
+										JOptionPane.INFORMATION_MESSAGE);
+							} else {
+								textInfo.setText("\r\n회원ID: " + mDto.getM_ID() + "\r\n\r\n남은 시간: "
+										+ mDto.getM_REMAIN_TIME() + "\r\n\r\n선택 요금 정보: " + lbl.getText().toString());
+							}
+						} else {
+							textInfo.setText("");
+							textInfo.setText("\r\n회원ID: " + mDto.getM_ID() + "\r\n\r\n남은 시간: " + mDto.getM_REMAIN_TIME()
+									+ "\r\n\r\n선택 요금 정보: " + lbl.getText().toString());
+						}
+					}
+				});
+
+				add(lbl_Pay[i][j]);
+				textY += (Pay_Label_Y + (Blue_Line_Y - (30 + 4 * (Pay_Label_Y))) / 3);
+			}
+			textY = 30;
+			textX += (Pay_Label_X + (Blue_Line_X - 2 * (15 + Pay_Label_X)));
+		}
+
+		/* TextArea - 요금 뒤에 테두리 */
+		textArea = new JTextArea();
+		textArea.setBounds(10, 15, Blue_Line_X, Blue_Line_Y);
+		textArea.setFont(font_L);
+		textArea.setEditable(false);
+		textArea.setBackground(new java.awt.Color(50, 50, 52));
+		textArea.setBorder(new LineBorder(new java.awt.Color(0, 152, 230), 5));
+
+		add(textArea);
+
+		/* Button - 현금결제 */
+		btn_Money = new JButton(Money);
+		btn_Money.setSelectedIcon(Money_s);
+		btn_Money.setRolloverIcon(Money_s);
+		btn_Money.setBorderPainted(false);
+		btn_Money.setFocusPainted(false);
+		btn_Money.setContentAreaFilled(false);
+		btn_Money.setBounds(Info_X, Info_Y + Info_H + 10, btn_W, btn_H);
+		btn_Money.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "현금을 넣어주세요", "결제", JOptionPane.INFORMATION_MESSAGE);
+				Charge();
+				boolean result = mDao.ChargeMoney(mDto);
+				if (result) {
+					JOptionPane.showMessageDialog(null, "충전이 완료되었습니다", "결제 완료", JOptionPane.INFORMATION_MESSAGE);
+					mDto = null;
+					textInfo.setText("");
+				} else {
+					JOptionPane.showMessageDialog(null, "오류가 발생하였습니다", "오류", JOptionPane.INFORMATION_MESSAGE);
+				}
+			}
+		});
+
+		add(btn_Money);
+
+		/* Button - 카드결제 */
+		btn_Card = new JButton(Card);
+		btn_Card.setSelectedIcon(Card_s);
+		btn_Card.setRolloverIcon(Card_s);
+		btn_Card.setBorderPainted(false);
+		btn_Card.setFocusPainted(false);
+		btn_Card.setContentAreaFilled(false);
+		btn_Card.setBounds(Info_X + Info_W / 2, Info_Y + Info_H + 10, btn_W, btn_H);
+		btn_Card.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "카드를 꽂아주세요", "결제", JOptionPane.INFORMATION_MESSAGE);
+				Charge();
+				boolean result = mDao.ChargeMoney(mDto);
+				if (result) {
+					JOptionPane.showMessageDialog(null, "충전이 완료되었습니다", "결제 완료", JOptionPane.INFORMATION_MESSAGE);
+					mDto = null;
+					textInfo.setText("");
+				} else {
+					JOptionPane.showMessageDialog(null, "오류가 발생하였습니다", "오류", JOptionPane.INFORMATION_MESSAGE);
+				}
+			}
+		});
+
+		add(btn_Card);
+
+		/* Button - 잔돈반환 */
+		btn_Recharge = new JButton(ReCharge);
+		btn_Recharge.setSelectedIcon(ReCharge_s);
+		btn_Recharge.setRolloverIcon(ReCharge_s);
+		btn_Recharge.setBorderPainted(false);
+		btn_Recharge.setFocusPainted(false);
+		btn_Recharge.setContentAreaFilled(false);
+		btn_Recharge.setBounds(Info_X, (Info_Y + Info_H) + Pay_Label_Y, btn_W, btn_H);
+		btn_Recharge.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				textInfo = new JTextArea() {
+					private static final long serial 
+					public void paintComponent(Graphics g) {
+						//for (int i = 0; i < 10; i++) {
+							//g.drawImage(Coin, 0, 0, null);// 이미지나 그림을 그린다.
+						//}
+						g.drawRect(10, 10, 20, 20);
+						super.paintComponent(g);
+					}
+				};
+				textInfo.setOpaque(false);
+				textInfo.setLineWrap(true);
+				textInfo.setWrapStyleWord(true);
+				JOptionPane.showMessageDialog(null, "잔돈이 반환되었습니다", "잔돈반환 완료", JOptionPane.INFORMATION_MESSAGE);
+				textInfo.setText("");
+			}
+		});
+
+		add(btn_Recharge);
+
+		/* Button - 현금결제 */
+		btn_Receipt = new JButton(Receipt);
+		btn_Receipt.setSelectedIcon(Receipt_s);
+		btn_Receipt.setRolloverIcon(Receipt_s);
+		btn_Receipt.setBorderPainted(false);
+		btn_Receipt.setFocusPainted(false);
+		btn_Receipt.setContentAreaFilled(false);
+		btn_Receipt.setBounds(Info_X + Info_W / 2, (Info_Y + Info_H) + Pay_Label_Y, btn_W, btn_H);
+		btn_Receipt.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				textInfo.setText("\r\n지-지직 지잉");
+				JOptionPane.showMessageDialog(null, "영수증이 출력되었습니다", "영수증 출력 완료", JOptionPane.INFORMATION_MESSAGE);
+				textInfo.setText("");
+			}
+		});
+
+		add(btn_Receipt);
+	}
+
+	// 해당 회원 금액 충전
+	public void Charge() {
+		String[] remain_s = mDto.getM_REMAIN_TIME().split(":");
+		String[] charge_s = Charge_Price[1].split(":");
+		int remainMoney = mDto.getUSED_MONEY();
+		String chMoney = Charge_Price[0].replace("원", "");
+		int chargeMoney = Integer.parseInt(chMoney);
+		int[] remain_i = new int[] { Integer.parseInt(remain_s[0]), Integer.parseInt(remain_s[1]) };
+		int[] charge_i = new int[] { Integer.parseInt(charge_s[0]), Integer.parseInt(charge_s[1]) };
+		int[] result_i = new int[] { (remain_i[0] + charge_i[0]), (remain_i[1] + charge_i[1]) };
+
+		if (result_i[1] >= 60) {
+			result_i[0] += result_i[1] / 60;
+			result_i[1] = result_i[1] % 60;
+		}
+
+		mDto.setM_REMAIN_TIME(result_i[0] + ":" + result_i[1]);
+		mDto.setUSED_MONEY(mDto.getUSED_MONEY() + chargeMoney);
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3008)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToFieldDeclaration(ASTConverter.java:3378)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleFieldDeclaration(ASTConverter.java:456)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:337)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1113)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1811)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:344)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2263)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1877)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:205)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3115)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1439)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:392)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:200)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1138)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1315)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2019-12-18 05:02:50.513
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3008)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToFieldDeclaration(ASTConverter.java:3378)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleFieldDeclaration(ASTConverter.java:456)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:337)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1113)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1811)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:344)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2263)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1877)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:205)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3115)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1439)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:392)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:200)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1138)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1315)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2019-12-18 05:02:50.539
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3008)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToFieldDeclaration(ASTConverter.java:3378)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleFieldDeclaration(ASTConverter.java:456)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:337)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1113)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1811)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:344)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2263)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1877)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:205)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3115)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1439)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:392)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:200)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1138)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1315)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.core 4 4 2019-12-18 05:02:54.119
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package pay;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.ComponentOrientation;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextPane;
+import javax.swing.UIManager;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
+import javax.swing.text.SimpleAttributeSet;
+import javax.swing.text.StyleConstants;
+import javax.swing.text.StyledDocument;
+
+import pcop.dao.Member_DAO;
+import pcop.dto.Member_DTO;
+
+public class Charge extends JPanel {
+	int x = (int) Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+	int y = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight();
+	int Blue_Line_X = x / 2 + 50, Blue_Line_Y = y - 55;
+	int Pay_Label_X = Blue_Line_X / 2 - 40, Pay_Label_Y = Blue_Line_Y / 4 - 40;
+	int Info_W = x - (x / 2 + 100), Info_H = y / 2;
+	int Info_X = x - (x - (x / 2 + 100 - 17)), Info_Y = 80;
+	int btn_W = Info_W / 2, btn_H = (Blue_Line_Y - (Info_H + 80)) / 2;
+
+	private MainFrame win;
+	private Font font_L = new Font("맑은 고딕", Font.BOLD, 35 + y / 250);
+	private Font font_M = new Font("맑은 고딕", Font.BOLD, 30 + y / 250);
+	private Font font_S = new Font("맑은 고딕", Font.BOLD, 15 + y / 250);
+
+	private JLabel label, lbl_Charge, lbl_SeatState;
+	private JLabel[][] lbl_Pay;
+	private JTextArea textArea, textInfo;
+	private JTextArea[][] textPay;
+	private JButton btn_Charge, btn_SeatState, btn_Money, btn_Card, btn_Recharge, btn_Receipt;
+	private JTextPane output = new JTextPane();
+	private SimpleAttributeSet attribs = new SimpleAttributeSet();
+
+	private Image Coin = new ImageIcon("image/Coin.png").getImage();
+	private ImageIcon icon_Charge_s = new ImageIcon("image/selected/Charge_s.png");
+	private ImageIcon icon_SeatState = new ImageIcon("image/noselected/SeatState.png");
+	private ImageIcon icon_SeatState_s = new ImageIcon("image/selected/SeatState_s.png");
+
+	private ImageIcon Money_Before = new ImageIcon("image/noselected/Money.png");
+	private Image Money_Before_i = Money_Before.getImage();
+	private Image Money_Before_ch = Money_Before_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Money = new ImageIcon(Money_Before_ch);
+
+	private ImageIcon Money_s_Before = new ImageIcon("image/selected/Money_s.png");
+	private Image Money_s_i = Money_s_Before.getImage();
+	private Image Money_s_ch = Money_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Money_s = new ImageIcon(Money_s_ch);
+
+	private ImageIcon Card_Before = new ImageIcon("image/noselected/Card.png");
+	private Image Card_i = Card_Before.getImage();
+	private Image Card_ch = Card_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Card = new ImageIcon(Card_ch);
+
+	private ImageIcon Card_s_Before = new ImageIcon("image/selected/Card_s.png");
+	private Image Card_s_i = Card_s_Before.getImage();
+	private Image Card_s_ch = Card_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Card_s = new ImageIcon(Card_s_ch);
+
+	private ImageIcon ReCharge_Before = new ImageIcon("image/noselected/ReCharge.png");
+	private Image ReCharge_i = ReCharge_Before.getImage();
+	private Image ReCharge_ch = ReCharge_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon ReCharge = new ImageIcon(ReCharge_ch);
+
+	private ImageIcon ReCharge_s_Before = new ImageIcon("image/selected/ReCharge_s.png");
+	private Image ReCharge_s_i = ReCharge_s_Before.getImage();
+	private Image ReCharge_s_ch = ReCharge_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon ReCharge_s = new ImageIcon(ReCharge_s_ch);
+
+	private ImageIcon Receipt_Before = new ImageIcon("image/noselected/Receipt.png");
+	private Image Receipt_i = Receipt_Before.getImage();
+	private Image Receipt_ch = Receipt_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Receipt = new ImageIcon(Receipt_ch);
+
+	private ImageIcon Receipt_s_Before = new ImageIcon("image/selected/Receipt_s.png");
+	private Image Receipt_s_i = Receipt_s_Before.getImage();
+	private Image Receipt_s_ch = Receipt_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Receipt_s = new ImageIcon(Receipt_s_ch);
+
+	private String[][] Pay;
+	private Member_DAO mDao = new Member_DAO();
+	private Member_DTO mDto = null;
+
+	private String[] Charge_Price = new String[] {};
+
+	public Charge(MainFrame win) {
+
+		setLayout(null);
+		this.win = win;
+		setBackground(new java.awt.Color(50, 50, 52));
+		UIManager UI = new UIManager();
+		UI.put("OptionPane.background", new java.awt.Color(50, 50, 52));
+		UI.put("Panel.background", new java.awt.Color(50, 50, 52));
+		UI.put("OptionPane.messageFont", font_S);
+		UI.put("OptionPane.messageForeground", Color.WHITE);
+		UI.put("OptionPane.buttonFont", font_S);
+
+		/* Button - 요금충전 */
+		btn_Charge = new JButton(icon_Charge_s);
+		btn_Charge.setBorderPainted(false);
+		btn_Charge.setFocusPainted(false);
+		btn_Charge.setContentAreaFilled(false);
+		btn_Charge.setBounds(x - 340, 20, 150, 40);
+
+		add(btn_Charge);
+
+		/* Label - '/' */
+		label = new JLabel("/");
+		label.setFont(font_L);
+		label.setBounds(x - 185, 15, 50, 40);
+		label.setForeground(Color.WHITE);
+
+		add(label);
+
+		/* Button - 좌석현황 */
+		btn_SeatState = new JButton(icon_SeatState);
+		btn_SeatState.setSelectedIcon(icon_SeatState_s);
+		btn_SeatState.setRolloverIcon(icon_SeatState_s);
+		btn_SeatState.setBorderPainted(false);
+		btn_SeatState.setFocusPainted(false);
+		btn_SeatState.setContentAreaFilled(false);
+		btn_SeatState.setBounds(x - 170, 20, 150, 40);
+		btn_SeatState.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				win.Change("SeatState");
+			}
+		});
+
+		add(btn_SeatState);
+
+		/* TextArea - 충전하는 회원 정보 */
+		textInfo = new JTextArea();
+		textInfo.setBounds(Info_X, Info_Y, Info_W, Info_H);
+		textInfo.setFont(font_M);
+		textInfo.setEditable(false);
+		textInfo.setBackground(Color.LIGHT_GRAY);
+		textInfo.setBorder(new LineBorder(Color.DARK_GRAY, 5));
+
+		add(textInfo);
+
+		/* Label - 요금 목록 */
+		Pay = new String[2][4];
+		Pay[0][0] = "1000원 0:50";
+		Pay[0][1] = "2000원 1:50";
+		Pay[0][2] = "3000원 3:00";
+		Pay[0][3] = "5000원 6:00";
+		Pay[1][0] = "10000원 15:00";
+		Pay[1][1] = "20000원 35:00";
+		Pay[1][2] = "50000원 100:00";
+		lbl_Pay = new JLabel[2][4];
+		int textX = 25, textY = 30;
+		for (int i = 0; i < 2; i++) {
+			for (int j = 0; j < 4; j++) {
+				lbl_Pay[i][j] = new JLabel(Pay[i][j]);
+				lbl_Pay[i][j].setBounds(textX, textY, Pay_Label_X, Pay_Label_Y);
+				lbl_Pay[i][j].setFont(font_L);
+				lbl_Pay[i][j].setOpaque(true);
+				lbl_Pay[i][j].setHorizontalAlignment(getWidth() / 2);
+				lbl_Pay[i][j].setBackground(new java.awt.Color(227, 225, 230));
+				lbl_Pay[i][j].setBorder(new LineBorder(Color.DARK_GRAY, 5));
+				lbl_Pay[i][j].addMouseListener(new MouseAdapter() {
+					public void mouseClicked(MouseEvent e) {
+						JLabel lbl = (JLabel) e.getSource();
+						Charge_Price = lbl.getText().split(" ");
+
+						if (mDto == null) {
+							String mID = JOptionPane.showInputDialog("충전하는 회원의 ID를 입력하세요");
+							mDto = mDao.GetMemberInfo(mID);
+							if (mDto == null) {
+								JOptionPane.showMessageDialog(null, "존재하지 않는 회원입니다", "오류",
+										JOptionPane.INFORMATION_MESSAGE);
+							} else {
+								textInfo.setText("\r\n회원ID: " + mDto.getM_ID() + "\r\n\r\n남은 시간: "
+										+ mDto.getM_REMAIN_TIME() + "\r\n\r\n선택 요금 정보: " + lbl.getText().toString());
+							}
+						} else {
+							textInfo.setText("");
+							textInfo.setText("\r\n회원ID: " + mDto.getM_ID() + "\r\n\r\n남은 시간: " + mDto.getM_REMAIN_TIME()
+									+ "\r\n\r\n선택 요금 정보: " + lbl.getText().toString());
+						}
+					}
+				});
+
+				add(lbl_Pay[i][j]);
+				textY += (Pay_Label_Y + (Blue_Line_Y - (30 + 4 * (Pay_Label_Y))) / 3);
+			}
+			textY = 30;
+			textX += (Pay_Label_X + (Blue_Line_X - 2 * (15 + Pay_Label_X)));
+		}
+
+		/* TextArea - 요금 뒤에 테두리 */
+		textArea = new JTextArea();
+		textArea.setBounds(10, 15, Blue_Line_X, Blue_Line_Y);
+		textArea.setFont(font_L);
+		textArea.setEditable(false);
+		textArea.setBackground(new java.awt.Color(50, 50, 52));
+		textArea.setBorder(new LineBorder(new java.awt.Color(0, 152, 230), 5));
+
+		add(textArea);
+
+		/* Button - 현금결제 */
+		btn_Money = new JButton(Money);
+		btn_Money.setSelectedIcon(Money_s);
+		btn_Money.setRolloverIcon(Money_s);
+		btn_Money.setBorderPainted(false);
+		btn_Money.setFocusPainted(false);
+		btn_Money.setContentAreaFilled(false);
+		btn_Money.setBounds(Info_X, Info_Y + Info_H + 10, btn_W, btn_H);
+		btn_Money.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "현금을 넣어주세요", "결제", JOptionPane.INFORMATION_MESSAGE);
+				Charge();
+				boolean result = mDao.ChargeMoney(mDto);
+				if (result) {
+					JOptionPane.showMessageDialog(null, "충전이 완료되었습니다", "결제 완료", JOptionPane.INFORMATION_MESSAGE);
+					mDto = null;
+					textInfo.setText("");
+				} else {
+					JOptionPane.showMessageDialog(null, "오류가 발생하였습니다", "오류", JOptionPane.INFORMATION_MESSAGE);
+				}
+			}
+		});
+
+		add(btn_Money);
+
+		/* Button - 카드결제 */
+		btn_Card = new JButton(Card);
+		btn_Card.setSelectedIcon(Card_s);
+		btn_Card.setRolloverIcon(Card_s);
+		btn_Card.setBorderPainted(false);
+		btn_Card.setFocusPainted(false);
+		btn_Card.setContentAreaFilled(false);
+		btn_Card.setBounds(Info_X + Info_W / 2, Info_Y + Info_H + 10, btn_W, btn_H);
+		btn_Card.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "카드를 꽂아주세요", "결제", JOptionPane.INFORMATION_MESSAGE);
+				Charge();
+				boolean result = mDao.ChargeMoney(mDto);
+				if (result) {
+					JOptionPane.showMessageDialog(null, "충전이 완료되었습니다", "결제 완료", JOptionPane.INFORMATION_MESSAGE);
+					mDto = null;
+					textInfo.setText("");
+				} else {
+					JOptionPane.showMessageDialog(null, "오류가 발생하였습니다", "오류", JOptionPane.INFORMATION_MESSAGE);
+				}
+			}
+		});
+
+		add(btn_Card);
+
+		/* Button - 잔돈반환 */
+		btn_Recharge = new JButton(ReCharge);
+		btn_Recharge.setSelectedIcon(ReCharge_s);
+		btn_Recharge.setRolloverIcon(ReCharge_s);
+		btn_Recharge.setBorderPainted(false);
+		btn_Recharge.setFocusPainted(false);
+		btn_Recharge.setContentAreaFilled(false);
+		btn_Recharge.setBounds(Info_X, (Info_Y + Info_H) + Pay_Label_Y, btn_W, btn_H);
+		btn_Recharge.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				textInfo = new JTextArea() {
+					private static final long serialVersion
+					public void paintComponent(Graphics g) {
+						//for (int i = 0; i < 10; i++) {
+							//g.drawImage(Coin, 0, 0, null);// 이미지나 그림을 그린다.
+						//}
+						g.drawRect(10, 10, 20, 20);
+						super.paintComponent(g);
+					}
+				};
+				textInfo.setOpaque(false);
+				textInfo.setLineWrap(true);
+				textInfo.setWrapStyleWord(true);
+				JOptionPane.showMessageDialog(null, "잔돈이 반환되었습니다", "잔돈반환 완료", JOptionPane.INFORMATION_MESSAGE);
+				textInfo.setText("");
+			}
+		});
+
+		add(btn_Recharge);
+
+		/* Button - 현금결제 */
+		btn_Receipt = new JButton(Receipt);
+		btn_Receipt.setSelectedIcon(Receipt_s);
+		btn_Receipt.setRolloverIcon(Receipt_s);
+		btn_Receipt.setBorderPainted(false);
+		btn_Receipt.setFocusPainted(false);
+		btn_Receipt.setContentAreaFilled(false);
+		btn_Receipt.setBounds(Info_X + Info_W / 2, (Info_Y + Info_H) + Pay_Label_Y, btn_W, btn_H);
+		btn_Receipt.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				textInfo.setText("\r\n지-지직 지잉");
+				JOptionPane.showMessageDialog(null, "영수증이 출력되었습니다", "영수증 출력 완료", JOptionPane.INFORMATION_MESSAGE);
+				textInfo.setText("");
+			}
+		});
+
+		add(btn_Receipt);
+	}
+
+	// 해당 회원 금액 충전
+	public void Charge() {
+		String[] remain_s = mDto.getM_REMAIN_TIME().split(":");
+		String[] charge_s = Charge_Price[1].split(":");
+		int remainMoney = mDto.getUSED_MONEY();
+		String chMoney = Charge_Price[0].replace("원", "");
+		int chargeMoney = Integer.parseInt(chMoney);
+		int[] remain_i = new int[] { Integer.parseInt(remain_s[0]), Integer.parseInt(remain_s[1]) };
+		int[] charge_i = new int[] { Integer.parseInt(charge_s[0]), Integer.parseInt(charge_s[1]) };
+		int[] result_i = new int[] { (remain_i[0] + charge_i[0]), (remain_i[1] + charge_i[1]) };
+
+		if (result_i[1] >= 60) {
+			result_i[0] += result_i[1] / 60;
+			result_i[1] = result_i[1] % 60;
+		}
+
+		mDto.setM_REMAIN_TIME(result_i[0] + ":" + result_i[1]);
+		mDto.setUSED_MONEY(mDto.getUSED_MONEY() + chargeMoney);
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3008)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToFieldDeclaration(ASTConverter.java:3378)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleFieldDeclaration(ASTConverter.java:456)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:337)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1113)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1811)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:344)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2263)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1877)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:205)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3115)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1439)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:392)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:200)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1138)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1315)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2019-12-18 05:02:54.149
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3008)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToFieldDeclaration(ASTConverter.java:3378)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleFieldDeclaration(ASTConverter.java:456)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:337)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1113)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1811)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:344)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2263)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1877)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:205)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3115)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1439)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:392)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:200)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1138)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1315)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2019-12-18 05:02:54.167
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3008)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToFieldDeclaration(ASTConverter.java:3378)
+	at org.eclipse.jdt.core.dom.ASTConverter.checkAndAddMultipleFieldDeclaration(ASTConverter.java:456)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:337)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1113)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1811)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:344)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2614)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1793)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2263)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1877)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2856)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:657)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:205)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3115)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1439)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:392)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:200)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1138)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1315)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+!SESSION 2019-12-18 15:55:52.223 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2019-12-18 15:56:10.057
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-18 15:56:10.057
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-12-18 15:56:10.657
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-18 15:56:10.657
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-18 15:56:30.580
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-12-18 16:16:54.637 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2019-12-18 16:18:16.220
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-18 16:18:16.221
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-12-18 16:18:17.098
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-18 16:18:17.098
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-18 16:18:37.711
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-12-19 06:46:58.904 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2019-12-19 06:47:15.603
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-19 06:47:15.603
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-12-19 06:47:16.322
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-12-19 06:47:16.322
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-19 06:47:35.618
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-12-19 10:39:23.942 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-19 10:40:12.403
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-12-19 10:40:13.380
+!MESSAGE Removing part descriptor with the 'org.eclipse.ajdt.ui.EventTraceView' id and the 'AJDT Event Trace' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-12-19 10:40:13.461
+!MESSAGE Removing part descriptor with the 'org.eclipse.contribution.visualiser.views.Visualiser' id and the 'Visualiser' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-12-19 10:40:13.493
+!MESSAGE Removing part descriptor with the 'org.eclipse.contribution.visualiser.views.Menu' id and the 'Visualiser Menu' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-12-19 10:40:13.519
+!MESSAGE Removing part descriptor with the 'org.eclipse.contribution.xref.ui.views.XReferenceView' id and the 'Cross References' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-12-19 10:40:13.537
+!MESSAGE Removing part descriptor with the 'org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator' id and the 'Beans Cross References' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-12-19 10:40:13.557
+!MESSAGE Removing part descriptor with the 'org.springframework.ide.eclipse.aop.ui.tracing.eventTraceView' id and the 'AOP Event Trace' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-12-19 10:40:13.579
+!MESSAGE Removing part descriptor with the 'org.springframework.ide.eclipse.beans.ui.livegraph.views.LiveBeansGraphView' id and the 'Live Beans Graph' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-12-19 10:40:13.612
+!MESSAGE Removing part descriptor with the 'com.springsource.sts.ide.metadata.ui.RequestMappingView' id and the '@RequestMappings' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-12-19 10:40:13.625
+!MESSAGE Removing part descriptor with the 'org.springframework.ide.eclipse.ui.navigator.springExplorer' id and the 'Spring Explorer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-12-19 10:40:13.997
+!MESSAGE Removing part descriptor with the 'org.springsource.ide.eclipse.commons.browser.View' id and the 'Browser View' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+!SESSION 2019-12-19 12:31:45.723 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-19 12:32:23.517
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-12-20 00:45:14.955 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-20 00:45:51.516
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-12-20 00:52:54.227 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-12-20 00:53:36.966
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tytyj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

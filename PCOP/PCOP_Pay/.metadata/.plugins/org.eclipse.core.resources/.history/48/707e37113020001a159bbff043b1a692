@@ -1,0 +1,25 @@
+package pcop.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Seat_DAO {
+	private static final String DRIVER = "org.mariadb.jdbc.Driver";
+	private static final String URL = "jdbc:mariadb://localhost:3306/PCOP";
+	private static final String USER = "root";
+	private static final String PASS = "hyun5292";
+
+	// DB연결 메서드
+	public Connection getConn() {
+		Connection conn = null;
+		try {
+			Class.forName(DRIVER);
+			conn = DriverManager.getConnection(URL, USER, PASS);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return conn;
+	}
+	
+	
+}

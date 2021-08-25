@@ -1,0 +1,33 @@
+package pcop.dto;
+
+public class Member_DTO {
+	private String M_ID;
+	private String M_REMAIN_TIME;
+	private String USED_MONEY;
+	
+	public Member_DTO(String m_ID, String m_REMAIN_TIME, String uSED_MONEY) {
+		super();
+		M_ID = m_ID;
+		M_REMAIN_TIME = m_REMAIN_TIME;
+		USED_MONEY = uSED_MONEY;
+	}
+	
+	public String getM_ID() {
+		return M_ID;
+	}
+	public void setM_ID(String m_ID) {
+		M_ID = m_ID;
+	}
+	public String getM_REMAIN_TIME() {
+		return M_REMAIN_TIME;
+	}
+	public void setM_REMAIN_TIME(String m_REMAIN_TIME) {
+		M_REMAIN_TIME = m_REMAIN_TIME;
+	}
+	public String getUSED_MONEY() {
+		return USED_MONEY;
+	}
+	public void setUSED_MONEY(String uSED_MONEY) {
+		USED_MONEY = uSED_MONEY;
+	}
+}

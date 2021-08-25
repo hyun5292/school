@@ -1,0 +1,5 @@
+package pcop.dao;
+
+public class Seat_DAO {
+
+}

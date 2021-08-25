@@ -1,0 +1,343 @@
+package pay;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.ComponentOrientation;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextPane;
+import javax.swing.UIManager;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
+import javax.swing.text.SimpleAttributeSet;
+import javax.swing.text.StyleConstants;
+import javax.swing.text.StyledDocument;
+
+import pcop.dao.Member_DAO;
+import pcop.dto.Member_DTO;
+
+public class Charge extends JPanel {
+	int x = (int) Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+	int y = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight();
+	int Blue_Line_X = x / 2 + 50, Blue_Line_Y = y - 55;
+	int Pay_Label_X = Blue_Line_X / 2 - 40, Pay_Label_Y = Blue_Line_Y / 4 - 40;
+	int Info_W = x - (x / 2 + 100), Info_H = y / 2;
+	int Info_X = x - (x - (x / 2 + 100 - 17)), Info_Y = 80;
+	int btn_W = Info_W / 2, btn_H = (Blue_Line_Y - (Info_H + 80)) / 2;
+
+	private MainFrame win;
+	private Font font_L = new Font("맑은 고딕", Font.BOLD, 35 + y / 250);
+	private Font font_M = new Font("맑은 고딕", Font.BOLD, 30 + y / 250);
+	private Font font_S = new Font("맑은 고딕", Font.BOLD, 15 + y / 250);
+
+	private JLabel label, lbl_Charge, lbl_SeatState;
+	private JLabel[][] lbl_Pay;
+	private JTextArea textArea, textInfo;
+	private JTextArea[][] textPay;
+	private JButton btn_Charge, btn_SeatState, btn_Money, btn_Card, btn_Recharge, btn_Receipt;
+	private JTextPane output = new JTextPane();
+	private SimpleAttributeSet attribs = new SimpleAttributeSet();
+
+	private Image Coin = new ImageIcon("image/Coin.png").getImage();
+	private ImageIcon icon_Charge_s = new ImageIcon("image/selected/Charge_s.png");
+	private ImageIcon icon_SeatState = new ImageIcon("image/noselected/SeatState.png");
+	private ImageIcon icon_SeatState_s = new ImageIcon("image/selected/SeatState_s.png");
+
+	private ImageIcon Money_Before = new ImageIcon("image/noselected/Money.png");
+	private Image Money_Before_i = Money_Before.getImage();
+	private Image Money_Before_ch = Money_Before_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Money = new ImageIcon(Money_Before_ch);
+
+	private ImageIcon Money_s_Before = new ImageIcon("image/selected/Money_s.png");
+	private Image Money_s_i = Money_s_Before.getImage();
+	private Image Money_s_ch = Money_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Money_s = new ImageIcon(Money_s_ch);
+
+	private ImageIcon Card_Before = new ImageIcon("image/noselected/Card.png");
+	private Image Card_i = Card_Before.getImage();
+	private Image Card_ch = Card_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Card = new ImageIcon(Card_ch);
+
+	private ImageIcon Card_s_Before = new ImageIcon("image/selected/Card_s.png");
+	private Image Card_s_i = Card_s_Before.getImage();
+	private Image Card_s_ch = Card_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Card_s = new ImageIcon(Card_s_ch);
+
+	private ImageIcon ReCharge_Before = new ImageIcon("image/noselected/ReCharge.png");
+	private Image ReCharge_i = ReCharge_Before.getImage();
+	private Image ReCharge_ch = ReCharge_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon ReCharge = new ImageIcon(ReCharge_ch);
+
+	private ImageIcon ReCharge_s_Before = new ImageIcon("image/selected/ReCharge_s.png");
+	private Image ReCharge_s_i = ReCharge_s_Before.getImage();
+	private Image ReCharge_s_ch = ReCharge_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon ReCharge_s = new ImageIcon(ReCharge_s_ch);
+
+	private ImageIcon Receipt_Before = new ImageIcon("image/noselected/Receipt.png");
+	private Image Receipt_i = Receipt_Before.getImage();
+	private Image Receipt_ch = Receipt_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Receipt = new ImageIcon(Receipt_ch);
+
+	private ImageIcon Receipt_s_Before = new ImageIcon("image/selected/Receipt_s.png");
+	private Image Receipt_s_i = Receipt_s_Before.getImage();
+	private Image Receipt_s_ch = Receipt_s_i.getScaledInstance(btn_W - 10, btn_H - 10, Image.SCALE_SMOOTH);
+	private ImageIcon Receipt_s = new ImageIcon(Receipt_s_ch);
+
+	private String[][] Pay;
+	private Member_DAO mDao = new Member_DAO();
+	private Member_DTO mDto = null;
+
+	private String[] Charge_Price = new String[] {};
+
+	public Charge(MainFrame win) {
+
+		setLayout(null);
+		this.win = win;
+		setBackground(new java.awt.Color(50, 50, 52));
+		UIManager UI = new UIManager();
+		UI.put("OptionPane.background", new java.awt.Color(50, 50, 52));
+		UI.put("Panel.background", new java.awt.Color(50, 50, 52));
+		UI.put("OptionPane.messageFont", font_S);
+		UI.put("OptionPane.messageForeground", Color.WHITE);
+		UI.put("OptionPane.buttonFont", font_S);
+
+		/* Button - 요금충전 */
+		btn_Charge = new JButton(icon_Charge_s);
+		btn_Charge.setBorderPainted(false);
+		btn_Charge.setFocusPainted(false);
+		btn_Charge.setContentAreaFilled(false);
+		btn_Charge.setBounds(x - 340, 20, 150, 40);
+
+		add(btn_Charge);
+
+		/* Label - '/' */
+		label = new JLabel("/");
+		label.setFont(font_L);
+		label.setBounds(x - 185, 15, 50, 40);
+		label.setForeground(Color.WHITE);
+
+		add(label);
+
+		/* Button - 좌석현황 */
+		btn_SeatState = new JButton(icon_SeatState);
+		btn_SeatState.setSelectedIcon(icon_SeatState_s);
+		btn_SeatState.setRolloverIcon(icon_SeatState_s);
+		btn_SeatState.setBorderPainted(false);
+		btn_SeatState.setFocusPainted(false);
+		btn_SeatState.setContentAreaFilled(false);
+		btn_SeatState.setBounds(x - 170, 20, 150, 40);
+		btn_SeatState.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				win.Change("SeatState");
+			}
+		});
+
+		add(btn_SeatState);
+
+		/* TextArea - 충전하는 회원 정보 */
+		textInfo = new JTextArea();
+		textInfo.setBounds(Info_X, Info_Y, Info_W, Info_H);
+		textInfo.setFont(font_M);
+		textInfo.setEditable(false);
+		textInfo.setBackground(Color.LIGHT_GRAY);
+		textInfo.setBorder(new LineBorder(Color.DARK_GRAY, 5));
+
+		add(textInfo);
+
+		/* Label - 요금 목록 */
+		Pay = new String[2][4];
+		Pay[0][0] = "1000원 0:50";
+		Pay[0][1] = "2000원 1:50";
+		Pay[0][2] = "3000원 3:00";
+		Pay[0][3] = "5000원 6:00";
+		Pay[1][0] = "10000원 15:00";
+		Pay[1][1] = "20000원 35:00";
+		Pay[1][2] = "50000원 100:00";
+		lbl_Pay = new JLabel[2][4];
+		int textX = 25, textY = 30;
+		for (int i = 0; i < 2; i++) {
+			for (int j = 0; j < 4; j++) {
+				lbl_Pay[i][j] = new JLabel(Pay[i][j]);
+				lbl_Pay[i][j].setBounds(textX, textY, Pay_Label_X, Pay_Label_Y);
+				lbl_Pay[i][j].setFont(font_L);
+				lbl_Pay[i][j].setOpaque(true);
+				lbl_Pay[i][j].setHorizontalAlignment(getWidth() / 2);
+				lbl_Pay[i][j].setBackground(new java.awt.Color(227, 225, 230));
+				lbl_Pay[i][j].setBorder(new LineBorder(Color.DARK_GRAY, 5));
+				lbl_Pay[i][j].addMouseListener(new MouseAdapter() {
+					public void mouseClicked(MouseEvent e) {
+						JLabel lbl = (JLabel) e.getSource();
+						Charge_Price = lbl.getText().split(" ");
+
+						if (mDto == null) {
+							String mID = JOptionPane.showInputDialog("충전하는 회원의 ID를 입력하세요");
+							mDto = mDao.GetMemberInfo(mID);
+							if (mDto == null) {
+								JOptionPane.showMessageDialog(null, "존재하지 않는 회원입니다", "오류",
+										JOptionPane.INFORMATION_MESSAGE);
+							} else {
+								textInfo.setText("\r\n회원ID: " + mDto.getM_ID() + "\r\n\r\n남은 시간: "
+										+ mDto.getM_REMAIN_TIME() + "\r\n\r\n선택 요금 정보: " + lbl.getText().toString());
+							}
+						} else {
+							textInfo.setText("");
+							textInfo.setText("\r\n회원ID: " + mDto.getM_ID() + "\r\n\r\n남은 시간: " + mDto.getM_REMAIN_TIME()
+									+ "\r\n\r\n선택 요금 정보: " + lbl.getText().toString());
+						}
+					}
+				});
+
+				add(lbl_Pay[i][j]);
+				textY += (Pay_Label_Y + (Blue_Line_Y - (30 + 4 * (Pay_Label_Y))) / 3);
+			}
+			textY = 30;
+			textX += (Pay_Label_X + (Blue_Line_X - 2 * (15 + Pay_Label_X)));
+		}
+
+		/* TextArea - 요금 뒤에 테두리 */
+		textArea = new JTextArea();
+		textArea.setBounds(10, 15, Blue_Line_X, Blue_Line_Y);
+		textArea.setFont(font_L);
+		textArea.setEditable(false);
+		textArea.setBackground(new java.awt.Color(50, 50, 52));
+		textArea.setBorder(new LineBorder(new java.awt.Color(0, 152, 230), 5));
+
+		add(textArea);
+
+		/* Button - 현금결제 */
+		btn_Money = new JButton(Money);
+		btn_Money.setSelectedIcon(Money_s);
+		btn_Money.setRolloverIcon(Money_s);
+		btn_Money.setBorderPainted(false);
+		btn_Money.setFocusPainted(false);
+		btn_Money.setContentAreaFilled(false);
+		btn_Money.setBounds(Info_X, Info_Y + Info_H + 10, btn_W, btn_H);
+		btn_Money.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "현금을 넣어주세요", "결제", JOptionPane.INFORMATION_MESSAGE);
+				Charge();
+				boolean result = mDao.ChargeMoney(mDto);
+				if (result) {
+					JOptionPane.showMessageDialog(null, "충전이 완료되었습니다", "결제 완료", JOptionPane.INFORMATION_MESSAGE);
+					mDto = null;
+					textInfo.setText("");
+				} else {
+					JOptionPane.showMessageDialog(null, "오류가 발생하였습니다", "오류", JOptionPane.INFORMATION_MESSAGE);
+				}
+			}
+		});
+
+		add(btn_Money);
+
+		/* Button - 카드결제 */
+		btn_Card = new JButton(Card);
+		btn_Card.setSelectedIcon(Card_s);
+		btn_Card.setRolloverIcon(Card_s);
+		btn_Card.setBorderPainted(false);
+		btn_Card.setFocusPainted(false);
+		btn_Card.setContentAreaFilled(false);
+		btn_Card.setBounds(Info_X + Info_W / 2, Info_Y + Info_H + 10, btn_W, btn_H);
+		btn_Card.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "카드를 꽂아주세요", "결제", JOptionPane.INFORMATION_MESSAGE);
+				Charge();
+				boolean result = mDao.ChargeMoney(mDto);
+				if (result) {
+					JOptionPane.showMessageDialog(null, "충전이 완료되었습니다", "결제 완료", JOptionPane.INFORMATION_MESSAGE);
+					mDto = null;
+					textInfo.setText("");
+				} else {
+					JOptionPane.showMessageDialog(null, "오류가 발생하였습니다", "오류", JOptionPane.INFORMATION_MESSAGE);
+				}
+			}
+		});
+
+		add(btn_Card);
+
+		/* Button - 잔돈반환 */
+		btn_Recharge = new JButton(ReCharge);
+		btn_Recharge.setSelectedIcon(ReCharge_s);
+		btn_Recharge.setRolloverIcon(ReCharge_s);
+		btn_Recharge.setBorderPainted(false);
+		btn_Recharge.setFocusPainted(false);
+		btn_Recharge.setContentAreaFilled(false);
+		btn_Recharge.setBounds(Info_X, (Info_Y + Info_H) + Pay_Label_Y, btn_W, btn_H);
+		btn_Recharge.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				textInfo.setOpaque(false);
+				textInfo.setLineWrap(true);
+				textInfo.setWrapStyleWord(true);
+				textInfo = new JTextArea(){
+	                public void paintComponent(Graphics g){
+	                    g.drawImage(Coin,0,0,null);       //이미지 그리기
+	                    super.paintComponent(g);
+	                }
+	            };
+				JOptionPane.showMessageDialog(null, "잔돈이 반환되었습니다", "잔돈반환 완료", JOptionPane.INFORMATION_MESSAGE);
+				textInfo.setText("");
+			}
+		});
+
+		add(btn_Recharge);
+
+		/* Button - 현금결제 */
+		btn_Receipt = new JButton(Receipt);
+		btn_Receipt.setSelectedIcon(Receipt_s);
+		btn_Receipt.setRolloverIcon(Receipt_s);
+		btn_Receipt.setBorderPainted(false);
+		btn_Receipt.setFocusPainted(false);
+		btn_Receipt.setContentAreaFilled(false);
+		btn_Receipt.setBounds(Info_X + Info_W / 2, (Info_Y + Info_H) + Pay_Label_Y, btn_W, btn_H);
+		btn_Receipt.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				textInfo.setText("\r\n지-지직 지잉");
+				JOptionPane.showMessageDialog(null, "영수증이 출력되었습니다", "영수증 출력 완료", JOptionPane.INFORMATION_MESSAGE);
+				textInfo.setText("");
+			}
+		});
+
+		add(btn_Receipt);
+	}
+
+	// 해당 회원 금액 충전
+	public void Charge() {
+		String[] remain_s = mDto.getM_REMAIN_TIME().split(":");
+		String[] charge_s = Charge_Price[1].split(":");
+		int remainMoney = mDto.getUSED_MONEY();
+		String chMoney = Charge_Price[0].replace("원", "");
+		int chargeMoney = Integer.parseInt(chMoney);
+		int[] remain_i = new int[] { Integer.parseInt(remain_s[0]), Integer.parseInt(remain_s[1]) };
+		int[] charge_i = new int[] { Integer.parseInt(charge_s[0]), Integer.parseInt(charge_s[1]) };
+		int[] result_i = new int[] { (remain_i[0] + charge_i[0]), (remain_i[1] + charge_i[1]) };
+
+		if (result_i[1] >= 60) {
+			result_i[0] += result_i[1] / 60;
+			result_i[1] = result_i[1] % 60;
+		}
+
+		mDto.setM_REMAIN_TIME(result_i[0] + ":" + result_i[1]);
+		mDto.setUSED_MONEY(mDto.getUSED_MONEY() + chargeMoney);
+	}
+}

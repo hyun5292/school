@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.xml.ws.Service"/>
+<fullyQualifiedTypeName name="javax.xml.ws.Service.Mode"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ScheduledExecutorService"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+</qualifiedTypeNameHistroy>

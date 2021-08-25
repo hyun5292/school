@@ -1,0 +1,154 @@
+package pcop.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Vector;
+
+import javax.swing.JOptionPane;
+
+import pcop.dto.FoodOrderDTO;
+
+public class FoodOrderDAO {
+	
+	String driver = "org.mariadb.jdbc.Driver";
+	String url = "jdbc:mariadb://localhost:3306/PCOP";
+	String uId = "system";
+	String uPwd = "system";
+
+	Connection con;
+	PreparedStatement pstmt;
+	Statement stmt;
+	ResultSet rs;
+
+	public FoodOrderDAO() {}
+
+	/** DB 연결 메소드 **/
+	public Connection getDBConn() {
+		con = null;
+		try {
+			Class.forName(driver);
+			con = DriverManager.getConnection(url, uId, uPwd);
+
+			if (con != null) {
+				// System.out.println("데이터 베이스 접속 성공");
+			}
+
+		} catch (ClassNotFoundException e) {
+			System.out.println("드라이버 로드 실패");
+		} catch (SQLException e) {
+			System.out.println("데이터 베이스 접속 실패");
+		}
+		return con;
+	}
+
+	/** 이미지 불러오기 **/
+	public FoodOrderDTO FoodImage(FoodOrderDTO dto) {	
+		try {
+			con = getDBConn();
+			String sql = "select fs_img from food_stock";
+			pstmt = con.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+
+			while (rs.next()) {
+				dto.setFS_IMG(rs.getString("FS_IMG")); //음식 이미지
+			}
+		} catch (SQLException e) {
+			System.out.println("쿼리 수행 실패");
+		} finally {
+			try {
+				if (rs != null)
+					rs.close();
+				if (pstmt != null)
+					pstmt.close();
+				if (con != null)
+					con.close();
+			} catch (SQLException e) {
+			}
+		}
+		return dto;
+	}
+	
+	
+	/** 테이블에 DB값 불러오기 **/
+	public Vector getOrderedList() {
+		Vector result = new Vector();
+		try {
+			con = getDBConn();
+			String sql = "select * from food_order where m_id = 'Choi'";
+			pstmt = con.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+
+			while (rs.next()) {
+				Vector row = new Vector();
+
+				row.addElement(rs.getString("FO_PRODUCT")); // 상품명
+				row.addElement(rs.getInt("FO_PRICE")); // 판매금액
+				row.addElement(rs.getInt("FO_COUNT")); // 수량
+				row.add(rs.getInt("FO_PRICE") * rs.getInt("FO_COUNT"));// 최종금액
+				row.addElement(rs.getString("FO_RESULT")); // 처리결과
+
+				result.add(row);
+			}
+		} catch (SQLException e) {
+			System.out.println("쿼리 수행 실패");
+		} finally {
+			try {
+				if (rs != null)
+					rs.close();
+				if (pstmt != null)
+					pstmt.close();
+				if (con != null)
+					con.close();
+			} catch (SQLException e) {
+			}
+		}
+		return result;
+	}
+
+	/** 상품 주문 버튼 클릭 시 insert하기 **/
+	public void OrderInsert(ArrayList<FoodOrderDTO> dtos) {
+		int message = JOptionPane.showConfirmDialog(null, "상품 주문 하시겠습니까?", "상품주문", 2);
+		FoodOrderDTO dto = new FoodOrderDTO();
+		
+		if (message == JOptionPane.YES_OPTION) {
+
+			try {
+				String sql = "insert into food_order values(?, ?, ?, ?, ?, ?, ?)";
+
+				con = getDBConn();
+				pstmt = con.prepareStatement(sql);
+
+				for(int i = 0; i < dtos.size(); i++) {
+				dto = dtos.get(i);
+				pstmt.setString(1, dto.getM_ID()); // 아이디
+				pstmt.setString(2, dto.getFO_PRODUCT()); // 상품명
+				pstmt.setInt(3, dto.getFO_PRICE()); // 상품가격
+				pstmt.setInt(4, dto.getFO_COUNT()); // 수량
+				pstmt.setString(5, dto.getFO_WAY()); // 결제방법
+				pstmt.setString(6, dto.getFO_RESULT()); // 처리결과
+				pstmt.setString(7, dto.getFO_MEMO()); // 요청사항
+				pstmt.executeUpdate();
+			  }
+				
+			} catch (SQLException e) {
+				e.printStackTrace();
+				System.out.println("쿼리 수행 실패");
+			} finally {
+				try {
+					if (rs != null)
+						rs.close();
+					if (pstmt != null)
+						pstmt.close();
+					if (con != null)
+						con.close();
+				} catch (SQLException e) {
+				}
+			}
+		} else if (message == JOptionPane.NO_OPTION) {}
+	}
+}

@@ -1,0 +1,9 @@
+package user;
+
+public class FoodKind {
+	public String[][] FoodKind = null;
+
+	public FoodKind() {
+
+	}
+}

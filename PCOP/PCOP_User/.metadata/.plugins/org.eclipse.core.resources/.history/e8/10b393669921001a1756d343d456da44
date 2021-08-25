@@ -1,0 +1,274 @@
+package user;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Font;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+import javax.swing.UIManager;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
+import pcop.dao.Member_DAO;
+import pcop.dto.Member_DTO;
+
+public class Login extends JFrame {
+	int x = (int) Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+	int y = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight();
+	int info_H = y / 5 + 23;
+	int btn_W = x / 6, btn_H = info_H/2;
+	int JoMark_H = y - (info_H + 50);
+	int info_X = x / 4 - 60, info_Y = JoMark_H + 10;
+	int Icon_W = x / 4 - 70, Icon_H = y / 5 + 25;
+	int info_W = x - (2*(btn_W+5)+Icon_W+10);
+	
+	// 글씨체
+	private Font font_L = new Font("맑은 고딕", Font.BOLD, 30 + y / 120);
+	private Font font_MB = new Font("맑은 고딕", Font.BOLD, 20 + y / 120);
+	private Font font_S = new Font("맑은 고딕", Font.BOLD, 18 + y / 120);
+
+	private JPanel panel = new JPanel();
+
+	private ImageIcon Mark = new ImageIcon("image/PCOP.png");
+	private ImageIcon JoMark_Before = new ImageIcon("image/JoMark.png");
+	private Image JoMark_i = JoMark_Before.getImage();
+	private Image JoMark_ch = JoMark_i.getScaledInstance(x*2/3, JoMark_H*2/3, Image.SCALE_SMOOTH);
+	private ImageIcon JoMark = new ImageIcon(JoMark_ch);
+
+	private ImageIcon MainIcon_Before = new ImageIcon("image/MainIcon.png");
+	private Image MainIcon_i = MainIcon_Before.getImage();
+	private Image MainIcon_ch = MainIcon_i.getScaledInstance(Icon_W, Icon_H, Image.SCALE_SMOOTH);
+	private ImageIcon MainIcon = new ImageIcon(MainIcon_ch);
+
+	private ImageIcon Login_Before = new ImageIcon("image/noselected/Login.png");
+	private Image Login_i = Login_Before.getImage();
+	private Image Login_ch = Login_i.getScaledInstance(btn_W, btn_H, Image.SCALE_SMOOTH);
+	private ImageIcon Login = new ImageIcon(Login_ch);
+
+	private ImageIcon Login_s_Before = new ImageIcon("image/selected/Login_s.png");
+	private Image Login_s_i = Login_s_Before.getImage();
+	private Image Login_s_ch = Login_s_i.getScaledInstance(btn_W, btn_H, Image.SCALE_SMOOTH);
+	private ImageIcon Login_s = new ImageIcon(Login_s_ch);
+
+	private ImageIcon Join_Before = new ImageIcon("image/noselected/Join.png");
+	private Image Join_i = Join_Before.getImage();
+	private Image Join_ch = Join_i.getScaledInstance(btn_W, btn_H, Image.SCALE_SMOOTH);
+	private ImageIcon Join = new ImageIcon(Join_ch);
+
+	private ImageIcon Join_s_Before = new ImageIcon("image/selected/Join_s.png");
+	private Image Join_s_i = Join_s_Before.getImage();
+	private Image Join_s_ch = Join_s_i.getScaledInstance(btn_W, btn_H, Image.SCALE_SMOOTH);
+	private ImageIcon Join_s = new ImageIcon(Join_s_ch);
+
+	private ImageIcon Clean_Before = new ImageIcon("image/noselected/Clean.png");
+	private Image Clean_i = Clean_Before.getImage();
+	private Image Clean_ch = Clean_i.getScaledInstance(btn_W, btn_H, Image.SCALE_SMOOTH);
+	private ImageIcon Clean = new ImageIcon(Clean_ch);
+
+	private ImageIcon Clean_s_Before = new ImageIcon("image/selected/Clean_s.png");
+	private Image Clean_s_i = Clean_s_Before.getImage();
+	private Image Clean_s_ch = Clean_s_i.getScaledInstance(btn_W, btn_H, Image.SCALE_SMOOTH);
+	private ImageIcon Clean_s = new ImageIcon(Clean_s_ch);
+
+	private ImageIcon IdPwFind_Before = new ImageIcon("image/noselected/IdPwFind.png");
+	private Image IdPwFind_i = IdPwFind_Before.getImage();
+	private Image IdPwFind_ch = IdPwFind_i.getScaledInstance(btn_W, btn_H, Image.SCALE_SMOOTH);
+	private ImageIcon IdPwFind = new ImageIcon(IdPwFind_ch);
+
+	private ImageIcon IdPwFind_s_Before = new ImageIcon("image/selected/IdPwFind_s.png");
+	private Image IdPwFind_s_i = IdPwFind_s_Before.getImage();
+	private Image IdPwFind_s_ch = IdPwFind_s_i.getScaledInstance(btn_W, btn_H, Image.SCALE_SMOOTH);
+	private ImageIcon IdPwFind_s = new ImageIcon(IdPwFind_s_ch);
+
+	private ImageIcon OK = new ImageIcon("image/OK.png");
+
+	private JLabel label, lbl_Image, lblIcon;
+	private JTextArea tArea_Info;
+	private JTextField txt_ID;
+	private JPasswordField txt_PW;
+	private JButton btn_Login, btn_Join, btn_Find, btn_Clean;
+	
+	/** dao,dto 가져오기 **/
+	Member_DAO dao = new Member_DAO();
+	Member_DTO dto = new Member_DTO();
+
+	public static String mID = "";
+	
+	public Login() {
+		setTitle("로그인"); // 타이틀바 텍스트 설정
+		// setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //x누르니까 프로그램이 다 꺼지더라구 그래서
+		// 막아놨어 얘만 꺼져야지
+		setExtendedState(JFrame.MAXIMIZED_BOTH); // 앞에 두 개는 프레임 시작 위치, 뒤에 두 개는 프레임 사이즈!
+		panel = new JPanel(); // 위에서 선언한 객체 초기화
+		panel.setBorder(new EmptyBorder(5, 5, 5, 5)); // 상하좌우 살짝씩 여유 주는거야
+		panel.setLayout(new BorderLayout(0, 0)); // 멀라 Layout 설정해준대
+		setContentPane(panel); // panel_MID을 지금까지 설정해준걸로 세팅해
+		setIconImage(Mark.getImage()); // 좌측 상단이랑 작업 표시줄 아이콘 설정
+		panel.setBackground(new java.awt.Color(50, 50, 52)); // 뒤에 배경 블랙
+		panel.setLayout(null); // 판을 다시 짠다
+		/** 메세지박스 UI **/
+		UIManager UI = new UIManager();
+		UI.put("OptionPane.background", new java.awt.Color(50, 50, 52));
+		UI.put("Panel.background", new java.awt.Color(50, 50, 52));
+		UI.put("OptionPane.messageFont", font_L);
+		UI.put("OptionPane.messageForeground", Color.WHITE);
+		UI.put("OptionPane.buttonFont", font_L);
+
+		/* Label - 이미지 */
+		lbl_Image = new JLabel(JoMark);
+		lbl_Image.setBounds(0, 0, x, JoMark_H);
+		lbl_Image.setVerticalAlignment(SwingConstants.CENTER);
+		lbl_Image.setHorizontalAlignment(SwingConstants.CENTER);
+		//lbl_Image.setBorder(new LineBorder(new java.awt.Color(255, 166, 0), 3));
+		
+		add(lbl_Image);
+
+		int side_Text = (info_H-2*(65+y/350))/3;
+		int side_Label = (info_H-2*(40+y/120))/3;
+		
+		/* Label - 아이디 */
+		label = new JLabel("아이디");
+		label.setFont(font_L);
+		label.setHorizontalAlignment(SwingConstants.RIGHT);
+		label.setBounds(info_X + 20, info_Y + side_Label, 150 + y / 120, 40+y / 120);
+		label.setForeground(Color.DARK_GRAY);
+
+		add(label);
+
+		/* TextField - ID 입력*/
+		txt_ID = new JTextField(20); // 텍스트필드 재정의
+		txt_ID.setBounds(info_X + 20 + 150 + 20, info_Y + side_Text, info_W - (50 + 150 + y / 120), 65+y/350); // 위치랑 사이즈
+		txt_ID.setFont(font_S); // 글씨체
+
+		add(txt_ID); // 판넬에 textfield 추가
+
+		/* Label - 비밀번호 */
+		label = new JLabel("비밀번호");
+		label.setFont(font_L);
+		label.setHorizontalAlignment(SwingConstants.RIGHT);
+		label.setBounds(info_X + 20, (info_Y + side_Label) + (40+y/120) + side_Label+5, 150 + y / 120, 40);
+		label.setForeground(Color.DARK_GRAY);
+		
+		add(label);
+
+		/* JTextField - PW 입력 */
+		txt_PW = new JPasswordField();
+		txt_PW.setBounds(info_X + 20 + 150 + 20, (info_Y + side_Text) + (65+y/350) + side_Text, info_W - (50 + 150 + y / 120), 65+y/350); // 위치랑 사이즈
+		txt_PW.setFont(font_S); // 글씨체
+
+		add(txt_PW); // 판넬에 textfield 추가
+
+		/* TextArea - 정보입력 뒤에 칸 */
+		tArea_Info = new JTextArea();
+		tArea_Info.setBounds(5 + Icon_W + 5, info_Y, info_W, info_H);
+		tArea_Info.disable();
+		tArea_Info.setBackground(new java.awt.Color(227, 225, 230));
+		tArea_Info.setBorder(new LineBorder(Color.DARK_GRAY, 2));
+
+		add(tArea_Info);
+
+		/* Label - 좌측하단 아이콘 */
+		lblIcon = new JLabel(MainIcon);
+		lblIcon.setBounds(5, info_Y - 3, Icon_W, Icon_H);
+		lblIcon.setBorder(new LineBorder(Color.DARK_GRAY, 2));
+
+		add(lblIcon);
+
+		/* Button - 로그인 */
+		btn_Login = new JButton(Login);
+		btn_Login.setSelectedIcon(Login_s);
+		btn_Login.setRolloverIcon(Login_s);
+		btn_Login.setBorderPainted(false);
+		btn_Login.setFocusPainted(false);
+		btn_Login.setContentAreaFilled(false);
+		btn_Login.setBounds(x - (2*btn_W+5), info_Y, btn_W, btn_H);
+
+		btn_Login.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				boolean result = dao.TryLogin(txt_ID.getText().toString(), txt_PW.getText().toString());
+				if(result) {
+					try {
+						AccessScreen as = new AccessScreen(txt_ID.getText().toString());
+						as.setVisible(false);
+						dispose();
+						as.state = true;
+						as.setVisible(true);
+					} catch (InterruptedException e1) {
+						e1.printStackTrace();
+					}
+				}
+			}
+		});
+		btn_Login.setBorder(new LineBorder(new java.awt.Color(255, 166, 0), 3));
+
+		add(btn_Login);
+
+		/* Button - ID/PW 찾기 */
+		btn_Find = new JButton(IdPwFind);
+		btn_Find.setSelectedIcon(IdPwFind_s);
+		btn_Find.setRolloverIcon(IdPwFind_s);
+		btn_Find.setBorderPainted(false);
+		btn_Find.setFocusPainted(false);
+		btn_Find.setContentAreaFilled(false);
+		btn_Find.setBounds(x - (btn_W+5), info_Y, btn_W, btn_H);
+		btn_Find.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "관리자에게 문의하세요.", "ID/PW 찾기", JOptionPane.INFORMATION_MESSAGE);
+			}
+		});
+		btn_Find.setBorder(new LineBorder(new java.awt.Color(255, 166, 0), 3));
+
+		add(btn_Find);
+
+		/* Button - 회원가입 */
+		btn_Join = new JButton(Join);
+		btn_Join.setSelectedIcon(Join_s);
+		btn_Join.setRolloverIcon(Join_s);
+		btn_Join.setBorderPainted(false);
+		btn_Join.setFocusPainted(false);
+		btn_Join.setContentAreaFilled(false);
+		btn_Join.setBounds(x - (2*btn_W+5), info_Y+(info_H/2), btn_W, btn_H);
+		btn_Join.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Join join = new Join();
+				join.setVisible(true);
+			}
+		});
+		btn_Join.setBorder(new LineBorder(new java.awt.Color(255, 166, 0), 3));
+
+		add(btn_Join);
+
+		/* Button - 청소요청 */
+		btn_Clean = new JButton(Clean);
+		btn_Clean.setSelectedIcon(Clean_s);
+		btn_Clean.setRolloverIcon(Clean_s);
+		btn_Clean.setBorderPainted(false);
+		btn_Clean.setFocusPainted(false);
+		btn_Clean.setContentAreaFilled(false);
+		btn_Clean.setBounds(x - (btn_W+5), info_Y+(info_H/2), btn_W, btn_H);
+		btn_Clean.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+
+			}
+		});
+		btn_Clean.setBorder(new LineBorder(new java.awt.Color(255, 166, 0), 3));
+
+		add(btn_Clean);
+	}
+}

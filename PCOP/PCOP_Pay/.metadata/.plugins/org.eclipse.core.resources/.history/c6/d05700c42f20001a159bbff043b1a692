@@ -1,0 +1,10 @@
+package pcop.dao;
+
+public class Seat_DAO {
+	private static final String DRIVER = "org.mariadb.jdbc.Driver";
+	private static final String URL = "jdbc:mariadb://localhost:3306/PCOP";
+	private static final String USER = "root";
+	private static final String PASS = "hyun5292";
+	
+	
+}
