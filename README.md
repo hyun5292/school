@@ -25,3 +25,13 @@
     https://github.com/hyun5292/school/tree/main/FCB
     
     <img src="https://user-images.githubusercontent.com/57443458/130737135-f34c607d-9105-418c-83fa-90e89fd0c7d6.png"  width="30%"/>
+-------------
++ 3학년
+  + PCOP<br/>
+    : 2019.09.06 ~ 2020.11.01<br/>
+    : PCOP PC Operation Program PC방 관리 프로그램<br/>
+    : 주로 Java, MariaDB 등 사용<br/>
+    https://github.com/hyun5292/school/tree/main/PCOP
+    
+    <img src="https://user-images.githubusercontent.com/57443458/130738742-890dc2cc-2446-4668-9f38-014cacea1d13.png"  width="50%"/>
+    <img src="https://user-images.githubusercontent.com/57443458/130738744-09d01ca7-de8d-4a78-aa58-4c199fb9e001.png"  width="50%"/>
