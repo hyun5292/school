@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="chosungTB">
+        <item>100</item>  //ㄱ
+        <item>100100</item>  //ㄴ
+        <item>10100</item>  //ㄷ
+        <item>10</item>  //ㄹ
+        <item>100010</item>  //ㅁ
+        <item>110</item>  //ㅂ
+        <item>1</item>  //ㅅ
+        <item>101</item>  //ㅈ
+        <item>11</item>  //ㅊ
+        <item>110100</item>  //ㅋ
+        <item>110010</item>  //ㅌ
+        <item>100110</item>  //ㅍ
+        <item>10110</item>  //ㅎ
+    </integer-array>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="moumB">
+        <item>10275</item>
+        //ㅏ
+        <item>10268</item>
+        //ㅑ
+        <item>10254</item>
+        //ㅓ
+        <item>10289</item>
+        //ㅕ
+        <item>10277</item>
+        //ㅗ
+        <item>10284</item>
+        //ㅛ
+        <item>10253</item>
+        //ㅜ
+        <item>10281</item>
+        //ㅠ
+        <item>10282</item>
+        //ㅡ
+        <item>10261</item>
+        //ㅣ
+        <item>10263</item>
+        //ㅐ
+        <item>10269</item>
+        //ㅔ
+        <item>10301</item>
+        //ㅚ
+        <item>10279</item>
+        //ㅘ
+        <item>10255</item>
+        //ㅝ
+        <item>10298</item>
+        //ㅢ
+        <item>10252</item>
+        //ㅖ
+        <item>10263</item>
+        //붙으면 앞에꺼랑 같이 ㅟ, ㅒ, ㅙ, ㅞ
+        <item>10253</item>
+        //ㅟ
+        <item>10268</item>
+        //ㅒ
+        <item>10279</item>
+        //ㅙ
+        <item>10255</item>
+        //ㅞ
+    </integer-array>
+</resources>

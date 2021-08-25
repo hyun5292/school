@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="moum">
+        <item>ㅇㅏ</item>
+        //ㅏ
+        <item>ㅇㅑ</item>
+        //ㅑ
+        <item>ㅇㅓ</item>
+        //ㅓ
+        <item>ㅇㅕ</item>
+        //ㅕ
+        <item>ㅇㅗ</item>
+        //ㅗ
+        <item>ㅇㅛ</item>
+        //ㅛ
+        <item>ㅇㅜ</item>
+        //ㅜ
+        <item>ㅇㅠ</item>
+        //ㅠ
+        <item>ㅇㅡ</item>
+        //ㅡ
+        <item>ㅇㅣ</item>
+        //ㅣ
+        <item>ㅇㅐ</item>
+        //ㅐ
+        <item>ㅇㅔ</item>
+        //ㅔ
+        <item>ㅇㅚ</item>
+        //ㅚ
+        <item>ㅇㅘ</item>
+        //ㅘ
+        <item>ㅇㅝ</item>
+        //ㅝ
+        <item>ㅇㅢ</item>
+        //ㅢ
+        <item>ㅇㅖ</item>
+        //ㅖ
+        <item>00</item>
+        <item>ㅇㅟ</item>
+        //ㅟ
+        <item>ㅇㅒ</item>
+        //ㅒ
+        <item>ㅇㅙ</item>
+        //ㅙ
+        <item>ㅇㅞ</item>
+        //ㅞ
+    </string-array>
+</resources>

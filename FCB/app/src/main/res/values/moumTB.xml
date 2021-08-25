@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="moumTB">
+        <item>110001</item>
+        //ㅏ
+        <item>1110</item>
+        //ㅑ
+        <item>011100</item>
+        //ㅓ
+        <item>100011</item>
+        //ㅕ
+        <item>101001</item>
+        //ㅗ
+        <item>1101</item>
+        //ㅛ
+        <item>101100</item>
+        //ㅜ
+        <item>100101</item>
+        //ㅠ
+        <item>10101</item>
+        //ㅡ
+        <item>101010</item>
+        //ㅣ
+        <item>111010</item>
+        //ㅐ
+        <item>101110</item>
+        //ㅔ
+        <item>101111</item>
+        //ㅚ
+        <item>111001</item>
+        //ㅘ
+        <item>111100</item>
+        //ㅝ
+        <item>10111</item>
+        //ㅢ
+        <item>1100</item>
+        //ㅖ
+        <item>111010</item>
+        //붙으면 앞에꺼랑 같이 ㅟ, ㅒ, ㅙ, ㅞ
+        <item>101100</item>
+        //ㅟ
+        <item>1110</item>
+        //ㅒ
+        <item>111001</item>
+        //ㅙ
+        <item>111100</item>
+        //ㅞ
+    </integer-array>
+</resources>

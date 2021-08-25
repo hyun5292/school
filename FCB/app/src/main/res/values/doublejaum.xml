@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="doublejaum">
+        <item>ㄲ</item>
+        //ㄱ
+        <item>00</item>
+        <item>ㄸ</item>
+        //ㄷ
+        <item>00</item>
+        <item>00</item>
+        <item>ㅃ</item>
+        //ㅂ
+        <item>ㅆ</item>
+        //ㅅ
+        <item>ㅉ</item>
+        //ㅈ
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>ㄳ</item>
+        <item>ㄵ</item>
+        <item>ㄶ</item>
+        <item>ㄺ</item>
+        <item>ㄻ</item>
+        <item>ㄼ</item>
+        <item>ㄽ</item>
+        <item>ㄾ</item>
+        <item>ㄿ</item>
+        <item>ㅀ</item>
+        <item>ㅄ</item>
+    </string-array>
+</resources>

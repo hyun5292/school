@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".TransedImgActivity">
+
+
+    // 사진
+    <ImageView
+        android:id="@+id/imgVBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/imgback" />
+
+    //세로 나눔바1
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="?android:attr/listDivider" />
+
+    //"입력된 점자" 글씨
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:autoSizePresetSizes="@array/autosize_text_sizes"
+        android:autoSizeTextType="uniform"
+        android:text="입력된 점자"
+        android:textColor="#F29999"
+        android:textStyle="bold" />
+
+    //세로 나눔바2
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="?android:attr/listDivider" />
+
+    //"입력된 점자" 글씨 출력용
+    <TextView
+        android:id="@+id/txtViewBraille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:autoSizePresetSizes="@array/autosize_text_sizes"
+        android:scrollbars="vertical"
+        android:autoSizeTextType="uniform" />
+
+    //세로 나눔바3
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="?android:attr/listDivider" />
+
+    //"번역된 내용" 글씨
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:autoSizePresetSizes="@array/autosize_text_sizes"
+        android:autoSizeTextType="uniform"
+        android:text="번역된 내용"
+        android:textColor="#F29999"
+        android:textStyle="bold"/>
+
+    //세로 나눔바4
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="?android:attr/listDivider" />
+
+    //"번역된 내용" 글씨 출력용
+    <TextView
+        android:id="@+id/txtViewTrans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:autoSizePresetSizes="@array/autosize_text_sizes"
+        android:scrollbars="vertical"
+        android:autoSizeTextType="uniform" />
+
+</LinearLayout>

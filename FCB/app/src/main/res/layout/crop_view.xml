@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".CropImageActivity">
+
+    // 사진
+    <com.theartofdev.edmodo.cropper.CropImageView
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@drawable/imgback"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:autoSizePresetSizes="@array/autosize_text_sizes"
+        android:text="점자 주위에 여백을 남겨주세요!!"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        //왼쪽 회전 버튼
+
+        <ImageButton
+            android:id="@+id/btnTurnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:maxWidth="70dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/leftturnbtn" />
+
+        //자르기 버튼
+
+        <ImageButton
+            android:id="@+id/btnCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:maxWidth="190dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cropbtn" />
+
+        //오른쪽 회전 버튼
+
+        <ImageButton
+            android:id="@+id/btnTurnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:maxWidth="70dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/righttrunbtn" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

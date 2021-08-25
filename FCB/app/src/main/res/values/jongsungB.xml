@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="jongsungB">
+        <item>10241</item>  //ㄱ
+        <item>10258</item>  //ㄴ
+        <item>10260</item>  //ㄷ
+        <item>10242</item>  //ㄹ
+        <item>10274</item>  //ㅁ
+        <item>10243</item>  //ㅂ
+        <item>10244</item>  //ㅅ
+        <item>10294</item>  //ㅇ
+        <item>10245</item>  //ㅈ
+        <item>10246</item>  //ㅊ
+        <item>10262</item>  //ㅋ
+        <item>10278</item>  //ㅌ
+        <item>10290</item>  //ㅍ
+        <item>10292</item>  //ㅎ
+        <item>10252</item>  //ㅆ
+    </integer-array>
+</resources>

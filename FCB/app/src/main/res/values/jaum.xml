@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="jaum">
+        <item>ㄱ</item>
+        //ㄱ
+        <item>ㄴ</item>
+        //ㄴ
+        <item>ㄷ</item>
+        //ㄷ
+        <item>ㄹ</item>
+        //ㄹ
+        <item>ㅁ</item>
+        //ㅁ
+        <item>ㅂ</item>
+        //ㅂ
+        <item>ㅅ</item>
+        //ㅅ
+        <item>ㅇ</item>
+        //ㅇ
+        <item>ㅈ</item>
+        //ㅈ
+        <item>ㅊ</item>
+        //ㅊ
+        <item>ㅋ</item>
+        //ㅋ
+        <item>ㅌ</item>
+        //ㅌ
+        <item>ㅍ</item>
+        //ㅍ
+        <item>ㅎ</item>
+        //ㅎ
+        <item>ㅆ</item>
+        //ㅆ
+    </string-array>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        //메인화면 마크
+
+        <ImageView
+            android:id="@+id/imgMainMark"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/fcb" />
+
+        //카메라 버튼
+
+        <ImageButton
+            android:id="@+id/btnCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:maxWidth="250dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imgtransbtn" />
+
+        //일반번역 버튼
+
+        <ImageButton
+            android:id="@+id/btnTrans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:maxWidth="250dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/transbtn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        //made by
+
+        <TextView
+            android:id="@+id/txtMadeby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="made by. 조성윤, 박수현" />
+
+    </LinearLayout>
+</LinearLayout>

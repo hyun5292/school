@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="excepTB">
+        <item>1001</item>  //⠤
+    </integer-array>
+</resources>

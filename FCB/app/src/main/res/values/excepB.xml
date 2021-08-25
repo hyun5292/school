@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="excepB">
+        <item>10276</item>  //⠤
+        <item>10296</item>   //⠸ 것 첫 번째
+        <item>10254</item>   //⠎ 것 두 번째
+    </integer-array>
+</resources>

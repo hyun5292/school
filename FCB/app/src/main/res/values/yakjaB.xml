@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="yakjaB">
+        <item>10283</item>  //가
+        <item>10249</item>  //나
+        <item>10250</item>  //다
+        <item>10257</item>  //마
+        <item>10264</item>  //바
+        <item>10247</item>  //사
+        <item>10280</item>  //자
+        <item>10251</item>  //카
+        <item>10259</item>  //타
+        <item>10265</item>  //파
+        <item>10266</item>  //하
+        <item>10297</item>  //억
+        <item>10302</item>  //언
+        <item>10270</item>  //얼
+        <item>10273</item>  //연
+        <item>10291</item>  //열
+        <item>10299</item>  //영
+        <item>10285</item>  //옥
+        <item>10295</item>  //온
+        <item>10303</item>  //옹
+        <item>10267</item>  //운
+        <item>10287</item>  //울
+        <item>10293</item>  //은
+        <item>10286</item>  //을
+        <item>10271</item>  //인
+        <item>10241</item>  //앞에 붙으면 그래서~그리고
+        <item>10254</item>  //그래서
+        <item>10249</item>  //그러나
+        <item>10258</item>  //그러면
+        <item>10274</item>  //그러므로
+        <item>10269</item>  //그런데
+        <item>10277</item>  //그리고
+    </integer-array>
+</resources>

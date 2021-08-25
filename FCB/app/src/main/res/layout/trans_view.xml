@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".TransViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        // 점자 입력 창
+
+        <EditText
+            android:id="@+id/edTextInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="9"
+            android:ems="10"
+            android:hint="점자를 입력하세요!"
+            android:inputType="textShortMessage" />
+
+        // 돋보기 버튼
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/searchbtn" />
+    </LinearLayout>
+
+    //"입력된 점자" 글씨
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:autoSizePresetSizes="@array/autosize_text_sizes"
+        android:autoSizeTextType="uniform"
+        android:background="#F29999"
+        android:text="입력된 점자"
+        android:textColor="#FFFF" />
+
+    //"입력된 점자" 글씨 출력용
+
+    <TextView
+        android:id="@+id/txtViewBraille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:autoSizePresetSizes="@array/autosize_text_sizes"
+        android:scrollbars="vertical"
+        android:autoSizeTextType="uniform" />
+
+    //세로 나눔바
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="10dp"
+        android:background="?android:attr/listDivider" />
+
+    //"번역된 내용" 글씨
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:autoSizePresetSizes="@array/autosize_text_sizes"
+        android:autoSizeTextType="uniform"
+        android:background="#F29999"
+        android:text="번역된 내용"
+        android:textColor="#FFFF" />
+
+    //"번역된 내용" 글씨 출력용
+
+    <TextView
+        android:id="@+id/txtViewTrans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:autoSizePresetSizes="@array/autosize_text_sizes"
+        android:scrollbars="vertical"
+        android:autoSizeTextType="uniform" />
+
+</LinearLayout>
