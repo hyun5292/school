@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>new Object()로 사용자 객체 만들기</title>
+	<script type="text/javascript">
+		function inquiry() {
+			return this.balance;
+		}
+		function deposit(money){
+			this.balance += money;
+		}
+		function withdraw(money){
+			this.balance -= money;
+			return money;
+		}
+
+		var account = new Object();
+		account.owner = "박수현";
+		account.code = "111";
+		account.balance = 35000;
+		account.inquiry = inquiry;  //함수 자체를 등록시켜줘야 하니까 inquiry 뒤에 ()가 없엉 
+		account.deposit = deposit;
+		account.withdraw = withdraw;
+	</script>
+</head>
+<body>
+	<h3>new Object()로 사용자 객체 만들기</h3>
+	<hr>
+	<script type="text/javascript">
+		document.write(account.owner + ", ");
+		document.write(account.code + ", ");
+		document.write(account.balance + ", ");
+
+		account.deposit(10000);
+		document.write("10000원 저금 후 잔액은 " + account.inquiry() + "<br>");
+		account.deposit(5000);
+		document.write("5000원 인출 후 잔액은 " + account.inquiry() + "<br>");
+	</script>
+</body>
+</html>

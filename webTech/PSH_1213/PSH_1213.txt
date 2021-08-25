@@ -1,0 +1,176 @@
+- 12ppt는 기말대비 자료
+- 기말 시험은 12월 17일 오후 2시 효행관
+범위는 jquery와 ajax
+총 문제는 4문제 객관식 형태의 주관식으로 출제
+Jquery 기본적인 내용과 javascript와 jquery의
+코드 차이는 알아야 하고
+Jquery의 구조와 선택자 문서 객체 다루기 이벤트 처리
+ajax의 get, post, put, delete 방식 이해입니다.
+보기는 주어질 것이고, 빈칸을 채우는 문제
+////////////////////////////////////////////////////
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XMLHttpRequest</title>
+    
+       
+    <script>
+        window.onload = function () {  //윈도우가 로드가 되면
+            document.getElementById('get').onclick = function () {
+                // Ajax를 수행합니다.
+                var request = new XMLHttpRequest();
+                request.open('GET', '/products?dummy=' + new Date().getTime(), false);
+                request.send();
+
+                // 출력합니다.
+                document.getElementById('output').value = request.responseText;
+            };
+
+            document.getElementById('post').onclick = function () {
+                // 변수를 선언합니다.
+                var name = document.getElementById('name').value;
+                var price = document.getElementById('price').value;
+
+                // Ajax를 수행합니다.
+                var request = new XMLHttpRequest();
+                request.open('POST', '/products', false);
+                request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                request.send('name=' + name + '&price=' + price);
+
+                // 출력합니다.
+                document.getElementById('output').value = request.responseText;
+            };
+
+            document.getElementById('put').onclick = function () {
+                // 변수를 선언합니다.
+                var name = document.getElementById('name').value;
+                var price = document.getElementById('price').value;
+
+                // Ajax를 수행합니다.
+                var request = new XMLHttpRequest();
+                request.open('PUT', '/products/0', false);
+                request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                request.send('name=' + name + '&price=' + price);
+
+                // 출력합니다.
+                document.getElementById('output').value = request.responseText;
+            };
+
+            document.getElementById('delete').onclick = function () {
+                // Ajax를 수행합니다.
+                var request = new XMLHttpRequest();
+                request.open('DELETE', '/products/0', false);
+                request.send();
+
+                // 출력합니다.
+                document.getElementById('output').value = request.responseText;
+            };
+        };
+    </script>
+</head>
+<body>
+    <button id="get">GET</button>
+    <button id="post">POST</button>
+    <button id="put">PUT</button>
+    <button id="delete">DELETE</button>
+    <h1>input</h1>
+    <input id="name" />
+    <input id="price" />
+    <h1>output</h1>
+    <textarea id="output" disabled="disabled" cols="40" rows="5"></textarea>
+</body>
+</html>
+///////////////////////////////////////////////////
+이게 시험이얔ㅋㅋㅋ
+위아래 비교해
+위아래 4개중에서 1개를 다른 1개로 바꿔주는 거랭
+4개 중에 1문제
+/////////////////////////////////////////////////
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XMLHttpRequest</title>
+    <script src='http://code.jquery.com/jquery-3.4.1.js'></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('#get').click(function(){
+                $.ajax({
+                    url:'/products',
+                    type:'get',
+                    dataType:'text',
+                    success:function(data){
+                        $('#output').val(data);
+                    }
+                });
+            });
+            $('#post').click(function(){
+                $.ajax({
+                    url:'/products',
+                    type:'post',
+                    dataType:'text',
+                    data:{
+                        name:$('#name').val(),
+                        price:$('#price').val()
+                    },
+                    success:function(data){
+                        $('#output').val(data);
+                    }
+                });
+            });
+            $('#put').click(function(){
+                $.ajax({
+                    url:'/products/0',
+                    type:'put',
+                    dataType:'text',
+                    data:{
+                        name:$('#name').val(),
+                        price:$('#price').val()
+                    },
+                    success:function(data){
+                        $('#output').val(data);
+                    }
+                });
+            });
+            $('#delete').click(function(){
+                $.ajax({
+                    url:'/products/0',
+                    type:'delete',
+                    dataType:'text',
+                    success:function(data){
+                        $('#output').val(data);
+                    }
+                });
+            });
+        });  
+    </script>
+</head>
+<body>
+    <button id="get">GET</button>
+    <button id="post">POST</button>
+    <button id="put">PUT</button>
+    <button id="delete">DELETE</button>
+    <h1>input</h1>
+    <input id="name" />
+    <input id="price" />
+    <h1>output</h1>
+    <textarea id="output" disabled="disabled" cols="40" rows="5"></textarea>
+</body>
+</html>
+///////////////////////////////////////////////////////////
+javascript기법을 -> ajax 기법
+p10 잘보랭
+
+ch12 ppt에서 filter부터
+문서 객체의 클래스 뭐시기 전까지
+javascript를 jquery로??
+filter인지 다른 문서객체인지로 교체 해야하는지??
+
+문서 객체 삽입 - Append와 AppendTo의 차이점
++ 문서 객체 이동도 중요한데
+=>문서 객체들을 다루는 법들을 잘 알고 있어라...ㅠ
+p.56
+
+마지막 문제는 제이쿼리 이벤트
+on, 어떻게 활용되는지
+노랑파랑빨강 있는곳 차이점? 어떤 위치에 있는지..?

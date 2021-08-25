@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>17831024 박수현</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function () {
+			var canvas = document.getElementById('canvas');
+			var context = canvas.getContext('2d');
+
+			$(canvas).on({
+				mousedown: function (event){
+					var position = $(this).offset();
+					var x = event.pageX - position.left;
+					var y = event.pageY - position.top;
+
+					context.beginPath();
+					context.moveTo(x, y);
+				},
+				mouseup: function (event){
+					var position = $(this).offset();
+					var x = event.pageX - position.left;
+					var y = event.pageY - position.top;
+
+					context.lineTo(x, y);
+					context.stroke();
+				}
+			})
+		});
+	</script>
+</head>
+<body>
+	<canvas id="canvas" width="500" height="500" style="border: 3px solid black">
+	</canvas>
+</body>
+</html>

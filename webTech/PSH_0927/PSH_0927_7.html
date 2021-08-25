@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>튀어오르는 공</title>
+	<style type="text/css">
+		@-webkit-keyframes bounce{
+			from, to{
+				bottom: 0px;
+				-webkit-animation-timing-function: ease-out;
+			}
+
+			100% {
+				bottom: 890px;
+				-webkit-animation-timing-function: ease-in;
+			}
+		}
+
+		#ball{
+			position: fixed;
+			width: 50px;
+			height: 50px;
+			background: lightblue;
+			border-radius: 50px;
+			-webkit-animation-name: bounce;
+			-webkit-animation-iteration-count:6;
+			-webkit-animation-duration: 1s;
+		}
+		#ball2{
+			position: fixed;
+			width: 50px;
+			height: 50px;
+			background: red;
+			border-radius: 50px;
+			-webkit-animation-name: bounce;
+			-webkit-animation-iteration-count:5;
+			-webkit-animation-duration: 2s;
+		}
+		#ball3{
+			position: fixed;
+			width: 50px;
+			height: 50px;
+			background: yellow;
+			border-radius: 50px;
+			-webkit-animation-name: bounce;
+			-webkit-animation-iteration-count:4;
+			-webkit-animation-duration: 3s;
+		}
+		#ball4{
+			position: fixed;
+			width: 50px;
+			height: 50px;
+			background: lightgreen;
+			border-radius: 50px;
+			-webkit-animation-name: bounce;
+			-webkit-animation-iteration-count:3;
+			-webkit-animation-duration: 4s;
+		}
+		#ball5{
+			position: fixed;
+			width: 50px;
+			height: 50px;
+			background: orange;
+			border-radius: 50px;
+			-webkit-animation-name: bounce;
+			-webkit-animation-iteration-count:2;
+			-webkit-animation-duration: 5s;
+		}
+		#ball6{
+			position: fixed;
+			width: 50px;
+			height: 50px;
+			background: blue;
+			border-radius: 50px;
+			-webkit-animation-name: bounce;
+			-webkit-animation-iteration-count:1;
+			-webkit-animation-duration: 6s;
+		}
+	</style>
+</head>
+<body>
+	<div id="ball"/>
+	<div id="ball2"/>
+	<div id="ball3"/>
+	<div id="ball4"/>
+	<div id="ball5"/>
+	<div id="ball6"/>
+</body>
+</html>

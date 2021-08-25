@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XMLHttpRequest 객체</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var request = new XMLHttpRequest();  //객체 생성
+        request.onreadystatechange=function(event){
+            if(request.readyState==4){
+                if(request.status==200){  //가져온 데이터가 올바른 데이터인지 확인
+                    //alert(request.readyState);
+                    //document.body.innerHTML += request.responseText;
+                    //alert(request.responseXML);
+                    var xml = request.responseXML;
+
+                    var names = xml.getElementsByTagName('name');
+                    var prices = xml.getElementsByTagName('price');
+
+                    for(var i = 0; i < names.length; i++){
+                        var name = names[i].childNodes[0].nodeValue;
+                        var price = prices[i].childNodes[0].nodeValue;
+
+                        document.body.innerHTML += '<h1>' + name + '</h1>';
+                        document.body.innerHTML += '<h2>' + price + '</h2>';
+                    }
+                }
+            }
+        };
+        request.open('GET', '/data.xml', true);  //false는 동기방식, true는 ajax 기법을 사용한다
+        request.send();
+        //document.body.innerHTML += request.responseText;
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>17831024 박수현</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#wrap').on('click', 'h1', function(){
+				var length = $('h1').length;
+				var targetHTML = $(this).html();
+				$('#wrap').append('<h1>' + length + '-' + targetHTML + '</h1>');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<h1>Header</h1>
+	</div>
+</body>
+</html>

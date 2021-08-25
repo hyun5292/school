@@ -1,0 +1,25 @@
+on + 이벤트이름
+
+이벤트 리스너 만들기 3가지 방법 중
+인기있는 건 addEventListener() 메소드
+
+이벤트 객체에 들어있는 정보
+target vs currentTarget
+
+이벤트의 디폴트 행동 취소는 주로 2번을 쓴댕
+
+캡처 단계
+-> 이벤트 하나하나 다 실행하는거??
+버블 단계
+-> 요즘은 주로 이거 쓰나봐
+
+JQuery닭
+https://code.jquery.com/
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+
+

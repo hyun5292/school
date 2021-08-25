@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>17831024 박수현</title>
+	<style type="text/css">
+		*{ margin: 0px; padding: 0px; }
+		div{
+			margin: 50px; padding: 3px;
+			border: 3px solid purple;
+			border-radius: 10px;
+			color: white;
+			background-color: orange;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('div').click(function(){
+				var header = $('h1', this).text();
+				var paragraph = $('p', this).text();
+
+				alert(header + '\n' + paragraph);
+			});
+		});
+	</script>
+</head>
+<body>
+	<center>
+		<div>
+			<h1>Header 1</h1>
+			<p>Paragraph</p>
+		</div>
+		</br>
+		<div>
+			<h1>Header 2</h1>
+			<p>Paragraph</p>
+		</div>
+		</br>
+		<div>
+			<h1>Header 3</h1>
+			<p>Paragraph</p>
+		</div>
+	</center>
+</body>
+</html>

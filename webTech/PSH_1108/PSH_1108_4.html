@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+	//JQuery Library를 쓸거얌
+    $(document).ready(function () {
+       $('body > *').css('color', 'red');
+       //$('body ul').css('color', 'red'); -> 이거는 통해
+       //$('body > ul').css('color', 'red'); -> 이거는 후손이라 안돼
+    });
+</script>
+</head>
+<body>
+	<div>
+		<ul>
+			<li>Apple</li>
+			<li>Bag</li>
+			<li>Cat</li>
+			<li>Dog</li>
+			<li>Elephant</li>
+		<ul>
+	</div>
+</body>
+</html>

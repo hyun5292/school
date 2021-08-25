@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<ul id="a">
+    <li id="b">
+        <button id="c">alert 발생</a>
+    </li>
+</ul>
+
+<script>
+    function showElement() {
+        alert(this.innerHTML);
+    }
+    el = document.getElementById("a");
+    el.addEventListener('click', showElement, true);
+
+    el = document.getElementById("b");
+    el.addEventListener('click', showElement, true);
+
+    el = document.getElementById("c");
+    el.addEventListener('click', showElement, true);
+</script>
+</body>
+</html>

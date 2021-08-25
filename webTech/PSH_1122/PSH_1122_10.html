@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>17831024 박수현</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('textarea').keyup(function(){
+				var inputLength = $(this).val().length;
+				var remain = 150 - inputLength;
+				$('h1').html(remain);
+			});
+		});
+	</script>
+</head>
+<body>
+	<div>
+		<p>지금 내 생각을</p>
+		<h1>10</h1>
+		<textarea cols="100" rows="10"></textarea>
+	</div>
+</body>
+</html>
