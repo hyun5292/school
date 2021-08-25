@@ -42,3 +42,7 @@
     https://github.com/hyun5292/school/tree/main/spring/HamSaMo
     
     <img src="https://user-images.githubusercontent.com/57443458/130741048-5a23da5c-6d4c-4f4a-ab07-1bd013c688b6.png"  width="50%"/>
+
+  + 웹 기술 수업 - Javascript, JQuery 조금, node.js 조금<br/>
+    : 2020.09.03 ~ 2020.12.17<br/>
+    https://github.com/hyun5292/school/tree/main/webTech
