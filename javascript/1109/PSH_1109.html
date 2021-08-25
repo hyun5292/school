@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>경민대 융소과 1-B 박수현(17831024)</title>
+</head>
+<body align = "center">
+<h3>경민대학교 융합소프트웨어과 1학년 B반 박수현(17831024)</h3>
+<hr width = "700">
+<br><br>
+<script>
+	function Car(model, speed, color, open)
+	{
+		this.model = model;
+		this.speed = speed;
+		this.color = color;
+		this.open = open;
+		this.brake = function ()
+		{
+			this.speed -= 10;
+		}
+		this.accel = function ()  //메소드
+		{
+			this.speed += 10;
+		}
+	}
+	//아빠 차
+	document.write("아빠 차<br><br>");
+	document.write("<img src='BMW.JPG' width='150' height='100'>" + "<br><br>");
+	var fatherCar = new Car("BMW", 60, "Black", 1000, "Not Open")
+	document.write("모델 : " + fatherCar.model + "  속도 : " + fatherCar.speed + "  색상 : " + fatherCar.color + "  오픈여부 : " + fatherCar.open + "<br>");
+	fatherCar.accel();
+	document.write("모델 : " + fatherCar.model + "  속도 : " + fatherCar.speed + "  색상 : " + fatherCar.color + "  오픈여부 : " + fatherCar.open + "<br>");
+	fatherCar.brake();
+	fatherCar.cc = 2000;
+    fatherCar.showcc = function()
+	{
+		alert("연비는 BMW, 람보르기니 모두 " + this.cc + "cc입니다.");
+	}
+	fatherCar.showcc();
+	document.write("모델 : " + fatherCar.model + "  속도 : " + fatherCar.speed + "  색상 : " + fatherCar.color + "  오픈여부 : " + fatherCar.open + "<br>");
+    document.write("<br>");
+
+    //엄마 차
+    document.write("엄마 차<br><br>");
+    document.write("<img src='람보르기니.JPG' width='150' height='100'>" + "<br><br>");
+	var motherCar = new Car("람보르기니", 100, "White", 2000, "Open")
+	document.write("모델 : " + motherCar.model + "  속도 : " + motherCar.speed + "  색상 : " + motherCar.color + "  오픈여부 : " + motherCar.open + "<br>");
+	motherCar.accel();
+	motherCar.color = "Red";
+	document.write("모델 : " + motherCar.model + "  속도 : " + motherCar.speed + "  색상 : " + motherCar.color + "  오픈여부 : " + motherCar.open + "<br>");
+	motherCar.brake();
+	document.write("모델 : " + motherCar.model + "  속도 : " + motherCar.speed + "  색상 : " + motherCar.color + "  오픈여부 : " + motherCar.open + "<br>");
+</script>
+<br><br><br>
+<hr width = "700">
+<h3>JavaScript</h3>
+</body>
+</html>

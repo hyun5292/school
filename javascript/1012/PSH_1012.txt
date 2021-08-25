@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>경민대 융소과 1-B 박수현(17831024)</title>
+  <style>
+    //CSS
+  </style>      
+  <script>
+    //JavaScript
+    function big()
+    {
+      e = document.getElementById("na");
+      e.style.fontSize = "10px";
+    }
+    function color()
+    {
+      e = document.getElementById("na");
+      e.style.color = "blue";
+    }
+  </script>
+  //html
+</head>
+<body align = "center">
+<h3>경민대학교 융합소프트웨어과 1학년 B반 박수현(17831024)</h3>
+<hr width = "700">
+<br><br>
+  <h1 id = na>홍길동</h1>
+  <p> </p>   //문단
+  <script>
+    //JavaScript
+  </script>
+  <form>
+    //html
+    <input type = button value = size onclick = big();>
+    <input type = button value = color onclick = color();>
+  </form>
+<br><br><br>
+<hr width = "700">
+<h3>JavaScript</h3>
+</body>
+</html>
+
+//p.161
+//과제 - 시계 만들기(월요일까지)
+날짜 + 둥글게 + 다이아 + 선에 이미지 넣기 + 시계배경 이미지 넣기
+
+//p.377 DOM & BOM
+
+
+
+

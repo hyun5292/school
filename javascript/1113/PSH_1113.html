@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>경민대 융소과 1-B 박수현(17831024)</title>
+</head>
+<body align = "center">
+<h3>경민대학교 융합소프트웨어과 1학년 B반 박수현(17831024)</h3>
+<hr width = "700">
+<br><br>
+<script>
+	function Car(model, speed, color)
+	{
+		this.model = model;
+		this.speed = speed;
+        this.color = color;
+	}
+	Car.prototype.getaccel = function(c)
+	{
+        return this.speed += 10;
+	}
+	//은진이 차
+	document.write("은진이 차<br>");
+	var eunjinCar = new Car("타요", 20, "yellow");
+    eunjinCar.getaccel();
+	document.write("차 종류 : " + eunjinCar.model + " 속도 : " + eunjinCar.speed + " 색상 : " + eunjinCar.color + "<br>");
+</script>
+<br><br><br>
+<hr width = "700">
+<h3>JavaScript</h3>
+</body>
+</html>

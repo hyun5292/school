@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>경민대 융소과 1-B 박수현(17831024)</title>
+</head>
+<body align = "center">
+<h3>경민대학교 융합소프트웨어과 1학년 B반 박수현(17831024)</h3>
+<hr width = "700">
+<br><br>
+<script>
+    function checkDate()
+    {
+        var s = document.getElementById("birthyear_input").value;
+	    var birthyear = new Date(s);
+	    //prompt("태어난 연도를 입력하세요", "'년'은 빼고 입력하세요");
+	    var now = new Date();
+	    var myage = 19;
+	    var age = now.getFullYear() - birthyear.getFullYear();
+	    document.write("<br><br><h2 align = 'center'>당신은 만으로 " + "<font color = 'blue'>" + age + "</font>" + "살 입니다.</h2><br>");
+	    if(age < myage)
+	    {
+		    document.write("<h4 align = 'center'>저보다 나이가 적으시네요</h4>");
+	    }
+        else if(age > myage)
+        {
+    	    document.write("<h4 align = 'center'>저보다 나이가 많으시네요</h4>");
+        }
+        else if(age = myage)
+        {
+    	    document.write("<h4 align = 'center'>저랑 동갑이시네요</h4>");
+        }
+        document.write("<h5>세상에 비호감 딱 두 명있대<br>어떻게 두 명이나<br>누군지 정말 궁금하구나<br>그게 나야<br>불쌍하다<br>하난 너야</h5>");
+    }
+</script>
+<input type="date" id="birthyear_input">
+<button onclick="checkDate()">태어난 연도 입력</button>
+<br><br><br>
+<hr width = "700">
+<h3>JavaScript</h3>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>경민대 융소과 1-B 박수현(17831024)</title>
+	<style>
+		canvas {
+			background: lightblue;
+			border: 1px dotted black;
+		}
+	</style>
+	<script>
+	//기능별로 설명하기
+		var context;
+		var dx = 5;
+		var dy = 5;
+		var y = 20;
+		var x = 20;
+		function draw()
+		{
+			//공 그리기
+			var canvas = document.getElementById('myCanvas');
+			var context = canvas.getContext('2d');
+			context.clearRect(0, 0, 600, 500);
+			context.beginPath();
+			context.fillStyle = "blue";
+			context.arc(x, y, 20, 0, Math.PI * 2, true);
+			context.closePath();
+			context.fill();
+			//위치 이동 - 공간을 벗어나지 않게
+			if(x < (0 + 20) || x > (600 - 20))
+				dx = -dx;
+			if(y < (0 + 20) || y > (500 - 20))
+				dy = -dy;
+			x += dx;
+			y += dy;
+		}
+		//반복 호출
+		setInterval(draw, 10);
+	</script>
+</head>
+<body>
+<canvas id="myCanvas" width = "600" height="500"></canvas>
+</body>
+</html>

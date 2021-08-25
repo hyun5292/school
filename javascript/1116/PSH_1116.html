@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>경민대 융소과 1-B 박수현(17831024)</title>
+</head>
+<body align = "center">
+<h3>경민대학교 융합소프트웨어과 1학년 B반 박수현(17831024)</h3>
+<hr width = "700">
+<br><br>
+<div id = 'remaining1'></div>
+<div id = 'remaining2'></div>
+<script>
+	//floor는 반올림에서 내림, ceiling 반올림에서 올림
+    function datesUntilNewYear()
+    {
+    	var now = new Date();
+    	var newYear = new Date('January 1, ' + (now.getFullYear() + 1));
+    	var diff = newYear - now;
+    	var milliseconds = Math.floor(diff % 1000);
+    	diff = diff / 1000;
+    	var seconds = Math.floor(diff % 60);
+    	diff = diff / 60;
+    	var minutes = Math.floor(diff % 60);
+    	diff = diff / 60;
+    	var hours = Math.floor(diff % 24);
+    	diff = diff / 24;
+    	var days = Math.floor(diff);
+
+    	var outStr = '내년도 신정까지 ' + "<font color = 'blue'>"+ days + '일, ' + hours + '시간, ' + minutes + '분, ' + seconds + "초<font color = 'black'>" + ' 남았습니다.<br><br>';
+
+    	document.getElementById('remaining1').innerHTML = outStr.fontsize('5px');
+    	setTimeout("datesUntilNewYear()", 1000);
+    }
+    function datesUntilCristmas()
+    {
+    	var now = new Date();
+    	var newYear = new Date('December 25, ' + now.getFullYear());
+    	var diff = newYear - now;
+    	var milliseconds = Math.floor(diff % 1000);
+    	diff = diff / 1000;
+    	var seconds = Math.floor(diff % 60);
+    	diff = diff / 60;
+    	var minutes = Math.floor(diff % 60);
+    	diff = diff / 60;
+    	var hours = Math.floor(diff % 24);
+    	diff = diff / 24;
+    	var days = Math.floor(diff);
+
+    	var outStr = '올해 크리스마스까지 ' + "<font color = 'red'>"+ days + '일, ' + hours + '시간, ' + minutes + '분, ' + seconds + "초<font color = 'black'>" + ' 남았습니다.<br><br>';
+
+    	document.getElementById('remaining2').innerHTML = outStr.fontsize('5px');
+    	setTimeout("datesUntilCristmas()", 1000);
+    }
+    datesUntilNewYear();
+    datesUntilCristmas();
+    document.write("<font size = '3px'>어휴 얼마 안남았네ㄷㄷ<br>올해도 쏠로");
+</script>
+<br><br><br>
+<hr width = "700">
+<h3>JavaScript</h3>
+</body>
+</html>
