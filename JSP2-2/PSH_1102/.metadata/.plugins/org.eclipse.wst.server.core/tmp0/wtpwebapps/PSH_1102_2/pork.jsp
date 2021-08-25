@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<%!String kind;%>
+<%
+kind = request.getParameter("kind");
+%>
+<h3>돼지고기... 별론데...다른 거 먹엉</h3><br/><br/><br/>
+<a href="requestex.html">처음처럼과 함께</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<jsp:useBean id="family" class="com.jsp.ex.Family" scope="page" />
+<jsp:useBean id="food" class="com.jsp.ex.Food" scope="page" />
+<jsp:useBean id="friends" class="com.jsp.ex.Friends" scope="page" />
+<jsp:useBean id="task" class="com.jsp.ex.TaskToDo" scope="page" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<center><h1>나에 대해서</h1></center>
+	<jsp:setProperty value="박수빈" property="name" name="family"/>
+	<jsp:setProperty value="언니" property="relation" name="family"/>
+	<jsp:setProperty value="01011111111" property="phone" name="family"/>
+	
+	이름 : <jsp:getProperty property="name" name="student"/><br />
+	나이 : <jsp:getProperty property="relation" name="student"/><br />
+	번호 : <jsp:getProperty property="phone" name="student"/><br />
+</body>
+</html>

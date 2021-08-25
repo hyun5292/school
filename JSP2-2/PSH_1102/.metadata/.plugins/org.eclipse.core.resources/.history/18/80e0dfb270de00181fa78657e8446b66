@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="request_send.jsp">
+무슨 고기 제일 좋아하세요? <br/>
+<input type="radio" name="kind" size="10">소고기
+<input type="radio" name="kind" size="10" value="pork">돼지고기
+<input type="radio" name="kind" size="10" value="chicken">닭고기 <br/>
+<input type="submit" value="제일 좋아합니다!">
+</form>
+</body>
+</html>

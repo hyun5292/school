@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Fri Nov 16 16:52:08 KST 2018
+org.eclipse.jst.jee.server\:PSH_1116_3=C\:\\Program Files\\Java\\apache-tomcat-9.0.13\\wtpwebapps\\PSH_1116_3
+org.eclipse.jst.jee.server\:PSH_1116_task=C\:\\Program Files\\Java\\apache-tomcat-9.0.13\\wtpwebapps\\PSH_1116_task

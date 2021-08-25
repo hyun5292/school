@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Fri Sep 21 16:46:05 KST 2018
+org.eclipse.jst.jee.server\:PSH_0921=C\:\\Program Files\\Java\\apache-tomcat-9.0.12\\wtpwebapps\\PSH_0921
+org.eclipse.jst.jee.server\:PSH_0921_servlet=C\:\\Program Files\\Java\\apache-tomcat-9.0.12\\wtpwebapps\\PSH_0921_servlet

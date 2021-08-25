@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Fri Oct 05 22:01:51 KST 2018
+org.eclipse.jst.jee.server\:PSH_1005_3=C\:\\Program Files\\Java\\apache-tomcat-9.0.12\\wtpwebapps\\PSH_1005_3
+org.eclipse.jst.jee.server\:PSH_1005_2=C\:\\Program Files\\Java\\apache-tomcat-9.0.12\\wtpwebapps\\PSH_1005_2
+org.eclipse.jst.jee.server\:PSH_1005_Last=C\:\\Program Files\\Java\\apache-tomcat-9.0.12\\wtpwebapps\\PSH_1005_Last
+org.eclipse.jst.jee.server\:PSH_1005=C\:\\Program Files\\Java\\apache-tomcat-9.0.12\\wtpwebapps\\PSH_1005

@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sat Apr 13 23:55:57 KST 2019
+org.eclipse.jst.jee.server\:PSH_1130=C\:\\Users\\tytyj\\apache-tomcat-9.0.17\\wtpwebapps\\PSH_1130
+org.eclipse.jst.jee.server\:PSH_1130_task=C\:\\Users\\tytyj\\apache-tomcat-9.0.17\\wtpwebapps\\PSH_1130_task

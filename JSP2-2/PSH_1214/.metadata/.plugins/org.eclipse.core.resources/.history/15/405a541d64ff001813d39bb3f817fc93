@@ -1,0 +1,15 @@
+package com.jsp.ex;
+
+public class AccountDAO {
+	private String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	private String uid = "clara";
+	private String upw = "agnes";
+	
+	public AccountDAO() {
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

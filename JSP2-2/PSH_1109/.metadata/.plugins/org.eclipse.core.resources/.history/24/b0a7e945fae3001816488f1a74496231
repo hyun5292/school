@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<%!
+	String id, pw;
+%>
+<%
+	id = request.getParameter("id");
+	pw = request.getParameter("pw");
+
+	if(!id.equals("abc")){
+		out.println("해당 id가 존재하지 않자나! 다시 확인해 이 자슥아!" + "<br/>");
+	}
+	else if(!pw.equals("123")){
+		out.println(id + "님! 비밀번호 틀렸자나! 다시 확인해 이 자슥아!" + "<br/>");
+	}
+
+%>
+<a href="login.html">다시 로그인하기</a>
+</body>
+</html>

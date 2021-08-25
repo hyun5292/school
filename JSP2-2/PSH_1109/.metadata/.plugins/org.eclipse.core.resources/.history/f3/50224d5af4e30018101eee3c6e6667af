@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<%!
+	String id, pw;
+%>
+<%
+	Cookie[] cookies = request.getCookies();
+
+	for(int i = 0; i < cookies.length; i++){
+		id = cookies[i].getName();
+		pw = cookies[i].getValue();
+		else if(!id.equals("abs")){
+			out.println(id + "님 안녕하세요! <br/>환영합니다." + "<br/>");
+		}
+	}
+%>
+<a href="Logout.jsp">로그아웃</a>
+</body>
+</html>
