@@ -1,0 +1,10 @@
+package com.spring.hamsamo.dao;
+
+import org.springframework.stereotype.Repository;
+
+import com.spring.hamsamo.dto.MemberDTO;
+
+@Repository
+public interface MemberDAO {
+	public MemberDTO GetMember();
+}

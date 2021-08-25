@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<!-- 외부 파일에 있는 값을 가져올 때 쓴댕 -->
+	<context:property-placeholder
+		location="classpath:admin.properties, classpath:sub_admin.properties" />
+
+	<!-- 변수명이 adminConnection이고 AdminConnection 클래스를 참조 -->
+	<bean id="adminConnection" class="com.spring.ex.AdminConnection">
+		<!-- 멤버변수 값 초기화 -->
+		<property name="adminId">
+			<value>${admin.id}</value>
+		</property>
+		<!-- 멤버변수 값 초기화 -->
+		<property name="adminPw">
+			<value>${admin.pw}</value>
+		</property>
+		<!-- 멤버변수 값 초기화 -->
+		<property name="subAdminId">
+			<value>${sub_admin.id}</value>
+		</property>
+		<!-- 멤버변수 값 초기화 -->
+		<property name="subAdminPw">
+			<value>${sub_admin.pw}</value>
+		</property>
+	</bean>
+</beans>

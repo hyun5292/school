@@ -1,0 +1,17 @@
+package com.spring.ex;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		//이 생성자를 통해서 스프링 컨테이너 생성, 클래스들의 경로를 지정해서 연결
+		AbstractApplicationContext ctx = new GenericXmlApplicationContext("classpath:applicationCTX.xml");
+		Pencil pencil = ctx.getBean("pencil", Pencil.class);
+		pencil.use();
+		
+		ctx.close();
+	}
+
+}

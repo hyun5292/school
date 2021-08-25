@@ -1,0 +1,110 @@
+package com.spring.hamsamo.controller;
+
+import java.sql.Timestamp;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.spring.hamsamo.dto.BoardDTO;
+import com.spring.hamsamo.service.BoardService;
+
+@Controller
+public class MainController {
+
+	@Autowired
+	BoardService bService;
+
+	// 게시물 목록
+	@RequestMapping("/list")
+	public String BList(Model model) {
+		System.out.println("Controller - List()");
+		List<BoardDTO> dtos = bService.GetBList();
+		model.addAttribute("dtos", dtos);
+
+		return "/board/list";
+	}
+
+	// 게시물 뷰
+	@RequestMapping("/contentForm")
+	public String BContentForm(HttpServletRequest request, Model model) {
+		System.out.println("Controller - ContentForm()");
+		BoardDTO dto = bService.GetBContent(request.getParameter("bId"));
+
+		model.addAttribute("dto", dto);
+
+		return "/board/contentForm";
+	}
+
+	// 게시물 작성 뷰 - writeForm
+	@RequestMapping("/writeForm")
+	public String BWriteForm(Model model) {
+		return "/board/writeForm";
+	}
+
+	// 게시물 작성
+	@RequestMapping("/write")
+	public String BWrite(HttpServletRequest request, Model model) {
+		System.out.println("Controller - Write()");
+
+		// 작성 날짜 넣으려고 timestamp 작성한 거
+		Timestamp ts = new Timestamp(System.currentTimeMillis());
+		// parameter로 string으로 걍 보내니까 오류난다 이 똬식 map으로 보내야된대 똬식
+		Map<String, String> map = new HashMap<String, String>();
+
+		map.put("bName", request.getParameter("bName"));
+		map.put("bTitle", request.getParameter("bTitle"));
+		map.put("bContent", request.getParameter("bContent"));
+		map.put("bDate", ts.toString());
+		bService.BWrite(map);
+
+		return "redirect:list";
+	}
+
+	// 게시물 수정
+	@RequestMapping("/modify")
+	public String BModify(HttpServletRequest request, Model model) {
+		System.out.println("Controller - Modify()");
+
+		// 작성 날짜 넣으려고 timestamp 작성한 거
+		Timestamp ts = new Timestamp(System.currentTimeMillis());
+		// parameter로 string으로 걍 보내니까 오류난다 이 똬식 map으로 보내야된대 똬식
+		Map<String, String> map = new HashMap<String, String>();
+
+		map.put("bName", request.getParameter("bName"));
+		map.put("bTitle", request.getParameter("bTitle"));
+		map.put("bContent", request.getParameter("bContent"));
+		map.put("bDate", ts.toString());
+		map.put("bId", request.getParameter("bId"));
+		bService.BModify(map);
+
+		return "redirect:list";
+	}
+
+	// 게시물 삭제
+	@RequestMapping("/delete")
+	public String BDelete(HttpServletRequest request, Model model) {
+		System.out.println("Controller - Delete()");
+
+		bService.BDelete(request.getParameter("bId"));
+
+		return "redirect:list";
+	}
+
+	// 댓글 폼 보여주기 
+	@RequestMapping("/replyForm")
+	public String ReplyForm(HttpServletRequest request, Model model) {
+		dao = sqlSession.getMapper(BoardDAO.class);
+
+		model.addAttribute("dto", dao.ContentForm(request.getParameter("bId")));
+
+		return "/board/replyForm";
+	}
+}

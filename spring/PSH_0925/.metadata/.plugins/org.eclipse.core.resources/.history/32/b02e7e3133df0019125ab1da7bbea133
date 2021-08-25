@@ -1,0 +1,30 @@
+package com.spring.ex;
+
+public class StudentInfo {
+	private Student student;  //Student 클래스의 객체 선언
+	
+	public StudentInfo(Student student) {  //생성자쓰, 클래스가 돌아가기 전 세팅할 값들을 세팅
+		this.student = student;  //현재 클래스의 멤버 객체인 student에 매개변수로 받은 student를 배정
+	}
+	
+	public void getStudentInfo() {  //학생 정보 출력 메서드
+		System.out.println("***********************");  //모양이 이래야 이뻐
+		if(student != null) {  //현재 student 객체가 null이 아니면, 값을 받아왔다면
+			//출력
+			System.out.println("이름 : " + student.getName());
+			System.out.println("나이 : " + student.getAge());
+			System.out.println("학년 : " + student.getGradeNum());
+			System.out.println("반 : " + student.getClassNum());
+			System.out.println("***********************");
+		} else {  //현재 student 객체가 null이면, 값을 받아오지 않았다면
+			//출력
+			System.out.println("내용이 없자낭");
+			System.out.println("***********************");
+		}
+	}
+	
+	//매개변수로 Student 형식의 값들을 받아옴, 생성자랑 비슷한데 얘는 객체 생성해서 초기에 설정해서 하는게 아니고 그냥 이 메서드 호출해서 값을 세팅하나봐
+	public void setStudent(Student student) {  
+		this.student = student;  //현재 클래스의 멤버 객체인 student에 매개변수로 받은 student를 배정
+	}
+}

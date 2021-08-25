@@ -1,0 +1,10 @@
+package com.spring.ex;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+public class LogAop {
+	public Object loggerAop(ProceedingJoinPoint joinpoint) throws Throwable{
+		String signatureStr = joinpoint.getSignature().toShortString();
+		System.out.println(signatureStr + " is start.");
+	}
+}

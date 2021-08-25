@@ -1,0 +1,5 @@
+package com.spring.hamsamo.service;
+
+public class MemberService {
+
+}

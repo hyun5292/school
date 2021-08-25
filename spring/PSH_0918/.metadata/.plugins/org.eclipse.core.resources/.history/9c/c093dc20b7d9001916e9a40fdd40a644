@@ -1,0 +1,32 @@
+package com.spring.ex;
+
+public class Calculator {
+	public void addition(int f, int s) {
+		System.out.println("addition");
+		int result = f + s;
+		System.out.println(f + "+" + s + "=" + result);
+	}
+	
+	public void substraction(int f, int s) {
+		System.out.println("substraction");
+		int result = f - s;
+		System.out.println(f + "-" + s + "=" + result);
+	}
+	
+	public void multiplication(int f, int s) {
+		System.out.println("multiplication");
+		int result = f * s;
+		System.out.println(f + "*" + s + "=" + result);
+	}
+	
+	public void division(int f, int s) {
+		System.out.println("division");
+		if(s == 0) {
+			System.out.println("그러지마...");
+		}
+		else {
+			int result = f / s;
+			System.out.println(f + "/" + s + "=" + result);
+		}
+	}
+}

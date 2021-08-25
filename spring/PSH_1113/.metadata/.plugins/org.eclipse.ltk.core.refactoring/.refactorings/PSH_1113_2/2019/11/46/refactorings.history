@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;PSH_1113_2&apos;&#x0D;&#x0A;- Original project: &apos;PSH_1113_2&apos;&#x0D;&#x0A;- Original element: &apos;PSH_1113_2/src/main/java/spring.com.ex&apos;" description="Delete element" element1="/src\/main\/java&lt;spring.com.ex" element2="/src\/main\/java&lt;spring.com" element3="/src\/main\/java&lt;spring" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1573610543234" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,8 @@
+package com.spring.hamsamo.service;
+
+import java.util.Map;
+
+public interface MemberService {
+	// 회원가입
+	public boolean MJoin(Map<String, String> map);
+}

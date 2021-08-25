@@ -1,0 +1,8 @@
+package com.spring.hamsamo.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MemberDAO {
+
+}

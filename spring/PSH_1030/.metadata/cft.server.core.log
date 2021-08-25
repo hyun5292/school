@@ -1,0 +1,4 @@
+수 10월 30 2019 10:57:20 오전 - CloudFoundryServer.modifyModules(...): add: { PSH_1030 [org.eclipse.jst.jee.server:PSH_1030/jst.web]} remove: {}
+수 10월 30 2019 10:58:11 오전 - CloudFoundryServerBehaviour.publishModule(...): ADDED { PSH_1030 [org.eclipse.jst.jee.server:PSH_1030/jst.web]}
+수 10월 30 2019 10:58:21 오전 - CloudFoundryServer.modifyModules(...): add: { PSH_1030 [org.eclipse.jst.jee.server:PSH_1030/jst.web]} remove: {}
+수 10월 30 2019 10:58:21 오전 - CloudFoundryServerBehaviour.publishModule(...): ADDED { PSH_1030 [org.eclipse.jst.jee.server:PSH_1030/jst.web]}

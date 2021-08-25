@@ -1,0 +1,26 @@
+package com.spring.hamsamo.service;
+
+import java.util.List;
+import java.util.Map;
+
+import com.spring.hamsamo.dto.BoardDTO;
+
+public interface BoardService {
+	// 게시물 목록 불러오기
+	public List<BoardDTO> GetBList();
+
+	// 해당 게시물 내용 가져오기
+	public BoardDTO GetBContent(String bId);
+
+	// 게시물 작성 후 DB 저장
+	public void BWrite(Map<String, String> map);
+
+	// 수정된 글 DB 저장
+	public void Modify(Map<String, String> map);
+
+	// 게시물 삭제
+	public void Delete(String bId);
+
+	// 댓글 쓴 거 DB에 넣어주는 메서드
+	public void Reply(Map<String, String> map);
+}

@@ -1,0 +1,8 @@
+package com.spring.hamsamo.dao;
+
+import java.util.Map;
+
+public interface MemberDAO {
+	// 게시물 작성 후 DB 저장
+	public void MLogin(Map<String, String> map);
+}

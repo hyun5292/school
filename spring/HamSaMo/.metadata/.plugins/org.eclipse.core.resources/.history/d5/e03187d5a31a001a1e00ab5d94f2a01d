@@ -1,0 +1,5 @@
+package com.spring.hamsamo.service;
+
+public interface MemberService {
+	public MemberDTO GetMember();
+}

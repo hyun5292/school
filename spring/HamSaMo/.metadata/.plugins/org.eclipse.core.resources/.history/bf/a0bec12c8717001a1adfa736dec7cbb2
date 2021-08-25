@@ -1,0 +1,8 @@
+package com.spring.hamsamo.service;
+
+import java.util.Map;
+
+public interface MemberService {
+	// 로그인 정보 확인
+	public BoardDTO MLogin(Map<String, String> map);
+}

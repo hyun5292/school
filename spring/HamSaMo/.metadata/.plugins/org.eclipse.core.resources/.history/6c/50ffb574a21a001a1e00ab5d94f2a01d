@@ -1,0 +1,8 @@
+package com.spring.hamsamo.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class MemberRunService implements MemberService {
+
+}

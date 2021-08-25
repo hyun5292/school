@@ -1,0 +1,8 @@
+package com.spring.hamsamo.dto;
+
+public class MemberDTO {
+	private String bId = "";
+	private String bName = "";
+	private String bTitle = "";
+	private String bContent = "";
+}

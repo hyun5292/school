@@ -1,0 +1,23 @@
+package com.spring.ex;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
+
+@Aspect
+public class LogAop {
+	@Pointcut("within(com.spring.ex)")
+	private void pointcutMethod() {
+		
+	}
+	@Around("pointcutMethod()")
+	public Object loggerAop(ProceedingJoinPoint joinpoint) throws Throwable{
+		//어떤 메서드가 될거에여~ 신호의 제목을 가져와여
+		String signatureStr = joinpoint.getSignature().toShortString();
+		//메서드 이름 is start 출력
+				System.out.println(signatureStr + " is start.");
+				//Start Time, 현재 시간이자 시작 시간
+				long st =  System.currentTimeMillis();
+	}
+}

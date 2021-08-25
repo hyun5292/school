@@ -1,0 +1,10 @@
+package com.spring.hamsamo.service;
+
+import java.util.Map;
+
+import com.spring.hamsamo.dto.MemberDTO;
+
+public interface MemberService {
+	// 회원가입
+	public boolean MJoin(MemberDTO mDto);
+}

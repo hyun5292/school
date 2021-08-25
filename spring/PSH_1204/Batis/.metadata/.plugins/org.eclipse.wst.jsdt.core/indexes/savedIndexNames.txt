@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\Spring\PSH_1204\Batis\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+311160968.index
+700008730.index
+3523548659.index
+501797775.index
+1657330681.index
+1635236846.index

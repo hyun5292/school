@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- constructor == 생성자 -->
+	<!-- argument == 구문 -->
+	<!-- 변수명이 student이고 Student 클래스를 참조 -->
+	<!-- scope="singleton" -->
+	<bean id="student" class="com.spring.ex.Student" scope="singleton">
+		<!-- 첫 번째 변수 값 -->
+		<constructor-arg value="박수현"/>
+		<!-- 두 번째 변수 값 -->
+		<constructor-arg value="22"/>
+	</bean>
+</beans>

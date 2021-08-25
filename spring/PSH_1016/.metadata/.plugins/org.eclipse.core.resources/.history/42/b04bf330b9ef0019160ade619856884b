@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+
+	<bean id="logAop" class="com.spring.ex.LogAop"/>
+	
+	<aop:config>
+		<aop:aspect id="Logger" ref="logAop">
+			<aop:pointcut expression="within(com.spring.ex.*)" id="publicM"/>
+			<aop:around pointcut-ref="publicM" method="loggerAop"/>
+		</aop:aspect>
+	</aop:config>
+	
+	<!-- 변수명이 student이고 Student 클래스를 참조 -->
+	<bean id="student" class="com.spring.ex.Student">
+		<!-- 멤버변수 초기화 -->
+		<property name="name" value="박수현"/>
+		<property name="age" value="21"/>
+		<property name="gradeNum" value="3"/>
+		<property name="classNum" value="B"/>
+	</bean>
+	
+	<!-- 변수명이 worker이고 Worker 클래스를 참조 -->
+	<bean id="worker" class="com.spring.ex.Worker">
+		<!-- 멤버변수 초기화 -->
+		<property name="name" value="서경원"/>
+		<property name="age" value="21"/>
+		<property name="job" value="청소년뭐시기선생님"/>
+	</bean>
+</beans>

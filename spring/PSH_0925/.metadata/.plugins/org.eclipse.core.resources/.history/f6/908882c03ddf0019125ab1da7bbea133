@@ -1,0 +1,15 @@
+package com.spring.ex;
+
+public class Family {
+	String papaName;
+	String mamaName;
+	String sisName;
+	String grandName;
+	
+	public family(String papaName, String mamaName) {
+		this.papaName = papaName;
+		this.mamaName = mamaName;
+	}
+	
+	
+}

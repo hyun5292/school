@@ -1,0 +1,15 @@
+package com.spring.hamsamo.dto;
+
+import java.sql.Timestamp;
+
+public class MemberDTO {
+	private String mId = "";
+	private String mName = "";
+	private String mPw = "";
+	private Timestamp bDate = null;
+	private String mId = "";
+	private String mName = "";
+	private String mPw = "";
+	private String mName = "";
+	private String mPw = "";
+}

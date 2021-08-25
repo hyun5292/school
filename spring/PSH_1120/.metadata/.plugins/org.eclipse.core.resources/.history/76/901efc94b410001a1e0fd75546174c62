@@ -1,0 +1,17 @@
+package com.spring.ex;
+
+import java.util.ArrayList;
+
+import com.spring.dao.MemberDAO;
+import com.spring.dto.MemberDTO;
+
+public class MainClass7 {
+	private static ArrayList<MemberDTO> dtos;
+	private static MemberDAO dao = new MemberDAO();
+	
+	public static void main(String[] args) {
+		 dtos = new ArrayList<MemberDTO>();
+		 
+		 dtos = dao.sMember();
+	}
+}

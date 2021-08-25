@@ -1,0 +1,21 @@
+package com.spring.hamsamo.service;
+
+import javax.inject.Inject;
+
+import org.springframework.stereotype.Service;
+
+import com.spring.hamsamo.dao.MemberDAO;
+import com.spring.hamsamo.dto.MemberDTO;
+
+@Service
+public class MemberRunService implements MemberService {
+	@Inject
+	MemberDAO mDAO;
+
+	@Override
+	public MemberDTO GetMember() {
+		return null;
+	}
+	
+	
+}

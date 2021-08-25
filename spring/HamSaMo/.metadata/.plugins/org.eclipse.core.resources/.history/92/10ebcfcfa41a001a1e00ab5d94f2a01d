@@ -1,0 +1,7 @@
+package com.spring.hamsamo.service;
+
+import com.spring.hamsamo.dto.MemberDTO;
+
+public interface MemberService {
+	public MemberDTO GetMember();
+}

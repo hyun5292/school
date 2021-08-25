@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 변수명이 student3이고 Student 클래스를 참조 -->
+	<bean id="student3" class="class.spring.ex.Student">
+		<!-- 생성자 값 초기화 -->
+		<constructor-arg value="박수빈"/>
+		<constructor-arg value="25">
+		<constructor-arg>
+			<list>
+				<value>노래</value>	
+				<value>댄스</value>
+			</list>
+		</constructor-arg>
+		
+		<!-- 얘는 멤버변수 값 초기화 -->
+		<property name="height" value="163"/>
+		<property name="weight" value="42"/>
+	</bean>
+	
+	<bean id="family" class="com.spring.ex.Family" c:papaName="박정희" c:mamaName="장영아" p:sisName="박수빈">
+		<property name="grandName" value="김종열"/>
+	</bean>
+</beans>

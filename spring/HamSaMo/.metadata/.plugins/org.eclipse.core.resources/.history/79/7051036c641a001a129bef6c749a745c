@@ -1,0 +1,84 @@
+package com.spring.hamsamo.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.spring.hamsamo.dto.BoardDTO;
+
+@Repository
+public class BoardRunDAO implements BoardDAO {
+	@Autowired
+	public SqlSessionTemplate temp;
+
+	// list 가져와
+	@Override
+	public List<BoardDTO> GetBList(Map<String, Object> map) {
+		return temp.selectList("Bmap.BList", map);
+	}
+	
+	// 게시물 댓글 불러오기
+	@Override
+	public List<BoardDTO> GetReplies(String bGroup) {
+		return temp.selectList("Bmap.BReplies", map);
+	}
+
+	// 게시물 선택 시 내용 보여주기
+	@Override
+	public List<BoardDTO> GetBContent(String bId) {
+		return temp.selectList("Bmap.BContentForm", bId);
+	}
+
+	// 게시물 작성 후 DB 저장
+	@Override
+	public boolean BWrite(Map<String, String> map) {
+		int rs = temp.insert("Bmap.BWrite", map);
+		if (rs == 1)
+			return true;
+		else
+			return false;
+	}
+
+	// 수정된 글 DB 저장
+	@Override
+	public boolean BModify(Map<String, String> map) {
+		int rs = temp.insert("Bmap.BModify", map);
+		if (rs == 1)
+			return true;
+		else
+			return false;
+	}
+
+	// 게시물 삭제
+	@Override
+	public boolean BDelete(String bId) {
+		int rs = temp.delete("Bmap.BDelete", bId);
+		if (rs == 1)
+			return true;
+		else
+			return false;
+	}
+
+	// 댓글 DB 저장
+	@Override
+	public void BReply(Map<String, String> map) {
+		temp.insert("Bmap.BReply", map);
+	}
+
+	// 전체 페이지 개수 구하기
+	@Override
+	public int PageCnt() {
+		return temp.selectOne("Bmap.PageCnt");
+	}
+
+	// 조회수
+	@Override
+	public void UpHit(Map<String, Object> map) {
+		temp.update("Bmap.UpHit", map);
+	}
+
+
+}

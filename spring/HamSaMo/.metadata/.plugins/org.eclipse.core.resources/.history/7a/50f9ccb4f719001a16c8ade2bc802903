@@ -1,0 +1,14 @@
+package com.spring.hamsamo.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.stereotype.Repository;
+
+import com.spring.hamsamo.dto.MemberDTO;
+
+@Repository
+public interface MemberDAO {
+	// ghldnjsrkdlq
+	public boolean MJoin(Map<String, String> map);
+}

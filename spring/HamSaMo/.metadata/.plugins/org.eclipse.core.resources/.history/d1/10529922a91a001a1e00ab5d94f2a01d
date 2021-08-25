@@ -1,0 +1,24 @@
+package com.spring.hamsamo.dao;
+
+import java.util.List;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.spring.hamsamo.dto.MemberDTO;
+
+@Repository
+public class MemberRunDAO implements MemberDAO{
+	@Autowired
+	public SqlSessionTemplate temp;
+
+	@Override
+	public boolean CheckId(String mId) {
+		String rs = temp.selectOne("Mmap.MCheckId", mId);
+		if (rs == null)
+			return true;
+		else
+			return false;
+	}
+}

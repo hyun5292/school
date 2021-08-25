@@ -1,0 +1,31 @@
+package com.spring.hamsamo.dao;
+
+import java.sql.Connection;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.spring.hamsamo.dto.BoardDTO;
+
+@Repository
+public interface BoardDAO {
+	// list 가져와
+	public List<BoardDTO> GetBList(Map<String, Object> map);
+
+	// 게시물 선택 시 내용 보여주기
+	public List<BoardDTO> GetBContent(String bId);
+
+	// 게시물 작성 후 DB 저장
+	public void BWrite(Map<String, String> map);
+
+	// 수정된 글 DB 저장
+	public void BModify(Map<String, String> map);
+
+	// 게시물 삭제
+	public void BDelete(String bId);
+
+	// 댓글 DB 저장
+	public void BReply(Map<String, String> map);
+}

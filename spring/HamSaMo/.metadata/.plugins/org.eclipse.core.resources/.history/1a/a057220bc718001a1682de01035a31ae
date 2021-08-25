@@ -1,0 +1,5 @@
+package com.spring.hamsamo.dto;
+
+public class MemberDTO {
+
+}

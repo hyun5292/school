@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id = "student1" class="com.spring.ex.Student">
+		<contructor-arg value = "박수현"/>
+		<contructor-arg value = "21"/>
+		<contructor-arg>
+			<list>
+				<value>뜨개질</value>
+				<value>바느질</value>
+			</list>
+		</contructor-arg>
+	</bean>
+</beans>

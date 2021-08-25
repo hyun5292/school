@@ -1,0 +1,13 @@
+package com.spring.hamsamo.dto;
+
+public class MemberDTO {
+	private String mId = "";
+	private String mName = "";
+	private String mPw = "";
+	private String mBirth = null;
+	private String mTel1 = "";
+	private String mTel2 = "";
+	private String mTel3 = "";
+	
+	
+}

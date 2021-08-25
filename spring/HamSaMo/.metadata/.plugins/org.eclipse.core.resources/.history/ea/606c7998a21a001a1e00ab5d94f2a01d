@@ -1,0 +1,5 @@
+package com.spring.hamsamo.dao;
+
+public class MemberRunDAO {
+
+}

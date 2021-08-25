@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Pencil pencil = new PencilHB();-->
+	<!-- 객체의 형변환은 상속관계에 있을 때 일어난다. -->
+	<bean id="pencil" class="com.spring.ex.Pencil4B"/>	
+	
+</beans>

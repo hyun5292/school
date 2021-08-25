@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+	
+	<!-- 변수명이 logAop이고 LogAop 클래스를 참조 -->
+	<bean id="logAop" class="com.spring.ex.LogAop"/>
+	
+	<!-- Aop당! -->
+	<!-- 속성 -->
+	<aop:config>
+		<!-- 가져가는게 위에 선언해준 빈 logAop를 참고하고 이름은 logger -->
+		<aop:aspect id="logger" ref="logAop">
+			<!-- com.spring.ex안에 있는 모든 클래스들을 publicM이라는 이름으로 가져다 쓸거야 -->
+			<aop:pointcut expression="within(com.spring.ex.*)" id="publicM"/>
+			<!-- publicM을 실행하되 전과 후에 advice 실행, publicM의 시점을 정해준거지 -->
+			<aop:around pointcut-ref="publicM" method="loggerAop"/>
+		</aop:aspect>
+	</aop:config>
+	
+	<!-- 변수명이 student이고 Student 클래스를 참조 -->
+	<bean id="student" class="com.spring.ex.Student">
+		<!-- 멤버변수 초기화 -->
+		<property name="name" value="박수현"/>
+		<property name="age" value="21"/>
+		<property name="gradeNum" value="3"/>
+		<property name="classNum" value="B"/>
+	</bean>
+	
+	<!-- 변수명이 worker이고 Worker 클래스를 참조 -->
+	<bean id="worker" class="com.spring.ex.Worker">
+		<!-- 멤버변수 초기화 -->
+		<property name="name" value="서경원"/>
+		<property name="age" value="21"/>
+		<property name="job" value="청소년뭐시기선생님"/>
+	</bean>
+</beans>

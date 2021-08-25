@@ -1,0 +1,23 @@
+package com.spring.ex;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MyController {
+	@RequestMapping("board/confirmId")  //board/confirmId를 통해서 매핑한댕
+	//confirmId가 돌아가는데 사용자가 httpServletRequest로 넘겨줄거야
+	public String confirmId(HttpServletRequest httpServletRequest, Model model) {
+		//이 때 id라는 parameter를 id에 담고 pw라는 parameter를 pw에 담고
+		String id = httpServletRequest.getParameter("id");
+		String pw = httpServletRequest.getParameter("pw");
+		//그리고 그걸 model에 담아줬어
+		model.addAttribute("id", id);
+		model.addAttribute("pw", pw);
+		//그리고 board/confirmId -> viewer를 설정해준거야
+		return "board/confirmId";
+	}
+}

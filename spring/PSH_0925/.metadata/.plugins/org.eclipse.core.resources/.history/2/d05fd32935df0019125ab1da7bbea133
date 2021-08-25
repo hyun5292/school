@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 변수명이 student1이고 Student 클래스를 참조 -->
+	<!-- constructor == 생성자 -->
+		<!-- argument == 구문 -->
+	<bean id="student1" class="com.spring.ex.Student">
+		<!-- 첫 번째 변수 값 -->
+		<constructor-arg value="박수현" />
+		<constructor-arg>  <!-- 두 번째 변수 값 -->
+			<value>21살</value>
+		</constructor-arg>
+		<constructor-arg>  <!-- 세 번째 변수 값 -->
+			<value>3학년</value>
+		</constructor-arg>
+		<constructor-arg>  <!-- 네 번째 변수 값 -->
+			<value>B반</value>
+		</constructor-arg>
+	</bean>
+
+	<!-- 변수명이 student2이고 Student 클래스를 참조 -->
+	<bean id="student2" class="com.spring.ex.Student">
+		<!-- 첫 번째 변수 값, 경원이는 제 친구입니다 -->
+		<constructor-arg value="서경원" />
+		<constructor-arg>  <!-- 두 번째 변수 값 -->
+			<value>21살</value>
+		</constructor-arg>
+		<constructor-arg>  <!-- 세 번째 변수 값 -->
+			<value>1학년</value>
+		</constructor-arg>
+		<constructor-arg>  <!-- 네 번째 변수 값 -->
+			<value>B반</value>
+		</constructor-arg>
+	</bean>
+
+	<!-- 변수명이 studentInfo이고 StudentInfo 클래스를 참조 -->
+	<bean id="studentInfo" class="com.spring.ex.StudentInfo">
+		<constructor-arg>
+			<ref bean="student1" />
+		</constructor-arg>
+	</bean>
+</beans>

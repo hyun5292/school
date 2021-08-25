@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed Dec 11 09:28:14 KST 2019
+org.eclipse.jst.jee.server\:HamSaMo=C\:\\Users\\tytyj\\apache-tomcat-9.0.27\\wtpwebapps\\HamSaMo
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\tytyj\\.m2\\repository\\org\\springframework\\spring-web\\5.2.1.RELEASE\\spring-web-5.2.1.RELEASE.jar=C\:\\Users\\tytyj\\apache-tomcat-9.0.27\\wtpwebapps\\HamSaMo\\WEB-INF\\lib\\spring-web-5.2.1.RELEASE.jar

@@ -1,0 +1,23 @@
+package com.spring.ex;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		String configLocation = "classpath:applicationCTX.xml"; // 클래스들의 경로를 지정
+		AbstractApplicationContext ctx = new GenericXmlApplicationContext(configLocation);
+		// 이 생성자를 통해서 스프링 컨테이너 생성
+		StudentInfo studentInfo = ctx.getBean("studentInfo", StudentInfo.class);
+		// 스프링 컨테이너에서 컴포넌트 가져옴
+		studentInfo.getStudentInfo();
+		
+		Student student2 = ctx.getBean("student2", Student.class);
+		studentInfo.setStudent(student2);
+		studentInfo.getStudentInfo();
+		
+		ctx.close();
+	}
+
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 변수명이 student1이고 Student 클래스를 참조 -->
+	<bean id = "student1" class="com.spring.ex.Student">
+		<!-- 생성자 값 초기화 -->
+		<constructor-arg value = "박수현"/>
+		<constructor-arg value = "21"/>
+		<constructor-arg>
+			<list>
+				<value>뜨개질</value>
+				<value>바느질</value>
+				<value>3D펜</value>
+			</list>
+		</constructor-arg>
+		
+		<!-- 얘는 멤버변수 값 초기화 -->
+		<property name="height" value="155.0"/>
+		<property name="weight" value="44.0"/>
+	</bean>
+	
+	<!-- 변수명이 studentInfo1이고 StudentInfo 클래스를 참조 -->
+	<bean id = "studentInfo1" class="com.spring.ex.StudentInfo">
+		<!-- 얘는 멤버변수 값 초기화 -->
+		<property name="student">
+			<!-- studentInfo는 Student 클래스가 필요하니까 위에서 만든 Bean student1을 가지고 참조 -->
+			<ref bean = "student1"/>
+		</property>
+	</bean>
+</beans>

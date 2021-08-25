@@ -1,0 +1,9 @@
+package com.spring.ex;
+
+@Aspect
+public class LogAop {
+	@Pointcut("within(com.spring.ex)")
+	private void pointcutMethod() {
+		
+	}
+}

@@ -1,0 +1,8 @@
+package com.spring.dto;
+
+public class MemberDTO {
+	String M_Id = null;
+	String M_Pw = null;
+	String M_Name = null;
+	String M_Email = null;
+}
