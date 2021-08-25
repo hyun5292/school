@@ -54,5 +54,30 @@
 -------------
 + 2학년
   + JSP 수업<br/>
-    : 2018.09.03 ~ 2020.12.21<br/>
+    : 2018.09.03 ~ 2018.12.21<br/>
     https://github.com/hyun5292/school/tree/main/JSP2-2
+    
+  + Java 수업<br/>
+    : 2018.09.03 ~ 2018.12.21<br/>
+    https://github.com/hyun5292/school/tree/main/Java
+    
+  + PHP 수업<br/>
+    : 2018.03.02 ~ 2018.06.21<br/>
+    https://github.com/hyun5292/school/tree/main/PHP
+-------------
++ 1학년
+  + PHP 수업<br/>
+    : 2017.09.01 ~ 2017.12.15<br/>
+    https://github.com/hyun5292/school/tree/main/PHP
+    
+  + Javascript 수업<br/>
+    : 2017.09.01 ~ 2017.12.15<br/>
+    https://github.com/hyun5292/school/tree/main/javascript
+    
+  + HTML 수업<br/>
+    : 2017.03.02 ~ 2017.06.22<br/>
+    https://github.com/hyun5292/school/tree/main/HTML
+    
+  + 웹 디자인 수업<br/>
+    : 2017.03.02 ~ 2017.06.22<br/>
+    https://github.com/hyun5292/school/tree/main/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8
