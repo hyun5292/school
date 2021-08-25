@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <title>button image</title>
+  <link rel = "stylesheet" type = "text/css" href = "namefont3-3-2.css">
+</head>
+<body>
+  <h3 align = "center" id = "name">경민대학교 융합소프트웨어과 17831024 <ins>박수현</ins></h3>
+  <h1 id = "name2" align = "center">스위치</h1>
+  <hr>
+  <br>
+    <form>
+    <table align = "center">
+      <tr align = "center">
+        <td height = "80px"><input type = "button" value = "n1" onclick = "turn('n1')" id = "n1-1"></td>
+        <td height = "80px"><input type = "button" value = "n2" onclick = "turn('n2')" id = "n2-1"></td>
+        <td height = "80px"><input type = "button" value = "n3" onclick = "turn('n3')" id = "n3-1"></td>
+      </tr>
+      <tr align = "center">
+        <td colspan = "3">
+        <img src = "images14/n1.jpg" id = "n1">
+        <script>
+          function turn(onoff)
+          {
+            myimg = document.getElementById("n1");
+            document.get
+            if(onoff == "n1")
+              myimg.src = "images14/n1.jpg"
+            else if(onoff == "n2")
+              myimg.src = "images14/n2.jpg"
+            else if(onoff == "n3")
+              myimg.src = "images14/n3.jpg"
+            else if(onoff == "n4")
+              myimg.src = "images14/n4.jpg"
+            else if(onoff == "n5")
+              myimg.src = "images14/n5.jpg"
+            else
+              myimg.src = "images14/n6.jpg"
+          }
+        </script>
+      </td>
+      </tr>
+      <tr align = "center">
+        <td height = "80px"><input type = "button" value = "n4" onclick = "turn('n4')" id = "n4-1"></td>
+        <td height = "80px"><input type = "button" value = "n5" onclick = "turn('n5')" id = "n5-1"></td>
+        <td height = "80px"><input type = "button" value = "n6" onclick = "turn('n6')" id = "n6-1"></td>
+      </tr>
+    </table>
+    </form>
+  <br>
+  <hr>
+  <h2 align = "center" id = "last">
+    <ins><a href = "index.html">처음으로</a></ins>
+  </h2>
+</body>
+</html>

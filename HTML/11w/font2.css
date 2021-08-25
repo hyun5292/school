@@ -1,0 +1,4 @@
+#name { background:blue; color:white; }
+#home { background:lightblue; width:500px; }
+h1:hover { color:red; }
+h1:active { color:blue; }

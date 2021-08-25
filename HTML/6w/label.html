@@ -1,0 +1,139 @@
+<!doctype html>
+<html>  
+  <head>
+    <title>label</title>
+    <style>
+      #what { background:lightblue; }
+      legend { background:blue; color:white; }
+    </style>
+    <link rel = "stylesheet" type = "text/css" href = "namefont.css">
+  </head>
+  <body>
+    <h3 align = "center" id = "name">경민대학교 융합소프트웨어과 17831024 <ins>박수현</ins></h3>
+    <center>
+      <h1 align = "center" id = "name2">폼태그 연습</h1>
+    </center>
+      <hr>
+      <br>
+      <h3>
+      <fieldset>
+        <legend>개인정보</legend>
+        <table>
+          <tr>
+            <td align = "right" id = "what">
+              <label for = "name">이름</label>
+            </td>
+            <td>
+              <input type = "text" name = "name"><br>
+            </td>
+          </tr>
+          <tr>
+            <td align = "right" id = "what">
+              <label for = "num">학번</label>
+            </td>
+            <td>
+              <input type = "text" name = "num"><br>
+            </td>
+          </tr>
+      </table>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>개인조사</legend>
+          <table>
+            <tr>
+              <td align = "right" id = "what"><lable for = "ch">당신의 취미는</label></td>
+              <td>
+                <input id = "ch1" type = "checkbox" name = "ch" value = "ch1">
+                <lable for = "ch1">바느질</label>
+                <input id = "ch2" type = "checkbox" name = "ch" value = "ch2">
+                <lable for = "ch2">농구</label>
+                <input id = "ch3" type = "checkbox" name = "ch" value = "ch3">
+                <lable for = "ch3">영화보기</label><br>
+                <input type = "hidden">
+              </td>
+            </tr>
+            <tr>
+              <td align = "right" id = "what">성별</td>
+              <td>
+                <input id= "man" type = "radio" name = "gender" value = "m">
+                <label for = "man">남성</label>
+                <input id = "woman" type = "radio" name = "gender" value = "w">
+                <label for = "woman">여성</label><br>
+              </td>
+            </tr>
+            <tr>
+              <td colspan = "2"><input width = "100" type = "image" src = "images6/Penguins.jpg"><br></td>
+            </tr>
+            <tr>
+              <td align = "right" id = "what">색상을 선택하세요</td>
+              <td><input type = "color"><br></td>
+            </tr>
+          </table>
+      </fieldset>
+      <br>
+      <fieldset>
+      <legend>연락처</legend>
+        <table>
+          <tr>
+            <td align = "right" id = "what">이메일을 입력하세요</td>
+            <td><input type = "email"><br></td>
+          </tr>
+          <tr>
+            <td align = "right" id = "what">전화번호</td>
+            <td><input type = "tel"><br></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>날짜</legend>
+        <table>
+          <tr>
+            <td align = "right" id = "what">날짜를 선택하세요</td>
+            <td><input type = "date"><br></td>
+          </tr>
+          <tr>
+            <td align = "right" id = "what">시간</td>
+            <td><input type = "time"><br></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>조절</legend>
+          <input type = "range"><br>
+          <input type = "number" value = "3" min = "3" max = "20">명<br>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>자기 소개</legend><br>
+          <textarea row = "5" cols ="50">
+          </textarea><br>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>갖고싶은 차</legend>
+        <select multiple = "multiple">
+          <optgroup label = "자동차">
+          <option>BMW</option>
+          <option>기아</option>
+          <option>현대</option>
+          </optgroup>
+          <optgroup label = "마시는 차">
+          <option selected>커피</option>
+          <option>녹차</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <input type = "button" value = "OK">
+      <input type = "submit" value = "확인">
+      <input type = "reset" value = "clear">
+    </h3>
+    <br>
+    <hr>
+    <h2 align = "center" id = "last">
+      <ins><a href = "6week tasks.html">6주차 과제 페이지</a></ins>
+    </h2>
+  </body>
+</html>

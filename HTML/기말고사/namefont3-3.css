@@ -1,0 +1,21 @@
+#name { background:blue; color:white; }
+#name2 { background:#0096FF; }
+#last { background:lightblue; }
+body { background-image:url('images12/mine.jpg');
+       background-size:100px;
+       background-repeat:repeat-x;
+     }
+a { text-decoration:none; }
+input {
+            margin:10px 30px 50px 20px; width:80px;
+            padding:10px;
+            border:3px solid darkblue;
+            font-size:17px;
+          }
+img { width:380px; }
+#n1-1 { background-image:url('images14/n1.jpg'); background-size:cover; }
+#n2-1 { background-image:url('images14/n2.jpg'); background-size:cover; }
+#n3-1 { background-image:url('images14/n3.jpg'); background-size:cover; }
+#n4-1 { background-image:url('images14/n4.jpg'); background-size:cover; }
+#n5-1 { background-image:url('images14/n5.jpg'); background-size:cover; }
+#n6-1 { background-image:url('images14/n6.jpg'); background-size:cover; }

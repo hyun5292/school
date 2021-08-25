@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+  <head>
+    <title>로그인</title>
+    <style>
+      #blank { background:white;
+               box-shadow: 5px 5px 5px gray;
+               font-family:HY견고딕;
+               border: 1px solid black;
+             }
+      body { background:#F5F6F8; }
+      #a { font-family:HY견고딕;
+           font-size:50pt;
+           color:#339900;
+           font-weight:bold;
+         }
+      #id { width:450px; height:50px;
+            background:white;
+          }
+      #pass { width:450px; height:50px;
+              background:white;
+            }
+      #aa { width:453px; height:65px;
+            background-color:#339900;
+            color:white; line-height:45px;
+            font-size:15pt;
+          }
+      #u { color:#2DA800; font-family:HY견고딕; }
+      a { text-decoration:none; color:#339900; }
+      #green { color:#339900; }
+      #black { color:black; }
+    </style>
+  <script>
+    function showSub(subname)
+    {
+      var sub = document.getElementById(subname);
+      sub.style.visibility = "visible";
+    }
+    function hideSub(subname)
+    {
+      var sub = document.getElementById(subname);
+      sub.style.visibility = "hidden";
+    }
+  </script>
+  </head>
+  <body>
+    <br>
+    <table align = "center">
+      <tr>
+        <td width = 500></td>
+        <td>
+          <select>
+            <option>
+                한국어
+            </option>
+            <option>
+                English
+            </option>
+            <option>
+                中國語
+            </option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <div id = "a" align = "center">
+      <a href = "http://www.naver.com/">
+        NAVER
+      </a>
+    </div>
+    <br><br><br><br>
+    <table align = "center">
+      <tr>
+        <td width = "220"></td>
+        <td>
+          <h6>
+            <a href = "https://help.naver.com/support/contents/contents.nhn?serviceNo=532&categoryNo=1577">
+              <div id = "black" align = "right">단체아이디 로그인 방법</div>
+            </a>
+          </h6>
+        </td>
+        <td width = "206"></td>
+      </tr>
+      <tr>
+        <td width = "220"></td>
+        <td align = "left">
+          <input type = "text" name = "id" id = "id" placeholder = "아이디"><br>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td width = "220"></td>
+        <td align = "left">
+          <input type = "password" name = "pwd" id = "pass" placeholder = "비밀번호"><br>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td width = "220"></td>
+        <td align = "left">
+          <input type = "button" value = "로그인" id = "aa">
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td width = "220"></td>
+        <td colspan = "2">
+        <table align = "left">
+          <tr>
+            <td align = "left" height = "20"><input type = "checkbox"></td>
+            <td align = "left" width = "223"><h6>로그인 상태 유지</h6></td>
+            <td>
+              <h6>
+                <a href = "https://nid.naver.com/login/ext/help_ip3.html">
+                  <div id = "black">IP 보안</div>
+                </a>
+              </h6>
+            </td>
+            <td>
+              <select>
+                <option id = "green">ON</option>
+                <option>OFF</option>
+              </select>
+            </td>
+            <td>
+              <h6>
+                <a href = "https://nid.naver.com/nidlogin.login?mode=number">
+                  <div id = "black">일회용 로그인</div>
+                </a>
+              </h6>
+            </td>
+          </tr>
+        </table>
+        <table align = "right">
+          <tr>
+            <td height = "190" rowspan = "3" class = "mainMenu" onmouseover = "showSub('sub1')" onmouseout = "hideSub('sub1')">
+              <img src = "images/Idont.jpg">
+              <table class = "subMenu" id = "sub1" align = "center">
+                <tr>
+                  <td width = "200" id = "blank">
+                    네이버앱에서 생성된 일회용 로그인 번호를 입력하면,
+                    앱에 로그인된 계정으로 PC에서 로그인할 수 있어요.
+                    아이디/비밀번호를 입력하지 않아 간편하고 더욱 안전합니다.
+                  </td>
+                </tr>
+              </table>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    <hr width = 450>
+    <table align = "center">
+      <tr>
+        <td>
+          <h6>
+            <a href = "https://nid.naver.com/user2/help/idInquiry.nhn?menu=idinquiry">
+              <div id = "black">아이디 찾기</div>
+            </a>
+          </h6>
+        </td>
+        <td>
+          <h6>
+            <a href = "https://nid.naver.com/user2/help/pwInquiry.nhn?menu=pwinquiry">
+              <div id = "black">비밀번호 찾기</div>
+            </a>
+          </h6>
+        </td>
+        <td>
+          <h6>
+            <a href = "https://nid.naver.com/user2/join.nhn?m=init&lang=ko_KR">
+              <div id = "black">회원가입</div>
+            </a>
+          <h6>
+        </td>
+      </tr>
+    </table>
+    <center>
+    <img src = "images/ad3.JPG">
+    </center>
+    <h6>
+    <table align = "center">
+      <tr>
+        <td>
+          <a href = "http://www.naver.com/rules/service.html">
+            <div id = "black">
+              이용약관
+            </div>
+          </a>
+        </td>
+        <td>
+          <a href = "http://www.naver.com/rules/privacy.html">
+            <div id = "black">
+              개인정보처리방침
+            </div>
+          </a>
+        </td>
+        <td>
+          <a href = "http://www.naver.com/rules/disclaimer.html">
+            <div id = "black">
+              책임의 한계와 법적고지
+            </div>
+          </a>
+        </td>
+        <td>
+          <a href = "https://help.naver.com/support/service/main.nhn?serviceNo=532">
+           <div id = "black">
+             회원정보 고객센터
+            </div>
+          </a>
+        </td>
+      </tr>
+    </table>
+    </h6>
+    <h5 align = "center">
+    <table align = "center">
+      <tr>
+        <td id = "u">
+          <a href = "http://www.naver.com/">
+          NAVER
+        </td>
+        <td>
+          Copyright
+        <td id = "all">
+          <a href = "http://www.navercorp.com/ko/index.nhn">
+            <div id = "black">
+              NAVER Corp.
+            </div>
+          </a>
+        </td>
+        <td>
+        All Rights Reserved.
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

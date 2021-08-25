@@ -1,0 +1,721 @@
+<!doctype html>
+<html>
+  <head>
+    <title>쥬니어네이버</title>
+    <style>
+      #game { color:black; }
+      #black { color:black; }
+      #what { background:#F2F2F2; color:#3B5973; }
+      #gray { background:#FBFBFB; }
+      #all { font-family:HY견고딕; }
+      a1 { color:#003399; }
+      b { color:#FF9900; }
+      c { color:#FF3300; }
+      d { color:#339900; }
+      #e { color:#FF9900; }
+      #f { font-family:HY울릉도M; }
+      #table2 { background:#0066CC; color:white; box-shadow:1px 1px 5px gray; }
+      #table1 { background:#0000CC; color:white; }
+      sub { color:lightblue; }
+      #table3 { background:#FDEA5D; height:370px }
+      #t { color:#3A8ECC; }
+      #t2 { background:#3A4050 }
+      #s { color:gray; font-size:10pt }
+      #gg { background:#3A4050; }
+      #bar { background:#F6F6F6; }
+      #last { color:#3B5973; }
+      #gf { background:#F2F2F2; }
+      #ww { background:white; }
+      #u { color:#2DA800; font-family:HY견고딕; }
+      a { text-decoration:none; }
+      #white { color:white; }
+      #div1 { width:70px; height:30px;
+              background:#3A4050; color:white;
+              line-height:30px; border-radius:20px 0 0 20px;
+              box-shadow:1px 1px 5px gray;
+            }
+      #div2 { width:70px; height:30px;
+              background:#259FEC; color:white;
+              line-height:30px;
+              box-shadow:1px 1px 5px gray;
+            }
+      #div3 { width:70px; height:30px;
+              background:#3A4050; color:white;
+              line-height:30px; border-radius:0 20px 20px 0;
+              box-shadow:1px 1px 5px gray;
+            }
+    </style>
+    <script>
+      function showSub(subname)
+      {
+        var sub = document.getElementById(subname);
+        sub.style.visibility = "visible";
+      }
+      function hideSub(subname)
+      {
+        var sub = document.getElementById(subname);
+        sub.style.visibility = "hidden";
+      }
+    </script>
+  </head>
+  <body>
+    <div id = "all">
+    <div id = "gray">
+    <table align = "center">
+      <tr>
+        <td><a href = "http://becky9520.dothome.co.kr/jn.html"><img src = "images/cap.JPG"></a></td>
+        <td><a href = "http://becky9520.dothome.co.kr/jn.html"><a1>쥬</a1><b>니</b><c>어</c><d>네이버</d></a></td>
+        </a>
+        <td width = 900></td>
+        <td>
+          <a href = "ncslogin.html">
+          <input type = "button" value = "로그인">
+          </a>
+        </td>
+      </tr>
+    </table>
+    <hr>
+    </div>
+    <table align = "center">
+    <tr>
+      <td align = "right">
+        <a href = "first.html">
+          <img src = "images/cap2.JPG"></td>
+        </a>
+      <td align = "left">
+        <h1>
+          <a href = "first.html">
+            <div id = "game">게임랜드</div>
+          </a>
+        </h1>
+      </td>
+      <td align = "right"><input type = "text"></td>
+      <td align = "left"><input type = "button" name = "button" value = "검색"></td>
+      <td width = "400"></td>
+      <td align = "right"><img src = "images/cap3.JPG"></td>
+      <td align = "left" id = "e">쥬니어네이버</td>
+      <td align = "left" id = "f"><sub>365일 신나는 쥬니버!</sub></td>
+    </tr>
+    </table>
+    <div id = "table1">
+    <table align = "center">
+      <tr align = "center">
+        <td id = "table2" width = "120" height = "50">
+          <a href = "http://game.jr.naver.com/game/genre/list.nhn?genre=puzzle">
+            <div id = "white">
+              <img src = "images/cap4-2.jpg"><sup>퍼즐/보드</sup>
+            </div>
+          </a>
+        </td>
+        <td id = "table2" width = "120" height = "50">
+          <a href = "http://game.jr.naver.com/game/genre/list.nhn?genre=fashion">
+            <div id = "white">
+              <img src = "images/cap5-2.jpg"><sup>패션/스타일</sup>
+            </div>
+          </a>
+        </td>
+        <td id = "table2" width = "120" height = "50">
+          <a href = "http://game.jr.naver.com/game/genre/list.nhn?genre=shooting">
+            <div id = "white">
+              <img src = "images/cap6-2.jpg"><sup>슈팅/아케이드</sup>
+            </div>
+          </a>
+        </td>
+        <td id = "table2" width = "120" height = "50">
+          <a href = "http://game.jr.naver.com/game/genre/list.nhn?genre=tycoon">
+            <div id = "white">
+              <img src = "images/cap7-2.jpg"><sup>타이쿤/키우기</sup>
+            </div>
+          </a>
+        </td>
+        <td id = "table2" width = "120" height = "50">
+          <a href = "http://game.jr.naver.com/game/genre/list.nhn?genre=makegame">
+            <div id = "white">
+              <img src = "images/cap8-2.jpg"><sup>자작게임</sup>
+            </div>
+          </a>
+        </td>
+        <td id = "table2" width = "120" height = "50">
+          <a href = "http://game.jr.naver.com/game/genre/list.nhn?genre=sports">
+            <div id = "white">
+              <img src = "images/cap9-2.jpg"><sup>스포츠/레이싱</sup>
+            </div>
+          </a>
+        </td>
+        <td id = "table2" width = "120" height = "50">
+          <a href = "http://game.jr.naver.com/game/genre/list.nhn?genre=adventure">
+            <div id = "white">
+              <img src = "images/cap10-2.jpg"><sup>어드벤쳐</sup>
+            </div>
+          </a>
+        </td>
+        <td align = "left" height = "50">
+          <a href = "http://game.jr.naver.com/gamezone/disney/">
+            <div id = "white">
+              디즈니게임<br>
+            </div>
+            <sub>놀러가기></sub>
+          </a>
+        </td>
+        <td align = "left">
+          <a href = "http://game.jr.naver.com/gamezone/disney/">
+            <img src = "images/cap11-2.jpg">
+          </a>
+        </td>
+      </tr>
+    </table>
+    </div>
+    <div id = "table3">
+      <table align = "center">
+        <tr>
+          <td colspan = "2" width = 200px><h2>테마별 게임 TOP4</h2></td>
+          <td colspan = "2">
+            <table align = "right">
+              <tr align = "center">
+                <td>
+                  <input type = "button" value = "NEW" onclick = "turn('num1')" id = "div1">
+                </td>
+                <td>
+                  <input type = "button" value = "순발력" onclick = "turn('num2')" id = "div2">
+                </td>
+                <td>
+                  <input type = "button" value = "상상력" onclick = "turn('num3')" id = "div3">
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td rowspan = "2">
+            <table id = "t2">
+              <tr>
+                <td colspan = "3">
+                  <table>
+                    <tr>
+                      <td width = "175">
+                        <h3 id = "t">
+                        장르별 주간 랭킹
+                        </h3>
+                      </td>
+                      <td id = "s" align = "right">
+                        <a href = "http://game.jr.naver.com/game/genre/list.nhn?genre=fashion">
+                          <div id = "s">더보기</div>
+                        </a>
+                      </td>
+                    </tr>
+                    </table>
+                </td>
+              </tr>
+              <tr>
+                <td align = "left" id = "t">
+                <
+                </td>
+                <td align = "center" id = "t" width = "200">
+                퍼즐/보드
+                </td>
+                <td align = "right" id = "t">
+                >
+                </td>
+              </tr>
+              <tr>
+                <td colspan = "3">
+                  <a href = "http://game.jr.naver.com/game/genre/view.nhn?contentsNo=8719">
+                    <img src = "images/lank1.JPG">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan = "3">
+                  <a href = "http://game.jr.naver.com/game/popular/view.nhn?contentsNo=3812&rankGenre=puzzle">
+                    <img src = "images/lank2.JPG">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan = "3">
+                  <a href = "http://game.jr.naver.com/game/popular/view.nhn?contentsNo=3820&rankGenre=puzzle">
+                    <img src = "images/lank3.JPG">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan = "3">
+                  <a href = "http://game.jr.naver.com/game/popular/view.nhn?contentsNo=3118&rankGenre=puzzle">
+                    <img src = "images/lank4.JPG">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan = "3">
+                  <a href = "http://game.jr.naver.com/game/popular/view.nhn?contentsNo=8224&rankGenre=puzzle">
+                    <img src = "images/lank5.JPG">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan = "3">
+                  <table>
+                    <tr>
+                      <td>
+                        <div id = "t">태그></div>
+                      </td>
+                      <td>
+                        <div id = "s">
+                          <a href = "http://game.jr.naver.com/game/search.nhn?query=%25EC%25B6%2595%25EA%25B5%25AC%25EA%25B2%258C%25EC%259E%2584">
+                            축구게임,
+                          </a>
+                          <a href = "http://game.jr.naver.com/game/search.nhn?query=%25EB%2593%259C%25EB%259D%25BC%25EB%25A7%2588%2520%25EC%2598%25B7%25EC%259E%2585%25ED%259E%2588%25EA%25B8%25B0">
+                            드라마 옷입히기
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td rowspan = "2">
+            <a href = "https://m.naver.com/naverapp/?version=1&cmd=addMenu&menuCode=SCHOOL">
+              <img src = "images/ad.JPG">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href = "http://game.jr.naver.com/game/genre/view.nhn?contentsNo=8744">
+              <img src = "images/0602-1.JPG" id = "picjpg1">
+            </a>
+            <script>
+              function turn(onoff)
+              {
+                myimg = document.getElementById("picjpg1");
+                document.get
+                if(onoff == "num1")
+                  myimg.src = "images/0602-1.JPG"
+                else if(onoff == "num2")
+                  myimg.src = "images/0602-5.JPG"
+                else
+                  myimg.src = "images/pic1.JPG"
+                myimg = document.getElementById("picjpg2");
+                document.get
+                if(onoff == "num1")
+                  myimg.src = "images/0602-2.JPG"
+                else if(onoff == "num2")
+                  myimg.src = "images/0602-6.JPG"
+                else
+                  myimg.src = "images/pic2.JPG"
+                myimg = document.getElementById("picjpg3");
+                document.get
+                if(onoff == "num1")
+                  myimg.src = "images/0602-3.JPG"
+                else if(onoff == "num2")
+                  myimg.src = "images/0602-7.JPG"
+                else
+                  myimg.src = "images/pic3.JPG"
+                myimg = document.getElementById("picjpg4");
+                document.get
+                if(onoff == "num1")
+                  myimg.src = "images/0602-4.JPG"
+                else if(onoff == "num2")
+                  myimg.src = "images/0602-8.JPG"
+                else
+                  myimg.src = "images/pic4.JPG"
+              }
+            </script>
+          </td>
+          <td>
+            <a href = "http://game.jr.naver.com/game/genre/view.nhn?contentsNo=8741">
+              <img src = "images/0602-2.JPG" id = "picjpg2">
+            </a>
+          </td>
+          <td>
+            <a href = "http://game.jr.naver.com/game/genre/view.nhn?contentsNo=8731">
+              <img src = "images/0602-3.JPG" id = "picjpg3">
+            </a>
+          </td>
+          <td>
+            <a href = "http://game.jr.naver.com/game/genre/view.nhn?contentsNo=8729">
+              <img src = "images/0602-4.JPG" id = "picjpg4">
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <table align = "center">
+      <tr>
+        <td id = "bar" rowspan = "3">
+          <
+        </td>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=1">
+            <img src = "images/hh1.JPG">
+          </a>
+        </td>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=2">
+            <img src = "images/hh2.JPG">
+          </a>
+        </td>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=10">
+            <img src = "images/hh3.JPG">
+          </a>
+        </td>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=7">
+            <img src = "images/hh4.JPG">
+          </a>
+        </td>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=26">
+            <img src = "images/hh5.JPG">
+          </a>
+        </td>
+        <td id = "bar" rowspan = "3">
+          >
+        </td>
+        <td rowspan = "3">
+            <img src = "images/fast.JPG">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=8">
+            <img src = "images/hh6.JPG">
+          </a>
+        </td>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=9">
+            <img src = "images/hh7.JPG">
+          </a>
+        </td>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=4">
+            <img src = "images/hh8.JPG">
+          </a>
+        </td>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=5">
+            <img src = "images/hh9.JPG">
+          </a>
+        </td>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=6">
+            <img src = "images/hh10.JPG">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=19">
+            <img src = "images/hh11.JPG">
+          </a>
+        </td>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=16">
+            <img src = "images/hh12.JPG">
+          </a>
+        </td>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=15">
+            <img src = "images/hh13.JPG">
+          </a>
+        </td>
+        <td>
+          <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=14">
+            <img src = "images/hh14.JPG">
+          </a>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td colspan = "7">
+          <a href = "http://game.jr.naver.com/gamezone/disney/">
+            <img src = "images/long.JPG">
+          </a>
+        <td>
+          <a href = "http://game.jr.naver.com/gameland/guide/guide.html">
+            <div id = "tip"><img src = "images/tip.JPG"></div>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <table align = "center">
+      <tr>
+        <td>
+          <table align = "center">
+            <tr>
+              <td class = "mainMenu" onmouseover = "showSub('sub1')" onmouseout = "hideSub('sub1')">
+                <a href = "http://game.jr.naver.com/game/genre/view.nhn?contentsNo=3110">
+                  <img src = "images/ad2-1.JPG" width = 390>
+                </a>
+                <table class = "subMenu" id = "sub1">
+                  <tr>
+                    <td width = "350" align = "center" id = "what">
+                      <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=8&todayGame=true">
+                        더보기
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class = "mainMenu" onmouseover = "showSub('sub2')" onmouseout = "hideSub('sub2')">
+                <a href = "http://game.jr.naver.com/game/brand/view.nhn?contentsNo=2377">
+                  <img src = "images/ad2-2.JPG" width = 390>
+                </a>
+                <table class = "subMenu" id = "sub2">
+                  <tr>
+                    <td width = "350" align = "center" id = "what">
+                      <a href = "http://game.jr.naver.com/game/genre/list.nhn?genre=fashion">
+                        더보기
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <a href = "http://whale.naver.com/promotion/">
+            <img src = "images/ad2.JPG">
+          </a>
+        </td>
+        <td rowspan = "2">
+          <img src = "images/white.jpg" width = "60">
+        </td>
+      </tr>
+      <tr>
+        <td colspan = "2">
+          <table align = "center" id = "gf">
+            <tr align = "center">
+              <td rowspan = "7" id = "last">
+                <
+              </td>
+              <td colspan = "6">
+                장르별 대표게임
+              </td>
+            </tr>
+            <tr id = "last" align = "center">
+              <td>
+                퍼즐/보드
+              </td>
+              <td>
+                패션/스타일
+              </td>
+              <td>
+                슈팅/아케이드
+              </td>
+              <td>
+                타이쿤/키우기
+              </td>
+              <td>
+                캐릭터 게임
+              </td>
+              <td>
+                어드벤처
+              </td>
+              <td rowspan = "7" id = "last">
+                >
+              </td>
+            </tr>
+            <tr align = "center">
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=21">
+                  <img src = "images/g1.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=26">
+                  <img src = "images/g2.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=19">
+                  <img src = "images/g3.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=2">
+                  <img src = "images/g4.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=36">
+                  <img src = "images/g5.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=17">
+                  <img src = "images/g6.JPG">
+                </a>
+              </td>
+            </tr>
+            <tr align = "center">
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=23">
+                  <img src = "images/g7.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=27">
+                  <img src = "images/g8.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=16">
+                  <img src = "images/g9.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=15">
+                  <img src = "images/g10.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=37">
+                  <img src = "images/g11.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=40">
+                  <img src = "images/g12.JPG">
+                </a>
+              </td>
+            </tr>
+            <tr align = "center">
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=24">
+                  <img src = "images/g13.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=14">
+                  <img src = "images/g14.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=30">
+                  <img src = "images/g15.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=33">
+                  <img src = "images/g16.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=38">
+                  <img src = "images/g17.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=41">
+                  <img src = "images/g18.JPG">
+                </a>
+              </td>
+            </tr>
+            <tr align = "center">
+              <td>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=29">
+                  <img src = "images/g19.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=31">
+                  <img src = "images/g20.JPG">
+                </a>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=35">
+                  <img src = "images/g21.JPG">
+                </a>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr align = "center">
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+                <a href = "http://game.jr.naver.com/game/brand/list.nhn?brandNo=32">
+                  <img src = "images/g22.JPG">
+                </a>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    </div>
+    <h6 align = "center">
+    <table align = "center">
+      <tr>
+        <td>
+          <a href = "http://help.jr.naver.com/juniver/faq.nhn" id = "black">
+            도움말
+        </td>
+        <td>
+          <a href = "https://www.naver.com/rules/service.html" id = "black">
+            이용약관
+          </a>
+        </td>
+        <td>
+          <a href = "http://jr.naver.com/jrservice/jr_use.html" id = "black">
+            운영원칙
+          </a>
+        </td>
+        <td>
+          <a href = "https://www.naver.com/rules/privacy.html" id = "black">
+            개인정보 처리방침
+          </a>
+        </td>
+        <td>
+          <a href = "https://www.naver.com/rules/disclaimer.html" id = "black">
+            책임의 한계와 법적고지
+          </a>
+        </td>
+        <td>
+          <a href = "http://help.jr.naver.com/juniver/index.nhn" id = "black">
+            고객센터
+          </a>
+        </td>
+      </tr>
+    </table>
+    </h6>
+    <h6 align = "center">
+    본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적책임을 질 수 있습니다.
+    </h6>
+    <h5 align = "center">
+    <table align = "center">
+      <tr>
+        <td>
+          <a href = "http://naver.com/">
+            <div id = "u">NAVER</div>
+          </a>
+        </td>
+        <td>
+          Copyright
+        <td id = "all">
+          NAVER Corp.
+        </td>
+        <td>
+        All Rights Reserved.
+        </td>
+      </tr>
+    </table>
+    </h5>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <title>그림자 속성</title>
+  <link rel = "stylesheet" type = "text/css" href = "namefont.css">
+  <style>
+    #sh1 { /* 글자에 그림자 */
+           text-shadow:1px 1px 5px red; }
+    #sh2 { /* 글자 오렌지색 */
+            color:orange;
+           /* 글자에 검정 그림자 */
+           text-shadow:1px -1px 5px black;
+            }
+    #sh3 { /* 글자 흰색 */
+           color:#fff;
+           /* 그림자 회색 오른쪽 위로 */
+           text-shadow:2px -2px 5px gray, -2px 2px 5px gray,
+                       2px 2px 5px gray, -2px -2px 5px gray;  
+         }
+  </style>
+</head>
+<body>
+  <h3 align = "center" id = "name">경민대학교 융합소프트웨어과 17831024 <ins>박수현</ins></h3>
+  <h1 id = "name2" align = "center">그림자 속성</h1>
+  <hr>
+  <br>
+    <h1 id = "sh1" class = "shadow1" align = "center">
+      HTML5
+    </h1>
+    <h1 id = "sh2" class = "shadow2" align = "center">
+      HTML5
+    </h1>
+    <h1 id = "sh3" class = "shadow3" align = "center">
+      HTML5
+    </h1>
+  <br>
+  <hr>
+  <h2 align = "center" id = "last">
+    <ins><a href = "13week tasks.html">13주차 과제 페이지</a></ins>
+  </h2>
+</body>
+</html>

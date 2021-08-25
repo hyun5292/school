@@ -1,0 +1,8 @@
+#name { background:blue; color:white; }
+#name2 { background:#0096FF; }
+#last { background:lightblue; }
+body { background-image:url('images12/mine.jpg');
+       background-size:100px;
+       background-repeat:repeat-x;
+     }
+a { text-decoration:none; }

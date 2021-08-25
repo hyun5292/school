@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <title>onoff</title>
+  <link rel = "stylesheet" type = "text/css" href = "namefont.css">
+  <style>
+    input {
+            margin:10px 30px 50px 20px; width:80px;
+            padding:10px; background-color:lightblue;
+            border:3px solid darkblue;
+            font-size:17px;
+          }
+    img { margin-left:50px; }
+  </style>
+</head>
+<body>
+  <h3 align = "center" id = "name">경민대학교 융합소프트웨어과 17831024 <ins>박수현</ins></h3>
+  <h1 id = "name2" align = "center">스위치</h1>
+  <hr>
+  <br>
+    <form>
+      <input type = "button" value = "ON" onclick = "turn('on')">
+      <input type = "button" value = "OFF" onclick = "turn('off')">
+    </form>
+    <img src = "images13/off.jpg" id = "offjpg">
+    <script>
+      function turn(onoff)
+      {
+        myimg = document.getElementById("offjpg");
+        document.get
+        if(onoff == "on")
+          myimg.src = "images13/on.jpg"
+        else
+          myimg.src = "images13/off.jpg"
+      }
+    </script>
+  <br>
+  <hr>
+  <h2 align = "center" id = "last">
+    <ins><a href = "13week tasks.html">13주차 과제 페이지</a></ins>
+  </h2>
+</body>
+</html>

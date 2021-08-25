@@ -1,0 +1,73 @@
+#name { background:blue; color:white; }
+#name2 { background:#0096FF; }
+#last { background:lightblue; }
+body { background-image:url('images12/mine.jpg');
+       background-size:100px;
+       background-repeat:repeat-x;
+     }
+a { text-decoration:none; }
+img { width:300px; }
+#n1-1 {
+        background-image:url('images14/n1.jpg');
+        background-size:cover;
+        width:100px;
+        color:white;
+        border-style:dashed;
+        border-color:white;
+        border-radius:30px 0 0 0;
+        line-height:50px;
+        font-size:30px;
+      }
+#n2-1 { 
+        background-image:url('images14/n2.jpg');
+        background-size:cover;
+        width:100px;
+        color:white;
+        border-style:dashed;
+        border-color:white;
+        line-height:50px;
+        font-size:30px;
+      }
+#n3-1 { 
+        background-image:url('images14/n3.jpg');
+        background-size:cover;
+        width:100px;
+        color:white;
+        border-style:dashed;
+        border-color:white;
+        border-radius:0 30px 0 0;
+        line-height:50px;
+        font-size:30px;
+      }
+#n4-1 { 
+        background-image:url('images14/n4.jpg');
+        background-size:cover;
+        width:100px;
+        color:white;
+        border-style:dashed;
+        border-color:white;
+        border-radius:0 0 0 30px;
+        line-height:50px;
+        font-size:30px;
+      }
+#n5-1 { 
+        background-image:url('images14/n5.jpg');
+        background-size:cover;
+        width:100px;
+        color:white;
+        border-style:dashed;
+        border-color:white;
+        line-height:50px;
+        font-size:30px;
+      }
+#n6-1 { 
+        background-image:url('images14/n6.jpg');
+        background-size:cover;
+        width:100px;
+        color:white;
+        border-style:dashed;
+        border-color:white;
+        border-radius:0 0 30px 0;
+        line-height:50px;
+        font-size:30px;
+      }
